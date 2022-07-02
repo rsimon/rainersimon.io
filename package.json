@@ -1,0 +1,24 @@
+{
+  "name": "rainersimon.io",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsimon/rainersimon.io.git"
+  },
+  "author": "Rainer Simon",
+  "devDependencies": {
+    "@astrojs/svelte": "^0.2.0",
+    "@astrojs/tailwind": "^0.2.2",
+    "astro": "^1.0.0-beta.61"
+  },
+  "dependencies": {
+    "svelte": "^3.48.0"
+  }
+}
