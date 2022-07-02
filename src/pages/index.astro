@@ -5,13 +5,13 @@ import Base from '../layouts/Base.astro';
 ---
 <style>
 	header {
-		background-image:url(/assets/img/layout/header.svg);
+		background-image:url(/assets/img/splash-header-bg.svg);
 		background-position:bottom;
 		background-size:cover;
 	}
 
 	footer {
-		background-image:url(/assets/img/layout/footer-bg.png);
+		background-image:url(/assets/img/splash-footer-bg.svg);
 		background-position:top;
 		background-size:cover;
 	}
@@ -31,7 +31,7 @@ import Base from '../layouts/Base.astro';
 <Base>
 	<header class="pb-8 md:pb-24">
 		<div class="container mx-auto px-10 pt-20 md:pt-24 pb-24 text-center md:text-left">
-			<img class="inline" src="/assets/img/layout/rainersimon-logotype.svg">
+			<img class="inline" src="/assets/img/splash-logo.svg">
 			<p class="text-white md:text-xl pt-1 md:pb-8">Web Development / Maps / UI / Open Source</p>
 		</div>
 	</header>
@@ -39,17 +39,17 @@ import Base from '../layouts/Base.astro';
 	<main>
 		<section class="container mx-auto px-10 pt-12 pb-24 md:pt-20 text-gray-800 text-lg">
 			<div class="max-w-screen-md">
-				<p class="font-semibold pb-8 text-xl">
+				<p class="font-semibold pb-10 text-xl">
 					Hi, I'm Rainer. I create software for working with data.
 				</p>
 					
-				<p class="pb-8">
+				<p class="pb-10">
 					I specialize in the design of tools and user interfaces that help people explore, 
 					analyze, present and manage data more easily. I am passionate about maps, 
 					and in many of my projects, I have dealt with spatial or cartographic data.  
 				</p>
 
-				<p class="pb-8">
+				<p class="pb-10">
 					I am also the maintainer of the <a href="https://annotorious.com">Annotorious</a> and 
 					<a href="https://github.com/recogito/recogito-js">RecogitoJS</a> open source libraries for 
 					text and image annotation, and the lead developer of the award-winning 
@@ -65,7 +65,7 @@ import Base from '../layouts/Base.astro';
 
 	<footer>
 		<section class="container mx-auto px-10 pt-24 text-white leading-8">
-			<div class="grid grid-cols-4 gap-4 pb-20">
+			<div class="grid grid-cols-3 gap-3 pb-20">
 				<div>
 					<h4>COMPANY</h4>
 					<ul>
@@ -79,23 +79,19 @@ import Base from '../layouts/Base.astro';
 					<h4>SOCIAL</h4>
 					<ul>
 						<li>
-							<a href="https://github.com/rsimon">
-								<Icon name="fontisto:github" /> Github
-							</a>
+							<Icon name="fontisto:github" /> 
+							<a href="https://github.com/rsimon">Github</a>
 						</li>
 						
 						<li>
-							<a href="https://twitter.com/aboutgeo">
-								<Icon name="iconoir:twitter" /> Twitter
-							</a>
+							<Icon name="iconoir:twitter" />
+							<a href="https://twitter.com/aboutgeo">Twitter</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 
-			<hr />
-
-			<div class="flex justify-between pt-4 pb-8">
+			<div class="flex justify-between pt-4 pb-8 border-t">
 				<p>&copy; Rainer Simon, 2022</p>
 
 				<p>Servion Theme |

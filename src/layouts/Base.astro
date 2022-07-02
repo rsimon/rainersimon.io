@@ -2,6 +2,16 @@
 const {title} = Astro.props;
 ---
 
+<style is:global>
+  main a {
+    color:#828282;
+  }
+
+  a:hover {
+    text-decoration:underline;
+  }
+</style>
+
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
   <head>
