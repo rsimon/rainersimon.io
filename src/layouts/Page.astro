@@ -1,0 +1,15 @@
+---
+import Base from './Base.astro';
+
+const {title} = Astro.props;
+---
+
+<Base title={title}>
+
+  <!-- TODO header + navbar -->
+
+  <slot />
+
+  <!-- TODO footer -->
+  
+</Base>
