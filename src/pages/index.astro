@@ -1,55 +1,43 @@
 ---
 import Base from '../layouts/Base.astro';
 ---
-
+<style>
+	header {
+		background-image:url(assets/img/layout/hero.png);
+		background-position:bottom;
+		background-size:cover;
+	}
+</style>
 <Base>
-	<main class="main" id="top">
-		<!-- nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
-			<div class="container">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
-				<div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-					<ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
-						<li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link fw-medium active" aria-current="page" href="#home">Home</a></li>
-						<li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link" href="#">Blog</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav -->
-		<section id="home" class="pt-0 pb-4">
-			<div class="bg-holder" style="background-image:url(/assets/img/layout/hero.png);background-position:bottom;background-size:cover;">
-			</div>
+	<header class="pb-24">
+		<div class="container mx-auto px-10 pt-20 pb-24 text-center md:text-left">
+			<img class="inline" src="/assets/img/layout/rainersimon-logotype.svg">
+			<p class="text-white md:text-xl pt-1">Web Development / Maps / UI / Open Source</p>
+		</div>
+	</header>
+	<main>
+		<section class="container mx-auto px-10 pt-12 md:pt-20 text-gray-800 text-lg">
+			<div class="max-w-screen-md">
+				<p class="font-semibold pb-8 text-xl">
+					Hi, I'm Rainer. I create software for working with data.
+				</p>
+					
+				<p class="pb-8">
+					I specialize in the design of tools and user interfaces that help people explore, 
+					analyze, present and manage data more easily. I am passionate about maps, 
+					and in many of my projects, I have dealt with spatial or cartographic data.  
+				</p>
 
-			<div class="container">
-				<div class="row align-items-center min-vh-50 min-vh-sm-50">
-					<div class="col-md-7 pt-lg-7 pb-lg-9 col-lg-6 text-md-start text-center">
-						<img src="assets/img/layout/rainersimon-logotype.svg" style="width:400px; max-width:80vw;" alt="rainersimon.io" />
-						<p class="text-light fs-sm-1 pt-2 pb-4">Web Development / Maps / UI / Open Source</p>
-					</div>
-				</div>
+				<p class="pb-8">
+					I am also the maintainer of the <a href="https://annotorious.com">Annotorious</a> and 
+					<a href="https://github.com/recogito/recogito-js">RecogitoJS</a> open source libraries for 
+					text and image annotation, and the lead developer of the award-winning 
+					<a href="https://recogito.pelagios.org">Recogito</a> annotation platform.
+				</p>
 			</div>
 		</section>
 
-		<section class="py-xl-9 py-lg-6 py-5 fs-1 px-3">
-			<div class="container">
-				<div class="row vw-xl-50 pb-lg-3">
-					<p class="pb-4 fw-semi-bold">
-						Hi, I'm Rainer. I create software for working with data.
-					</p>
-					
-					<p class="pb-4">
-						I specialize in the design of tools and user interfaces that help people explore, 
-						analyze, present and manage data more easily. I am passionate about maps, 
-						and in many of my projects, I have dealt with spatial or cartographic data.  
-					</p>
-
-					<p class="pb-4">
-						I am also the maintainer of the <a href="https://annotorious.com">Annotorious</a> and 
-						<a href="https://github.com/recogito/recogito-js">RecogitoJS</a> open source libraries for 
-						text and image annotation, and the lead developer of the award-winning 
-						<a href="https://recogito.pelagios.org">Recogito</a> annotation platform.
-					</p>
-				</div>
-
+			<!-- 
 				<a class="btn btn-primary" style="text-decoration:none;" href="contact.html">
 					Contact me
 				</a>
@@ -93,5 +81,6 @@ import Base from '../layouts/Base.astro';
 				</div>
 			</div>
 		</section>
+	-->
 	</main>
 </Base>
