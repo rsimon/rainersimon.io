@@ -5,13 +5,13 @@ import Base from '../layouts/Base.astro';
 ---
 <style>
 	header {
-		background-image:url(assets/img/layout/hero.png);
+		background-image:url(/assets/img/layout/hero.png);
 		background-position:bottom;
 		background-size:cover;
 	}
 
 	footer {
-		background-image:url(assets/img/layout/footer-bg.png);
+		background-image:url(/assets/img/layout/footer-bg.png);
 		background-position:top;
 		background-size:cover;
 	}
@@ -27,6 +27,7 @@ import Base from '../layouts/Base.astro';
     padding-right:3px;
   }
 </style>
+
 <Base>
 	<header class="pb-8 md:pb-24">
 		<div class="container mx-auto px-10 pt-20 md:pt-24 pb-24 text-center md:text-left">
@@ -79,13 +80,13 @@ import Base from '../layouts/Base.astro';
 					<ul>
 						<li>
 							<a href="https://github.com/rsimon">
-								<Icon name="iconoir:twitter" /> Github
+								<Icon name="fontisto:github" /> Github
 							</a>
 						</li>
 						
 						<li>
 							<a href="https://twitter.com/aboutgeo">
-								<Icon name="fontisto:github" /> Twitter
+								<Icon name="iconoir:twitter" /> Twitter
 							</a>
 						</li>
 					</ul>
