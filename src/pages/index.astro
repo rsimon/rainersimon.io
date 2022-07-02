@@ -1,4 +1,6 @@
 ---
+import { Icon } from 'astro-icon';
+
 import Base from '../layouts/Base.astro';
 ---
 <style>
@@ -7,6 +9,23 @@ import Base from '../layouts/Base.astro';
 		background-position:bottom;
 		background-size:cover;
 	}
+
+	footer {
+		background-image:url(assets/img/layout/footer-bg.png);
+		background-position:top;
+		background-size:cover;
+	}
+
+	footer h4 {
+		font-weight:bold;
+	}
+
+	footer [astro-icon] {
+		height:20px;
+    display:inline;
+    vertical-align:text-top;
+    padding-right:3px;
+  }
 </style>
 <Base>
 	<header class="pb-8 md:pb-24">
@@ -15,8 +34,9 @@ import Base from '../layouts/Base.astro';
 			<p class="text-white md:text-xl pt-1 md:pb-8">Web Development / Maps / UI / Open Source</p>
 		</div>
 	</header>
+
 	<main>
-		<section class="container mx-auto px-10 pt-12 pb-8 md:pt-20 text-gray-800 text-lg">
+		<section class="container mx-auto px-10 pt-12 pb-24 md:pt-20 text-gray-800 text-lg">
 			<div class="max-w-screen-md">
 				<p class="font-semibold pb-8 text-xl">
 					Hi, I'm Rainer. I create software for working with data.
@@ -40,11 +60,50 @@ import Base from '../layouts/Base.astro';
 					href="contact">Contact me</a>
 			</div>
 		</section>
+	</main>
 
-		<!--
-		<section class="py-0">
-			<div class="bg-holder" style="background-image:url(assets/img/layout/footer-bg.png);background-position:0 80px;background-size:cover;">
+	<footer>
+		<section class="container mx-auto px-10 pt-24 text-white leading-8">
+			<div class="grid grid-cols-4 gap-4 pb-20">
+				<div>
+					<h4>COMPANY</h4>
+					<ul>
+						<li><a href="imprint.html">Imprint</a></li>
+						<li><a href="assets/files/rainersimon_terms_202206.pdf">Terms & Conditions</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<h4>SOCIAL</h4>
+					<ul>
+						<li>
+							<a href="https://github.com/rsimon">
+								<Icon name="iconoir:twitter" /> Github
+							</a>
+						</li>
+						
+						<li>
+							<a href="https://twitter.com/aboutgeo">
+								<Icon name="fontisto:github" /> Twitter
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
+
+			<hr />
+
+			<div class="flex justify-between pt-4 pb-8">
+				<p>&copy; Rainer Simon, 2022</p>
+
+				<p>Servion Theme |
+					<a class="font-bold" href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+				</p>
+			</div>
+		</section>
+	</footer>
+		<!--
 
 			<div class="container">
 				<div class="row min-vh-75 min-vh-xl-50 pt-10">
@@ -65,20 +124,8 @@ import Base from '../layouts/Base.astro';
 					</div>
 				</div>
 
-				<hr />
-				
-				<div class="row flex-center pb-3">
-					<div class="col-md-6 order-0">
-						<p class="text-200 text-center text-md-start">&copy; Rainer Simon, 2022</p>
-					</div>
-					<div class="col-md-6 order-1">
-						<p class="text-200 text-center text-md-end">Servion Theme |
-							<a class="text-200 fw-bold" href="https://themewagon.com/" target="_blank">ThemeWagon</a>
-						</p>
-					</div>
-				</div>
+
 			</div>
-		</section>
+
 	-->
-	</main>
 </Base>
