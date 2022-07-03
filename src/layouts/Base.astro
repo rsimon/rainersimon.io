@@ -1,11 +1,13 @@
 ---
-const {title} = Astro.props;
+const { title } = Astro.props;
 ---
 <html lang="en-US" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+
     <title>{title ? `rainersimon.io | ${title}` : 'rainersimon.io'}</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
@@ -15,7 +17,21 @@ const {title} = Astro.props;
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
 
-    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Web Development / Maps / UI / Open Source" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@aboutgeo" />
+    <meta name="twitter:title" content={title ? `rainersimon.io | ${title}` : 'rainersimon.io'} />
+    <meta name="twitter:description" content="Web Development / Maps / UI / Open Source" />
+    <meta name="twitter:image" content="https://rainersimon.io/assets/img/social-preview.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title ? `rainersimon.io | ${title}` : 'rainersimon.io'} />
+    <meta property="og:description" content="Web Development / Maps / UI / Open Source" />
+    <meta property="og:image" content="https://rainersimon.io/assets/img/social-preview.png" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:url" content="https://rainersimon.io/" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
