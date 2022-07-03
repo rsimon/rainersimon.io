@@ -1,0 +1,59 @@
+---
+import Page from '../layouts/Page.astro';
+---
+
+<style>
+  label, input, button {
+    display: block;
+  }
+
+  form {
+    max-width:800px;
+  }
+</style>
+
+<Page>
+  <section>
+    <div class="container pb-12">
+      <h3 class="text-xl pb-2">Want to work with me?</h3>
+      <p class="pb-10">
+        Drop me a line and I will get right back to you!
+      </p>
+
+      <form action="https://submit-form.com/RAUIBlCo">
+        <label for="name">Name</label>
+        <input 
+          class="rounded-md bg-gray-100 border border-gray-300 p-2 mt-2 mb-4 w-full focus:outline outline-2 outline-steel-lightest" 
+          type="text" 
+          id="name" 
+          name="name" 
+          placeholder="Name" 
+          required />
+        
+        <label for="email">Email</label>
+        <input
+          class="rounded-md bg-gray-100 border border-gray-300 p-2 mt-2 mb-4 w-full focus:outline outline-2 outline-steel-lightest" 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Email" 
+          required />
+        
+        <label for="message">Message</label>
+        <textarea
+          class="rounded-md bg-gray-100 border border-gray-300 p-2 mt-2 mb-4 w-full focus:outline outline-2 outline-steel-lightest"
+          id="message"
+          name="message"
+          placeholder="Message"
+          required
+          class="form-control mb-3" 
+          style="height: 240px;"
+        ></textarea>
+
+        <button class="inline-flex items-center h-10 px-6 text-md transition-colors duration-150 rounded-md focus:shadow-outline text-white bg-steel-light hover:bg-steel-lighter" type="submit">
+          Send
+        </button>
+      </form>
+    </div>
+  </section>
+</Page>

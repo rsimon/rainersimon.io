@@ -10,7 +10,8 @@ module.exports = {
 			'steel': {
 				'normal': '#424d83',
 				'light': '#5c69a7',
-				'lighter': '#818ed0'
+				'lighter': '#818ed0',
+				'lightest': '#d5dcff'
 			},
 			'lilac': {
 				300: '#d5dbff',
