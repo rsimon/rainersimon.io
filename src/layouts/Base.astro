@@ -1,45 +1,6 @@
 ---
 const {title} = Astro.props;
 ---
-
-<style is:global>
-  main {
-    min-height:70vh;
-  }
-
-  main a {
-    color:#5c69a7;
-  }
-
-  main a:hover {
-    text-decoration:underline;
-  }
-
-  article h1,
-  article h2,
-  article h3,
-  article h4,
-  article h5 {
-    font-weight:bold;
-  }
-
-  article h1 {
-    font-size:1.5rem;
-    line-height:2rem;
-    padding-bottom:1.5rem;
-  }
-
-  article p {
-    padding-bottom:1.5rem;
-    line-height:170%;
-  }
-
-  .btn:hover {
-    text-decoration:none;
-  }
-</style>
-
-<!DOCTYPE html>
 <html lang="en-US" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -59,11 +20,45 @@ const {title} = Astro.props;
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap" rel="stylesheet">
+
+    <style is:global>
+      main {
+        min-height:70vh;
+      }
+    
+      main a {
+        color:#5c69a7;
+      }
+    
+      main a:hover {
+        text-decoration:underline;
+      }
+    
+      article h1,
+      article h2,
+      article h3,
+      article h4,
+      article h5 {
+        font-weight:bold;
+      }
+    
+      article h1 {
+        font-size:1.5rem;
+        line-height:2rem;
+        padding-bottom:1.5rem;
+      }
+    
+      article p {
+        padding-bottom:1.5rem;
+        line-height:170%;
+      }
+    
+      .btn:hover {
+        text-decoration:none;
+      }
+    </style>
   </head>
-
   <body>
-
     <slot />
-  
   </body>
 </html>
