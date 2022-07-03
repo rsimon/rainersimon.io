@@ -3,12 +3,35 @@ const {title} = Astro.props;
 ---
 
 <style is:global>
+  main {
+    min-height:70vh;
+  }
+
   main a {
     color:#5c69a7;
   }
 
   main a:hover {
     text-decoration:underline;
+  }
+
+  article h1,
+  article h2,
+  article h3,
+  article h4,
+  article h5 {
+    font-weight:bold;
+  }
+
+  article h1 {
+    font-size:1.5rem;
+    line-height:2rem;
+    padding-bottom:1.5rem;
+  }
+
+  article p {
+    padding-bottom:1.5rem;
+    line-height:170%;
   }
 
   .btn:hover {

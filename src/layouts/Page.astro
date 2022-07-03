@@ -1,15 +1,82 @@
 ---
+import { Icon } from 'astro-icon';
+
 import Base from './Base.astro';
 
 const {title} = Astro.props;
 ---
 
+<style>
+  html, body {
+    min-height:100%;
+  }
+
+  header, footer {
+    background-color:#424d83;
+  }
+
+  footer h4 {
+		font-weight:bold;
+	}
+
+	footer [astro-icon] {
+		height:20px;
+    display:inline;
+    vertical-align:text-top;
+    padding-right:6px;
+  }
+</style>
+
 <Base title={title}>
+  <header>
+    <nav class="container mx-auto px-10 text-right text-white py-6">
+      <ul>
+        <li><a href="/">Home</a></li>
+      </ul>
+    </nav>
+	</header>
 
-  <!-- TODO header + navbar -->
+  <main class="container mx-auto px-10 py-8 md:py-20">
+    <article>
+      <slot />
+    </article>
+  </main>
 
-  <slot />
+  <footer>
+    <section class="container mx-auto px-10 pt-6 text-white leading-8">
+			<div class="grid grid-cols-3 gap-3 pb-12">
+				<div>
+					<h4>COMPANY</h4>
+					<ul>
+						<li><a href="imprint.html">Imprint</a></li>
+						<li><a href="/assets/files/rainersimon_terms_202206.pdf" target="_blank">Terms & Conditions</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
 
-  <!-- TODO footer -->
-  
+				<div>
+					<h4>SOCIAL</h4>
+					<ul>
+						<li>
+							<Icon name="fontisto:github" /> 
+							<a href="https://github.com/rsimon" target="_blank">Github</a>
+						</li>
+						
+						<li>
+							<Icon name="iconoir:twitter" />
+							<a href="https://twitter.com/aboutgeo" target="_blank">Twitter</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="flex justify-between pt-4 pb-8 border-t">
+				<p>&copy; Rainer Simon, 2022</p>
+
+				<p>Servion Theme |
+					<a class="font-bold" href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+				</p>
+			</div>
+		</section>
+  </footer>
 </Base>
