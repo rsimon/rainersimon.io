@@ -15,6 +15,10 @@ const {title} = Astro.props;
     background-color:#424d83;
   }
 
+	#logo {
+		height:48px;
+	}
+
   footer h4 {
 		font-weight:bold;
 	}
@@ -29,7 +33,10 @@ const {title} = Astro.props;
 
 <Base title={title}>
   <header>
-    <nav class="container mx-auto px-10 text-right text-white py-6">
+    <nav class="container mx-auto px-10 text-right text-white py-5 flex justify-between items-center">
+			<a href="/">
+				<img alt="rainersimon.io" class="inline" id="logo" src="/assets/img/splash-logo.svg">
+			</a>
       <ul>
         <li><a href="/">Home</a></li>
       </ul>
@@ -48,9 +55,9 @@ const {title} = Astro.props;
 				<div>
 					<h4>COMPANY</h4>
 					<ul>
-						<li><a href="imprint.html">Imprint</a></li>
+						<li><a href="/imprint">Imprint</a></li>
 						<li><a href="/assets/files/rainersimon_terms_202206.pdf" target="_blank">Terms & Conditions</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="/contact">Contact</a></li>
 					</ul>
 				</div>
 
