@@ -10,8 +10,8 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="3850"
-   height="1380"
-   viewBox="0 0 1018.6458 365.12501"
+   height="2166"
+   viewBox="0 0 1018.6458 573.08752"
    version="1.1"
    id="svg821"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.24748737"
-     inkscape:cx="2669.8917"
+     inkscape:cx="2045.6174"
      inkscape:cy="901.70933"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -38,18 +38,7 @@
      inkscape:window-y="30"
      inkscape:window-maximized="1"
      showguides="true"
-     inkscape:guide-bbox="true">
-    <sodipodi:guide
-       position="79.374997,410.48215"
-       orientation="1,0"
-       id="guide3961"
-       inkscape:locked="false" />
-    <sodipodi:guide
-       position="78.121319,281.7034"
-       orientation="0,1"
-       id="guide3963"
-       inkscape:locked="false" />
-  </sodipodi:namedview>
+     inkscape:guide-bbox="true" />
   <metadata
      id="metadata818">
     <rdf:RDF>
@@ -66,9 +55,10 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,68.125036)">
+     transform="translate(0,276.08754)">
     <g
-       id="g3959">
+       id="g3959"
+       transform="translate(0,-88.90005)">
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
@@ -79,11 +69,11 @@
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
          id="path1467"
-         d="M 1018.6458,281.91871 V -68.125036 H 0 V 212.33329 Z"
+         d="m 1018.6458,281.91871 v -469.1062 H 0 v 399.52078 z"
          style="fill:#424d83;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
     <g
-       transform="matrix(4.6130184,0,0,4.6130184,77.578509,-1272.1796)"
+       transform="matrix(4.6130184,0,0,4.6130184,87.103515,-1430.4104)"
        id="layer1-6"
        inkscape:label="Layer 1">
       <g
@@ -172,13 +162,13 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="77.10714"
-       y="132.80707"
+       x="86.632149"
+       y="-25.413742"
        id="text3967"><tspan
          sodipodi:role="line"
          id="tspan3965"
-         x="77.10714"
-         y="132.80707"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.69444466px;font-family:Nunito;-inkscape-font-specification:Nunito;fill:#ffffff;stroke-width:0.26458332">Web Deveolopment / Maps / UI / Open Source</tspan></text>
+         x="86.632149"
+         y="-25.413742"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24.69444466px;font-family:Nunito;-inkscape-font-specification:Nunito;fill:#ffffff;stroke-width:0.26458332">Web Development / Maps / UI / Open Source</tspan></text>
   </g>
 </svg>
