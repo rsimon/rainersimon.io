@@ -1,31 +1,18 @@
 ---
 title: Tetrastylon
+url: tetrastylon.eu
+client: University of Rome, La Sapienza
+image: /assets/img/projects/tetrastylon.png
+technologies: [ PostgreSQL, Directus, React, Leflet, Ant Design ]
 layout: ../../layouts/Project.astro
-image: /assets/img/projects/tetrastylon.jpg
-url: https://tetrastylon.eu
 ---
 
-# Tetrastylon
+An online database and web presence for an archaeological research project that studies 
+the development of a specific ancient housing type, the Tetrastyle Courtyard House.
 
-An online database and Web presence for [Tetrastylon](http://tetrastylon.eu), an archaeological
-research project at the University of Rome, La Sapienza.
-
-## Customer Need
-A user-friendly database system for recording archaelogical data. Data fields included a mix of
-structured vocabulary, numeric fields, rich-text descriptions, and image uploads; and a compact website with an attractive design,
-functionality to browse the database, view high-resolution copies of the uploaded media, and
-render maps.
-
-The site has responsive design with mobile-specific views for the item pages.
-
-## Technology
-
-- [PostgreSQL](https://www.postgresql.org/) database
-- [Directus](https://directus.io/) headless CMS
-- [ReactJS](https://reactjs.org/) frontend 
-- [Ant Design](https://ant.design/) design system
-- Various UI and utility libraries ([React Leaflet](https://react-leaflet.js.org/), [react-markdown](https://github.com/remarkjs/react-markdown),
-  [React Image Lightbox](https://frontend-collective.github.io/react-image-lightbox/))
-- Automated [Github Action](https://github.com/features/actions) deployment for customer self-service 
-- Cost-efficient hosting on [DigitalOcean](https://www.digitalocean.com/)
+The client was looking for a cost-effective solution for a custom online database. They needed 
+a user-friendly interface for managing a mix for content: structured vocabulary, 
+numeric fields, rich text, geo-coordinate data, and image uploads. A second requirement was a
+public website to search, browse and export the project data, with responsive layout and
+mobile-friendly maps.
 

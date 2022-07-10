@@ -19,16 +19,54 @@ const title = Astro.props.title || Astro.props.content.title;
 		height:48px;
 	}
 
+	aside {
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 380px;
+		padding-right: 50px;
+	}
+
+	aside .image-wrapper {
+		border-radius: 3px;
+		position: relative;
+	}
+
+	aside .image-wrapper img {
+		position: relative;
+		border-radius: 4px;
+		z-index: 2;
+	}
+
+	aside .image-wrapper::after {
+		content: '';
+		z-index: 1;
+		position: absolute;
+		top: 8%;
+		left: 8%;
+		width: 84%;
+		height: 84%;
+		box-shadow: 0 5px 60px 10px rgba(0, 0, 0, 0.2), 0 -2px 25px 10px rgba(0, 0, 0, 0.3);
+	}
+
   footer h4 {
 		font-weight:bold;
 	}
 
+	[astro-icon] {
+    display:inline;
+  }
+  
+	h2 [astro-icon] {
+		height:20px;
+		margin-right:0;
+		vertical-align:text-bottom;
+	}
+
 	footer [astro-icon] {
 		height:20px;
-    display:inline;
-    vertical-align:text-top;
-    padding-right:6px;
-  }
+		padding-right:6px;
+		vertical-align:text-top;
+	}
 </style>
 
 <Base title={title}>
@@ -43,18 +81,28 @@ const title = Astro.props.title || Astro.props.content.title;
     </nav>
 	</header>
 
-  <main class="container mx-auto px-10 py-8 md:py-20">
-    <article>
-			<div class="columns-2">
-				<aside>
-					<img src={Astro.props.content.image} />
-				</aside>
-
-				<div>
-					<slot />
-				</div>
+  <main class="container mx-auto px-10 py-8 md:py-20 flex text-gray-800">
+		<aside>
+			<div class="image-wrapper">
+				<img src={Astro.props.content.image} />
 			</div>
-    </article>
+		</aside>
+
+    <article class="project max-w-screen-md text-lg">
+			<h1 class="pb-1 text-3xl">{Astro.props.content.title}</h1>
+
+			<h2 class="text-steel-light pb-1">
+				<Icon name="ci:external-link" />
+				<a class="text-base" href={`https://${Astro.props.content.url}`} target="_blank">{Astro.props.content.url}</a>
+			</h2>
+
+			<h2 class="pb-12 text-gray-500 text-sm">
+				{Astro.props.content.client}
+			</h2>
+
+			<slot />
+			
+		</article>
   </main>
 
   <footer>
