@@ -2,8 +2,8 @@ module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}'],
 	theme: {
     fontFamily: {
-      sans: ['Nunito', 'sans-serif'],
-      serif: ['Nunito', 'serif']
+      sans: ['Assistant', 'sans-serif'],
+      serif: ['Assistant', 'serif']
     },
 		colors: {
 			'white': '#fff',
