@@ -63,9 +63,9 @@ const title = Astro.props.title || Astro.props.content.title;
 	}
 
 	footer [astro-icon] {
-		height:20px;
+		height:21px;
 		padding-right:6px;
-		vertical-align:text-top;
+		vertical-align:text-bottom;
 	}
 </style>
 
@@ -89,14 +89,14 @@ const title = Astro.props.title || Astro.props.content.title;
 		</aside>
 
     <article class="project max-w-screen-md text-lg">
-			<h1 class="pb-1 text-3xl">{Astro.props.content.title}</h1>
+			<h1 class="pb-1 font-semibold text-3xl">{Astro.props.content.title}</h1>
 
 			<h2 class="text-steel-light pb-1">
 				<Icon name="ci:external-link" />
-				<a class="text-base" href={`https://${Astro.props.content.url}`} target="_blank">{Astro.props.content.url}</a>
+				<a class="text-md font-semibold" href={`https://${Astro.props.content.url}`} target="_blank">{Astro.props.content.url}</a>
 			</h2>
 
-			<h2 class="pb-12 text-gray-500 text-sm">
+			<h2 class="pb-12 font-semibold text-gray-500 text-md">
 				{Astro.props.content.client}
 			</h2>
 
