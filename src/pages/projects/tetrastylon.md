@@ -1,6 +1,6 @@
 ---
 title: Tetrastylon
-url: tetrastylon.eu
+link: tetrastylon.eu
 client: University of Rome, La Sapienza
 image: /assets/img/projects/tetrastylon.png
 technologies: [ PostgreSQL, Directus, React, Leflet, Ant Design ]
