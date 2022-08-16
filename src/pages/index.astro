@@ -26,6 +26,10 @@ import Base from '../layouts/Base.astro';
     vertical-align:text-top;
     padding-right:6px;
   }
+	
+	footer a:hover {
+		text-decoration:underline;
+	}
 </style>
 
 <Base>
@@ -64,8 +68,8 @@ import Base from '../layouts/Base.astro';
 	</main>
 
 	<footer>
-		<section class="container mx-auto px-10 pt-24 text-white leading-8">
-			<div class="grid grid-cols-2 md:grid-cols-3 gap-14 pb-20">
+		<section class="container mx-auto px-10 pt-28 text-white leading-8">
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-14 pb-20">
 				<div>
 					<h4>COMPANY</h4>
 					<ul>
@@ -93,6 +97,18 @@ import Base from '../layouts/Base.astro';
 							<a href="https://observablehq.com/@rsimon" target="_blank">Observable</a>
 						</li>
 					</ul>
+				</div>
+
+				<div class="col-span-2 md:col-span-1">
+					<h4><span class="hidden md:inline">BECOME A </span>SPONSOR</h4>
+					<p class="leading-6">
+						Use any of my open source libraries? Please consider supporting them
+						through Patreon.
+					</p>
+					<p class="pt-3 whitespace-nowrap">
+						<Icon name="simple-icons:patreon" />
+						<a href="https://www.patreon.com/rainersimon" target="_blank">patreon.com/rainersimon</a>
+					</p>
 				</div>
 			</div>
 
