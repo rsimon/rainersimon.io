@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon';
+import { Icon } from 'astro-icon/components';
 
 import Base from './Base.astro';
 
@@ -25,11 +25,11 @@ const year = new Date().getFullYear();
 		font-weight:bold;
 	}
 
-	footer [astro-icon] {
-		height:20px;
-    display:inline;
-    vertical-align:text-top;
-    padding-right:6px;
+	footer li {
+		align-items: center;
+    display: flex;
+		gap: 0.75rem;
+    padding-right: 6px;
   }
 </style>
 

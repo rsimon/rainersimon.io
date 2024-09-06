@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon';
+import { Icon } from 'astro-icon/components';
 
 import Base from '../layouts/Base.astro';
 
@@ -22,11 +22,11 @@ const year = new Date().getFullYear();
 		font-weight:bold;
 	}
 
-	footer [astro-icon] {
-		height:20px;
-    display:inline;
-    vertical-align:text-top;
-    padding-right:6px;
+	footer li {
+		align-items: center;
+    display: flex;
+		gap: 0.75rem;
+    padding-right: 6px;
   }
 	
 	footer a:hover {
@@ -56,11 +56,10 @@ const year = new Date().getFullYear();
 				</p>
 
 				<p class="pb-12">
-					I am also the maintainer of the <a href="https://annotorious.com">Annotorious</a> and 
-					<a href="https://github.com/recogito/recogito-js">RecogitoJS</a> open source libraries for 
-					text and image annotation, and the former lead developer of the award-winning and 
-					<a href="https://what-is-dh-the-album.netlify.app/singles/recogito/">song-inspiring</a> 
-					<a href="https://recogito.pelagios.org">Recogito</a> annotation platform.
+					I am also the maintainer of the <a href="https://annotorious.dev">Annotorious</a> and
+					<a href="https://github.com/recogito/text-annotator-js">Recogito Text Annotator</a> open source 
+					libraries for image and text annotation, and the former lead developer of the award-winning and 
+					<a href="https://what-is-dh-the-album.netlify.app/singles/recogito/">song-inspiring</a>&nbsp;<a href="https://recogito.pelagios.org">Recogito</a> annotation platform.
 				</p>
 
 				<a 
