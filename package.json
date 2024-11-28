@@ -13,15 +13,15 @@
   },
   "author": "Rainer Simon",
   "devDependencies": {
-    "@astrojs/svelte": "^5.7.0",
-    "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.15.4"
+    "@astrojs/svelte": "^6.0.2",
+    "@astrojs/tailwind": "^5.1.2",
+    "astro": "^4.16.16"
   },
   "dependencies": {
-    "@iconify-json/akar-icons": "^1.2.0",
+    "@iconify-json/akar-icons": "^1.2.1",
     "@iconify-json/fontisto": "^1.2.0",
-    "@iconify-json/simple-icons": "^1.2.1",
-    "astro-icon": "^1.1.1",
-    "svelte": "^4.2.19"
+    "@iconify-json/simple-icons": "^1.2.13",
+    "astro-icon": "^1.1.4",
+    "svelte": "^5.2.10"
   }
 }
