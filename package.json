@@ -13,9 +13,9 @@
   },
   "author": "Rainer Simon",
   "devDependencies": {
-    "@astrojs/svelte": "^6.0.2",
+    "@astrojs/svelte": "^7.1.0",
     "@astrojs/tailwind": "^5.1.5",
-    "astro": "^4.16.18"
+    "astro": "^5.12.3"
   },
   "dependencies": {
     "@iconify-json/akar-icons": "^1.2.2",
