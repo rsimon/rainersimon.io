@@ -14,14 +14,14 @@
   "author": "Rainer Simon",
   "devDependencies": {
     "@astrojs/svelte": "^6.0.2",
-    "@astrojs/tailwind": "^5.1.2",
-    "astro": "^4.16.16"
+    "@astrojs/tailwind": "^5.1.5",
+    "astro": "^4.16.18"
   },
   "dependencies": {
-    "@iconify-json/akar-icons": "^1.2.1",
-    "@iconify-json/fontisto": "^1.2.0",
-    "@iconify-json/simple-icons": "^1.2.13",
-    "astro-icon": "^1.1.4",
-    "svelte": "^5.2.10"
+    "@iconify-json/akar-icons": "^1.2.2",
+    "@iconify-json/fontisto": "^1.2.1",
+    "@iconify-json/simple-icons": "^1.2.44",
+    "astro-icon": "^1.1.5",
+    "svelte": "^5.37.0"
   }
 }
