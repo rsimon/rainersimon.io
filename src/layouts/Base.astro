@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 const { title } = Astro.props;
 ---
 <html lang="en-US" dir="ltr">
@@ -17,17 +19,17 @@ const { title } = Astro.props;
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
 
-    <meta name="description" content="Web Development / Maps / UI / Open Source" />
+    <meta name="description" content="Digital Humanities / IIIF / UX / Open Source" />
     
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@aboutgeo" />
     <meta name="twitter:title" content={title ? `rainersimon.io | ${title}` : 'rainersimon.io'} />
-    <meta name="twitter:description" content="Web Development / Maps / UI / Open Source" />
+    <meta name="twitter:description" content="Digital Humanities / IIIF / UX / Open Source" />
     <meta name="twitter:image" content="https://rainersimon.io/assets/img/social-preview.png" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title ? `rainersimon.io | ${title}` : 'rainersimon.io'} />
-    <meta property="og:description" content="Web Development / Maps / UI / Open Source" />
+    <meta property="og:description" content="Digital Humanities / IIIF / UX / Open Source" />
     <meta property="og:image" content="https://rainersimon.io/assets/img/social-preview.png" />
     <meta property="og:image:width" content="1600" />
     <meta property="og:image:height" content="900" />
@@ -43,7 +45,7 @@ const { title } = Astro.props;
         "familyName": "Simon",
         "givenName": "Rainer",
         "brand": "rainersimon.io",
-        "description": "Rainer Simon is a senior software engineer and freelance developer who specializes in the design of tools that help people explore, analyze and manage data more easily.",
+        "description": "Rainer Simon is a senior software engineer and freelance developer who specializes in the design of tools that help Digital Humanities researchers and cultural heritage professionals explore, analyze and manage data more easily.",
         "url": "https://rainersimon.io",
         "jobTitle": "Software Engineer",
         "workLocation": "Vienna, Austria",
@@ -56,40 +58,8 @@ const { title } = Astro.props;
         ]
       }
     </script>
-
-    <style is:global>
-      main {
-        min-height:70vh;
-      }
-    
-      main a {
-        color:#5c69a7;
-      }
-    
-      main a:hover {
-        text-decoration:underline;
-      }
-
-      article p {
-        padding-bottom:1.5rem;
-      }
- 
-      article h1 {
-        font-weight:700;
-        font-size:1.3em;
-        padding-bottom:30px;
-      }
-
-      article h2 {
-        font-weight:700;
-      }    
-
-      .btn:hover {
-        text-decoration:none;
-      }
-    </style>
   </head>
-  <body>
+  <body class="text-neutral-800">
     <slot />
   </body>
 </html>

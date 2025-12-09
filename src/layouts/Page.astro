@@ -7,32 +7,6 @@ const title = Astro.props.title || Astro.props.content.title;
 
 const year = new Date().getFullYear();
 ---
-
-<style>
-  html, body {
-    min-height:100%;
-  }
-
-  header, footer {
-    background-color:#424d83;
-  }
-
-	#logo {
-		height:48px;
-	}
-
-  footer h4 {
-		font-weight:bold;
-	}
-
-	footer li {
-		align-items: center;
-    display: flex;
-		gap: 0.75rem;
-    padding-right: 6px;
-  }
-</style>
-
 <Base title={title}>
   <header>
     <nav class="container mx-auto px-10 text-right text-white py-5 flex justify-between items-center">
@@ -83,7 +57,7 @@ const year = new Date().getFullYear();
 
 						<li>
 							<Icon name="simple-icons:mastodon" />
-							<a rel="me" href="https://vis.social/@aboutgeo" target="_blank">Mastodon</a>
+							<a rel="me" href="https://hcommons	.social/@aboutgeo" target="_blank">Mastodon</a>
 						</li>
 					</ul>
 				</div>

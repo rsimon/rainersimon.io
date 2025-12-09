@@ -5,153 +5,47 @@ import Base from '../layouts/Base.astro';
 
 const year = new Date().getFullYear();
 ---
-<style>
-	header {
-		background-image:url(/assets/img/splash-header-bg.svg);
-		background-position:bottom;
-		background-size:cover;
-	}
-
-	footer {
-		background-image:url(/assets/img/splash-footer-bg.svg);
-		background-position:top;
-		background-size:cover;
-	}
-
-	footer h4 {
-		font-weight:bold;
-	}
-
-	footer li {
-		align-items: center;
-    display: flex;
-		gap: 0.75rem;
-    padding-right: 6px;
-  }
-	
-	footer a:hover {
-		text-decoration:underline;
-	}
-</style>
-
 <Base>
-	<header class="pb-8 md:pb-24">
-		<div class="container mx-auto px-10 pt-20 md:pt-24 pb-24 text-center md:text-left">
+  <header class="pb-8 md:pb-24 bg-[url(/assets/img/splash-header-bg.svg)] bg-bottom bg-cover">
+		<div class="container mx-auto px-10 pt-20 md:pt-20 pb-18 text-center md:text-left">
 			<img class="inline" src="/assets/img/splash-logo.svg"alt="rainersimon.io">
-			<p class="text-white md:text-xl pt-1 md:pb-8">Web Development / Maps / UI / Open Source</p>
+			<p class="text-white md:text-xl pt-1 md:pb-8 tracking-wide">Digital Humanities / IIIF / UX / Open Source</p>
 		</div>
 	</header>
 
-	<main>
-		<section class="container mx-auto px-10 pt-12 pb-24 md:pt-20 text-gray-800 text-lg">
-			<div class="max-w-screen-md">
-				<p class="font-bold pb-10 text-xl">
-					Hi, I'm Rainer. I create software for people working with data.
-				</p>
-					
-				<p class="pb-10">
-					I specialize in the design of tools that help people explore, 
-					analyze and manage data more easily. I am passionate about maps, 
-					and in many of my projects, I have dealt with spatial or cartographic data.  
-				</p>
+  <main>
+		<section class="pt-12 md:pt-18 text-lg leading-relaxed">
+      <div class="container mx-auto">
+        <div class="px-10 pb-20 max-w-3xl space-y-12">
+          <p class="font-bold text-xl">
+            Hi, I'm Rainer. I create software for people working with data.
+          </p>
+            
+          <p>
+            I specialize in the design of tools that help Digital Humanities researchers and cultural 
+            heritage professionals explore, analyze and manage data more easily. I am passionate about maps, 
+            and in many of my projects, I have dealt with spatial or cartographic data.  
+          </p>
 
-				<p class="pb-12">
-					I am also the maintainer of the <a href="https://annotorious.dev">Annotorious</a> and
-					<a href="https://github.com/recogito/text-annotator-js">Recogito Text Annotator</a> open source 
-					libraries for image and text annotation, and the former lead developer of the award-winning and 
-					<a href="https://what-is-dh-the-album.netlify.app/singles/recogito/">song-inspiring</a>&nbsp;<a href="https://recogito.pelagios.org">Recogito</a> annotation platform.
-				</p>
+          <div class="flex gap-4 text-md">
+            <a 
+              class="inline-flex items-center h-12 px-8 transition-colors duration-150 rounded-md focus:shadow-outline text-white bg-steel-light hover:bg-steel-lighter" 
+              href="contact">Book a Meeting</a>
 
-				<a 
-					class="btn inline-flex items-center h-10 px-6 text-md transition-colors duration-150 rounded-md focus:shadow-outline text-white bg-steel-light hover:bg-steel-lighter" 
-					href="contact">Contact me</a>
-			</div>
-		</section>
-
-
-		<!-- section>
-			<div id="mc_embed_shell">
-      <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-
-<div id="mc_embed_signup">
-    <form action="https://rainersimon.us22.list-manage.com/subscribe/post?u=f4ed4e985724ba37296f0d677&amp;id=40e4120c2e&amp;f_id=00f0c2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-        <div id="mc_embed_signup_scroll"><h2></h2>
-            <div class="indicates-required"><span class="asterisk">*</span> Angaben erforderlich</div>
-            <div class="mc-field-group"><label for="mce-EMAIL">E-Mail-Adresse <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
-        <div id="mce-responses" class="clear foot">
-            <div class="response" id="mce-error-response" style="display: none;"></div>
-            <div class="response" id="mce-success-response" style="display: none;"></div>
+            <a 
+              class="inline-flex items-center h-12 px-8 transition-colors duration-150 rounded-md focus:shadow-outline border border-steel-light text-steel hover:bg-steel-lighter/10" 
+              href="contact">Contact Me</a>
+          </div>
         </div>
-    <div aria-hidden="true" style="position: absolute; left: -5000px;">
-        /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-        <input type="text" name="b_f4ed4e985724ba37296f0d677_40e4120c2e" tabindex="-1" value="">
-    </div>
-        <div class="optionalParent">
-            <div class="clear foot">
-                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                <p style="margin: 0px auto;"><a href="http://eepurl.com/jiKVeI" title="Mailchimp – Einfaches, schnelles E-Mail-Marketing"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
-            </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mx-auto">
+        <div class="px-10 max-w-screen-md space-y-12">
+          Services
         </div>
-    </div>
-</form>
-</div>
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='COMPANY';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
-
-		</section -->
-	</main>
-
-	<footer>
-		<section class="container mx-auto px-10 pt-28 text-white leading-8">
-			<div class="grid grid-cols-2 md:grid-cols-4 gap-14 pb-20">
-				<div>
-					<h4>COMPANY</h4>
-					<ul>
-						<li><a href="/imprint">Imprint</a></li>
-						<li><a href="/assets/files/rainersimon_terms_202206.pdf" target="_blank">Terms<span class="hidden md:inline"> & Conditions</span></a></li>
-						<li><a href="/contact">Contact</a></li>
-					</ul>
-				</div>
-
-				<div>
-					<h4>SOCIAL</h4>
-					<ul>
-						<li>
-							<Icon name="fontisto:github" /> 
-							<a href="https://github.com/rsimon" target="_blank">Github</a>
-						</li>
-
-						<li>
-							<Icon name="simple-icons:linkedin" />
-							<a href="https://www.linkedin.com/in/rainersimon/" target="_blank">LinkedIn</a>
-						</li>
-
-						<li>
-							<Icon name="simple-icons:bluesky" />
-							<a rel="me" href="https://bsky.app/profile/aboutgeo.bsky.social" target="_blank">Bluesky</a>
-						</li>
-
-						<li>
-							<Icon name="simple-icons:mastodon" />
-							<a rel="me" href="https://vis.social/@aboutgeo" target="_blank">Mastodon</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="flex justify-between pt-2 md:pt-4 pb-8 border-t">
-				<p>&copy; Rainer Simon, {year}</p>
-
-				<p class="hidden md:inline-block">
-					Site built with <a href="https://astro.build/" target="_blank">Astro</a> | 
-					<a href="https://themewagon.com/" target="_blank">Servion Theme</a>
-				</p>
-			</div>
-		</section>
-	</footer>
+      </div>
+    </section>
+  </main>
 </Base>
-
-  <style type="text/css">
-        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
-        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>

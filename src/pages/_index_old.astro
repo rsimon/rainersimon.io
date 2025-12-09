@@ -1,0 +1,427 @@
+---
+import { Icon } from 'astro-icon/components';
+
+import Base from '../layouts/Base.astro';
+
+const year = new Date().getFullYear();
+---
+<style>
+	header {
+		background-image:url(/assets/img/splash-header-bg.svg);
+		background-position:bottom;
+		background-size:cover;
+	}
+
+	footer {
+		background-image:url(/assets/img/splash-footer-bg.svg);
+		background-position:top;
+		background-size:cover;
+	}
+
+	footer h4 {
+		font-weight:bold;
+	}
+
+	footer li {
+		align-items: center;
+    display: flex;
+		gap: 0.75rem;
+    padding-right: 6px;
+  }
+	
+	footer a:hover {
+		text-decoration:underline;
+	}
+
+
+	/* Accordion (Shadcn-like) styles */
+	.accordion-item {
+		border-bottom: 1px solid #e5e7eb;
+	}
+
+	.accordion-trigger {
+		justify-content: space-between;
+		width: 100%;
+		padding: 1rem 0;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+	}
+
+	.accordion-trigger .title {
+		font-size: 1.125rem;
+		font-weight: 600;
+	}
+
+	.accordion-trigger .summary {
+		display: block;
+		font-size: 0.95rem;
+		color: #374151;
+		margin-top: 0.25rem;
+	}
+
+	.chevron {
+		width: 1.25rem;
+		height: 1.25rem;
+		transition: transform 0.2s ease;
+		flex-shrink: 0;
+	}
+
+	.accordion-trigger[aria-expanded="true"] .chevron {
+		transform: rotate(180deg);
+	}
+
+	.accordion-content {
+		overflow: hidden;
+		max-height: 0;
+		transition: max-height 0.28s ease-in-out;
+		padding-bottom: 0;
+	}
+
+	.accordion-content.open {
+		padding-bottom: 1rem;
+	}
+
+	.service-bullets {
+		padding-left: 1.25rem;
+	}
+
+	.service-bullets li {
+		margin-bottom: 0.5rem;
+		list-style-type: disc;
+	}
+</style>
+
+<Base>
+	<header class="pb-8 md:pb-24">
+		<div class="container mx-auto px-10 pt-20 md:pt-24 pb-24 text-center md:text-left">
+			<img class="inline" src="/assets/img/splash-logo.svg"alt="rainersimon.io">
+			<p class="text-white md:text-xl pt-1 md:pb-8 tracking-wide">Digital Humanities / IIIF / UX / Open Source</p>
+		</div>
+	</header>
+
+	<main>
+		<section class="container mx-auto px-10 pt-12 md:pt-20 text-gray-800 text-lg">
+			<div class="max-w-screen-md">
+				<p class="font-bold pb-10 text-xl">
+					Hi, I'm Rainer. I create software for people working with data.
+				</p>
+					
+				<p class="pb-10">
+					I specialize in the design of tools that help Digital Humanities researchers and cultural 
+					heritage professionals explore, analyze and manage data more easily. I am passionate about maps, 
+					and in many of my projects, I have dealt with spatial or cartographic data.  
+				</p>
+
+				<div class="pb-10 flex gap-4 text-base">
+					<a 
+						class="btn inline-flex items-center h-10 px-6 text-md transition-colors duration-150 rounded-md focus:shadow-outline text-white bg-steel-light hover:bg-steel-lighter" 
+						href="contact">Book a Meeting</a>
+
+					<a 
+						class="btn inline-flex items-center h-10 px-6 text-md transition-colors duration-150 rounded-md focus:shadow-outline border border-steel-light text-steel-normal hover:bg-steel-lighter/20" 
+						href="contact">Contact Me</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="container mx-auto px-10 pb-24 pt-28 text-gray-800">
+			<div class="max-w-screen-md">
+				<h2 class="text-xl font-bold">What I offer:</h2>
+
+				<div class="accordion-item text-lg leading-relaxed">
+					<button 
+						class="accordion-trigger flex gap-2 items-start text-left" 
+						aria-expanded="false"
+						aria-controls="service-0">
+						<div class="space-y-0.5">
+							<div class="font-bold tracking-wide">1. UX Design and Interaction Prototyping</div>
+							<div>
+								I design user experiences tailored to your audience—whether scholars, curators, 
+								students, or the general public. I help you develop concepts, test ideas and 
+								create interactive prototypes for digital publications, research environments, 
+								and digital scholarly tools.<span class="text-[#5c69a7] hover:underline">Details...</span>
+							</div>
+						</div>
+						<svg class="chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+							<path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</button>
+
+					<div class="accordion-content" id="service-0">
+						<ul class="service-bullets pb-12">
+							<li>
+								<strong>Discovery and scoping.</strong> I work with you to develop initial 
+								ideas into well-defined projects through stakeholder analysis, persona 
+								development and collaborative design sessions.
+							</li>
+
+							<li>
+								<strong>Wireframes and interface concepts.</strong> I create mockups that 
+								explore different design directions and interaction patterns.
+							</li>
+
+							<li>
+								<strong>Interactive prototypes.</strong> I build clickable prototypes you 
+								can test with users, demonstrate to stakeholders, or include in grant 
+								applications.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="accordion-item text-lg leading-relaxed ">
+					<button 
+						class="accordion-trigger flex gap-2 items-start text-left" 
+						aria-expanded="false"
+						aria-controls="service-1">
+						<div class="space-y-0.5">
+							<div class="font-bold tracking-wide">2. IIIF & Annotation Workflow Consulting</div>
+							<div>
+								I support Digital Humanities research projects, DH centers, and small to mid-sized 
+								museums and archives in evaluating tools, technologies, and metadata practices. 
+								I help you make informed decisions around IIIF adoption, manifest generation, 
+								viewer user experience, and annotation infrastructure. <span class="text-[#5c69a7] hover:underline">Details...</span>
+							</div>
+						</div>
+						<svg class="chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+							<path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</button>
+
+					<div class="accordion-content" id="service-1">
+						<ul class="service-bullets pb-12">
+							<li>
+								<strong>Infrastructure assessment.</strong> I evaluate your existing IIIF setup for gaps, 
+								standards compliance, interoperability issues, and opportunities for optimization.
+							</li>
+
+							<li>
+								<strong>Technology selection.</strong> I help you compare tools, frameworks, and platforms
+								to find solutions that fit your technical capacity, budget, and institutional context.
+							</li>
+
+							<li>
+								<strong>User experience design.</strong> I provide UX guidance for image viewers, 
+								annotation interfaces, and research workflows.
+							</li>
+
+							<li>
+								<strong>Architecture planning.</strong>  I work with you to design solutions that match 
+								your project needs, from lightweight static site setups to database-driven systems.
+							</li>
+
+							<li>
+								<strong>Grant proposal support.</strong> I support you with writing technical components 
+								of research grants, including narrative sections, milestone planning, budget justification, 
+								and technical feasibility assessments.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="accordion-item text-lg leading-relaxed">
+					<button 
+						class="accordion-trigger flex gap-2 items-start text-left" 
+						aria-expanded="false"
+						aria-controls="service-2">
+						<div class="space-y-0.5">
+							<div class="font-bold tracking-wide">3. Web Application Development</div>
+							<div>
+								I design and build production-ready web applications for digital humanities
+								and cultural heritage projects. From digital editions to custom databases, 
+								annotation tools, interactive maps or storytelling projects.<span class="text-[#5c69a7] hover:underline">Details...</span>
+							</div>
+						</div>
+						<svg class="chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+							<path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</button>
+
+					<div class="accordion-content" id="service-2">
+						<ul class="service-bullets pb-12">
+							<li>
+								<strong>Technology consulting.</strong> I help you choose frameworks, 
+								hosting solutions, and architectural approaches that fit your technical 
+								requirements and project budget.
+							</li>
+
+							<li>
+								<strong>End-to-end development.</strong> I provide complete UX design and 
+								frontend/backend development, from initial concept to deployed application.
+							</li>
+
+							<li>
+								<strong>Operations support.</strong> I offer ongoing maintenance and hosting,
+								or provide documentation and handoff support for your IT department.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="accordion-item text-lg leading-relaxed">
+					<button 
+						class="accordion-trigger flex gap-2 items-start text-left" 
+						aria-expanded="false"
+						aria-controls="service-3">
+						<div class="space-y-0.5">
+							<div class="font-bold tracking-wide">4. AI & Machine Learning for Collections</div>
+							<div>
+								I help you explore where AI can genuinely support your 
+								research goals and users, with proper focus on 
+								quality, transparency, ethics, and sustainability. This 
+								includes evaluation and prototyping of OCR/HTR, entity 
+								extraction, metadata enrichment, human-in-the-loop systems, 
+								and RAG pipelines. <span class="text-[#5c69a7] hover:underline">Details...</span>
+							</div>
+						</div>
+						<svg class="chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+							<path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</button>
+
+					<div class="accordion-content" id="service-3">
+						<ul class="service-bullets pb-12">
+							<li>
+								<strong>Tool and model evaluation.</strong> I assess AI tools and 
+								models for your content types, use cases, and institutional constraints.
+							</li>
+
+							<li>
+								<strong>Minimal computing approaches.</strong> I specialize in lightweight 
+								AI solutions that run entirely in the browser, reducing infrastructure cost, 
+								protecting user privacy, and helping your applications more long-term sustainable.
+							</li>
+
+							<li>
+								<strong>Architecture design and prototyping.</strong> I build proof-of-contept 
+								implementations that validate approaches before full-scale development.
+							</li>
+
+							<li>
+								<strong>Integration support.</strong> I help you integrate AI-generated 
+								outputs into your existing systems while maintaining transparency, documenting 
+								limitations and keeping in mind ethical considerations and sustainability.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="accordion-item text-lg leading-relaxed">
+					<button 
+						class="accordion-trigger flex gap-2 items-start text-left" 
+						aria-expanded="false"
+						aria-controls="service-4">
+						<div class="space-y-0.5">
+							<div class="font-bold tracking-wide">5. Grant Writing & Technical Planning Support</div>
+							<div>
+								I help you scope technical work packages, write methodological and technical narratives, 
+								and define implementation steps for grant applications. I translate complex technical 
+								ideas into clear, funder-friendly language. <span class="text-[#5c69a7] hover:underline">Details...</span>
+							</div>
+						</div>
+						<svg class="chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+							<path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</button>
+
+					<div class="accordion-content" id="service-4">
+						<ul class="service-bullets pb-12">
+							<li>
+								<strong>Technical narratives.</strong> I write methodology and technical approach sections that 
+								communicate your project's feasibility and innovation.
+							</li>
+
+							<li>
+								<strong>Work package scoping.</strong> I help you define technical tasks, milestones, 
+								timelines, deliverables, and risk assessments.
+							</li>
+
+							<li>
+								<strong>Proposal review.</strong> I review and refine existing technical sections to 
+								improve clarity, feasibility, and alignment with funder priorities.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script>
+			// Accordion behaviour: toggle content height and aria-expanded
+			document.querySelectorAll('.accordion-trigger').forEach(btn => {
+				const controls = btn.getAttribute('aria-controls');
+				if (!controls) return;
+				const panel = document.getElementById(controls);
+
+				btn.addEventListener('click', () => {
+					const expanded = btn.getAttribute('aria-expanded') === 'true';
+					btn.setAttribute('aria-expanded', String(!expanded));
+
+					if (!panel) return;
+					if (expanded) {
+						panel.style.maxHeight = '0px';
+						panel.classList.remove('open');
+					} else {
+						panel.style.maxHeight = panel.scrollHeight + 'px';
+						panel.classList.add('open');
+					}
+				});
+
+				// allow CSS transition to work properly if panel has content on load
+				if (panel && panel.classList.contains('open')) {
+					panel.style.maxHeight = panel.scrollHeight + 'px';
+				}
+			});
+		</script>
+	</main>
+
+	<footer>
+		<section class="container mx-auto px-10 pt-28 text-white leading-8">
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-14 pb-20">
+				<div>
+					<h4>COMPANY</h4>
+					<ul>
+						<li><a href="/imprint">Imprint</a></li>
+						<li><a href="/assets/files/rainersimon_terms_202206.pdf" target="_blank">Terms<span class="hidden md:inline"> & Conditions</span></a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<h4>SOCIAL</h4>
+					<ul>
+						<li>
+							<Icon name="fontisto:github" /> 
+							<a href="https://github.com/rsimon" target="_blank">Github</a>
+						</li>
+
+						<li>
+							<Icon name="simple-icons:linkedin" />
+							<a href="https://www.linkedin.com/in/rainersimon/" target="_blank">LinkedIn</a>
+						</li>
+
+						<li>
+							<Icon name="simple-icons:bluesky" />
+							<a rel="me" href="https://bsky.app/profile/aboutgeo.bsky.social" target="_blank">Bluesky</a>
+						</li>
+
+						<li>
+							<Icon name="simple-icons:mastodon" />
+							<a rel="me" href="https://vis.social/@aboutgeo" target="_blank">Mastodon</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="flex justify-between pt-2 md:pt-4 pb-8 border-t">
+				<p>&copy; Rainer Simon, {year}</p>
+
+				<p class="hidden md:inline-block">
+					Site built with <a href="https://astro.build/" target="_blank">Astro</a> ·
+					<a href="https://themewagon.com/" target="_blank">Servion Theme</a>
+				</p>
+			</div>
+		</section>
+	</footer>
+</Base>
