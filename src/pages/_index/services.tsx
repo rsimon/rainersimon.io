@@ -86,7 +86,7 @@ implementation planning.
   structure, and alignment with call aims.`
 }]
 
-export const ServicesList = () => {
+export const Services = () => {
 
   return (
     <div className="space-y-16">
