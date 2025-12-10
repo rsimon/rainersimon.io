@@ -8,33 +8,42 @@ const year = new Date().getFullYear();
 <Base>
   <header class="pb-8 md:pb-24 bg-[url(/assets/img/splash-header-bg.svg)] bg-bottom bg-cover">
 		<div class="container mx-auto px-10 pt-20 md:pt-20 pb-18 text-center md:text-left">
-			<img class="inline" src="/assets/img/splash-logo.svg"alt="rainersimon.io">
-			<p class="text-white md:text-xl pt-1 md:pb-8 tracking-wide">Digital Humanities / IIIF / UX / Open Source</p>
+			<img 
+        class="inline" 
+        src="/assets/img/splash-logo.svg"
+        alt="rainersimon.io">
+			<h1 class="text-white md:text-xl pt-1 md:pb-8 tracking-wide">
+        Digital Humanities / IIIF / UX / Open Source
+      </h1>
 		</div>
 	</header>
 
   <main>
 		<section class="pt-12 md:pt-18 text-lg leading-relaxed">
       <div class="container mx-auto">
-        <div class="px-10 pb-20 max-w-3xl space-y-12">
+        <div class="px-10 pb-20 max-w-3xl">
           <p class="font-bold text-xl">
-            Hi, I'm Rainer. I create software for people working with data.
+            Hi, I'm Rainer. I create software for digital humanists.
           </p>
             
-          <p>
-            I specialize in the design of tools that help Digital Humanities researchers and cultural 
-            heritage professionals explore, analyze and manage data more easily. I am passionate about maps, 
-            and in many of my projects, I have dealt with spatial or cartographic data.  
-          </p>
+          <div class="space-y-4 mt-8">
+            <p>
+              I help Digital Humanities researchers, DH labs, museums, libraries, 
+              and archives build tools that make complex data easier 
+              to explore, analyze, and manage. 
+            </p>
+            
+            <p>
+              Are you planning a grant proposal? Evaluating IIIF tools? Developing a 
+              custom research database, or a digital edition? I help you
+              translate your research needs into usable technology.
+            </p>
+          </div>
 
-          <div class="flex gap-4 text-md">
+          <div class="flex gap-4 text-md mt-16">
             <a 
               class="inline-flex items-center h-12 px-8 transition-colors duration-150 rounded-md focus:shadow-outline text-white bg-steel-light hover:bg-steel-lighter" 
               href="contact">Book a Meeting</a>
-
-            <a 
-              class="inline-flex items-center h-12 px-8 transition-colors duration-150 rounded-md focus:shadow-outline border border-steel-light text-steel hover:bg-steel-lighter/10" 
-              href="contact">Contact Me</a>
           </div>
         </div>
       </div>
@@ -43,7 +52,7 @@ const year = new Date().getFullYear();
     <section>
       <div class="container mx-auto">
         <div class="px-10 max-w-3xl space-y-12">
-          {<ServicesList />}
+          {<ServicesList client:load />}
         </div>
       </div>
     </section>
