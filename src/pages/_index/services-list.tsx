@@ -110,7 +110,7 @@ export const ServicesList = () => {
             </AccordionTrigger>
 
             <AccordionContent>
-              <div className="prose max-w-full bg-steel-lighter/10  p-4 rounded">
+              <div className="prose max-w-full bg-steel-lighter/10 p-4 rounded">
                 <p>{details}</p>
                 <Markdown>{services}</Markdown>
               </div>
