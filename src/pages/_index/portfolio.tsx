@@ -5,8 +5,8 @@ const PROJECTS = [{
   image: '/images/portfolio-immarkus.jpg'
 }, {
   title: 'Machina Emblematica',
-  summary: 'A chatbot that brings a small corner of Renaissance knowledge back to life!',
-  image: '/images/portfolio-machina.jpg'
+  summary: 'A chatbot that brings a small corner of Renaissance knowledge back to life.',
+  image: '/assets/img/portfolio-machina-emblematica.jpg'
 }, {
   title: 'Annotorious',
   summary: 'Open source JavaScript image annotation library.',
@@ -32,15 +32,15 @@ export const Portfolio = () => {
       {PROJECTS.map((project, index) => (
         <div
           key={index}
-          className="group relative overflow-hidden rounded-lg cursor-pointer shadow-md hover:shadow-xl transition-all duration-300">
-          <div className="aspect-4/3 relative">
+          className="group relative overflow-hidden rounded-lg border border-gray-100 cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300">
+          <div className="aspect-video relative">
             <img
               src={project.image || "/placeholder.svg"}
               alt={project.title}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
 
-            <div className="absolute inset-0 leading-relaxed bg-linear-to-t from-primary via-primary/95 to-primary/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+            <div className="absolute inset-0 bg-linear-to-t from-primary via-primary/95 to-primary/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
               <h3 className="text-xl tracking-wide font-semibold text-primary-foreground">{project.title}</h3>
               <p className="text-primary-foreground/90">{project.summary}</p>
             </div>
