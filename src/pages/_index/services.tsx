@@ -103,7 +103,7 @@ export const Services = () => {
             key={title}
             value={title}>
             <AccordionTrigger
-              className="text-lg font-semibold items-start">
+              className="text-lg font-semibold">
               <h3 className="space-y-1">
                 {title}
               </h3>

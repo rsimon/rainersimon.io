@@ -2,7 +2,7 @@
 const PROJECTS = [{
   title: 'IMMARKUS',
   summary: 'An open source tool for scholarly semantic image annotation.',
-  image: '/images/portfolio-immarkus.jpg'
+  image: '/assets/img/portfolio-immarkus.jpg'
 }, {
   title: 'Machina Emblematica',
   summary: 'A chatbot that brings a small corner of Renaissance knowledge back to life.',
@@ -14,11 +14,11 @@ const PROJECTS = [{
 }, {
   title: 'Recogito Studio',
   summary: 'Collaborative document annotation for the classroom.',
-  image: '/images/portfolio-recogito-studio.jpg'
+  image: '/assets/img/portfolio-recogito-studio.png'
 }, {
   title: 'Heritage Browser',
   summary: 'An interactive map browser for large cultural heritage collections.',
-  image: '/images/portfolio-heritage-browser.jpg'
+  image: '/assets/img/portfolio-heritage-browser.jpg'
 }, {
   title: 'liiive',
   summary: 'Real-time collaborative viewing & annotation for IIIF image collections.',
@@ -32,7 +32,7 @@ export const Portfolio = () => {
       {PROJECTS.map((project, index) => (
         <div
           key={index}
-          className="group relative overflow-hidden rounded-lg border border-gray-100 cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300">
+          className="group relative overflow-hidden rounded-lg border border-steel/15 cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300">
           <div className="aspect-video relative">
             <img
               src={project.image || "/placeholder.svg"}
