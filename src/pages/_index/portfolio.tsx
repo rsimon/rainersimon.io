@@ -55,7 +55,15 @@ I designed the user experience for the project and developed the frontend web ap
   title: 'Annotorious',
   summary: 'Open source JavaScript image annotation library.',
   image: '/assets/img/portfolio-annotorious.jpg',
-  blurb: ''
+  blurb: `An open source JavaScript library for adding image annotation capabilities to 
+your web application with just a few lines of code.
+
+Annotorious integrates seamlessly with OpenSeadragon, allowing developers to easily build
+applications for annotating high-resolution zoomable images, including images served 
+via [IIIF](https://iiif.io). Annotorious is compatible with the
+[W3C Web Annotation Data Model](https://www.w3.org/TR/annotation-model/).`,
+  technologies: '[OpenSeadragon](https://openseadragon.github.io/), [PixiJS](https://pixijs.com/), [React](https://react.dev/), ',
+  link: 'https://annotorious.dev'
 }, {
   title: 'Recogito Studio',
   summary: 'Collaborative document annotation for the classroom.',
@@ -90,7 +98,7 @@ const InlineMarkdown = (props: { children: string }) => {
     <Markdown
       components={{
         a: ({ node, ...props }) => (
-          <a className="hover:underline font-medium" {...props} target="_blank" />
+          <a className="hover:underline" {...props} target="_blank" />
         )
       }}>
       {props.children}
