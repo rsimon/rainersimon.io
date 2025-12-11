@@ -1,12 +1,13 @@
 import { defineConfig } from 'astro/config';
 import icon from 'astro-icon';
-import svelte from '@astrojs/svelte';
-import tailwind from '@astrojs/tailwind';
+import react from '@astrojs/react';
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   outDir: './docs',
-	integrations: [icon(), svelte(), tailwind()],
+	integrations: [icon(), react()],
 	vite: {
+    plugins: [tailwindcss()],
     ssr: {
       external: ['svgo']
     }
