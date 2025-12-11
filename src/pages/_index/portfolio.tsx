@@ -68,8 +68,18 @@ via [IIIF](https://iiif.io). Annotorious is compatible with the
   title: 'Recogito Studio',
   summary: 'Collaborative document annotation for the classroom.',
   image: '/assets/img/portfolio-recogito-studio.png',
-  blurb: '',
-  client: '[Performant Software Solutions](https://www.performantsoftware.com/)'
+  blurb: `A collaborative tool for annotating text and images.
+Built for classroom use, lecturers can use Recogito Studio to create exercises
+for close reading and online group work.
+
+Recogito supports documents in plaintext, [TEI/XML](https://tei-c.org/), and PDF and format,
+and allows upload of images as well as import of IIIF manifests. A plugin architecture 
+allows extending functionality with custom components, features or even full custom 
+annotation environments.
+  `,
+  client: '[Performant Software Solutions](https://www.performantsoftware.com/)',
+  technologies: '[React](https://react.dev/), [Annotorious](https://annotoruious.dev), [PDF.js](https://mozilla.github.io/pdf.js/)',
+  link: 'https://recogitostudio.org'
 }, {
   title: 'Heritage Browser',
   summary: 'An interactive map browser for large cultural heritage collections.',
@@ -146,7 +156,7 @@ export const Portfolio = () => {
             className="p-0 overflow-hidden border-0 shadow-xl gap-0 lg:max-w-2xl"
             onOpenAutoFocus={e => e.preventDefault()}>
             <DialogHeader 
-              className="relative h-44 border-b bg-cover bg-center"
+              className="relative h-28 border-b bg-cover bg-center"
               style={{ backgroundImage: `url(${selected.image})` }}>
               <div className="absolute inset-0 bg-linear-to-t from-primary/80 to-primary/40" />
               <h3 className="absolute bottom-0 text-white text-2xl font-semibold tracking-wide mb-2 px-8 py-2">
