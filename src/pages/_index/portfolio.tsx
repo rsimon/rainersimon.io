@@ -22,20 +22,21 @@ interface Project {
 }
 
 const PROJECTS: Project[] = [{
-  title: 'IMMARKUS',
-  summary: 'A semantic image annotation tool for digital humanists and heritage professionals.',
-  image: '/assets/img/portfolio-immarkus.png',
-  blurb: `A browser-based, open source tool for semantic image annotation, 
-built for researchers, digital humanists, and cultural heritage professionals. It includes 
-a multi-image annotation workbench with AI-powered drawing tools for faster, smarter 
-selection; a lightweight ontology builder and an interactive, searchable knowledge graph.
+  title: 'Recogito Studio',
+  summary: 'Collaborative document annotation for the classroom.',
+  image: '/assets/img/portfolio-recogito-studio.png',
+  blurb: `A collaborative tool for annotating text and images.
+Built for classroom use, lecturers can use Recogito Studio to create exercises
+for close reading and online group work.
 
-IMMARKUS supports local images as well as IIIF collections and operates entirely in your browser, 
-without transmitting data to a server. All images, data models, and annotations are stored 
-on your device, for complete privacy and control over your work.`,
-  client: '[KU Leuven](https://www.arts.kuleuven.be/english)',
-  technologies: '[IIIF](https://iiif.io), [Annotorious](https://annotorious.dev), [SegmentAnything 2](https://ai.meta.com/sam2/), [OpenCV.js](https://github.com/TechStark/opencv-js)',
-  link: 'https://immarkus.xmarkus.org'
+Recogito supports documents in plaintext, [TEI/XML](https://tei-c.org/), and PDF and format,
+and allows upload of images as well as import of IIIF manifests. A plugin architecture 
+allows extending functionality with custom components, features or even full custom 
+annotation environments.
+  `,
+  client: '[Performant Software Solutions](https://www.performantsoftware.com/)',
+  technologies: '[React](https://react.dev/), [Annotorious](https://annotoruious.dev), [PDF.js](https://mozilla.github.io/pdf.js/)',
+  link: 'https://recogitostudio.org'
 }, {
   title: 'Machina Emblematica',
   summary: 'A chatbot that brings a small corner of Renaissance knowledge back to life.',
@@ -65,21 +66,20 @@ via [IIIF](https://iiif.io). Annotorious is compatible with the
   technologies: '[OpenSeadragon](https://openseadragon.github.io/), [PixiJS](https://pixijs.com/), [React](https://react.dev/), ',
   link: 'https://annotorious.dev'
 }, {
-  title: 'Recogito Studio',
-  summary: 'Collaborative document annotation for the classroom.',
-  image: '/assets/img/portfolio-recogito-studio.png',
-  blurb: `A collaborative tool for annotating text and images.
-Built for classroom use, lecturers can use Recogito Studio to create exercises
-for close reading and online group work.
+  title: 'IMMARKUS',
+  summary: 'A semantic image annotation tool for digital humanists and heritage professionals.',
+  image: '/assets/img/portfolio-immarkus.png',
+  blurb: `A browser-based, open source tool for semantic image annotation, 
+built for researchers, digital humanists, and cultural heritage professionals. It includes 
+a multi-image annotation workbench with AI-powered drawing tools for faster, smarter 
+selection; a lightweight ontology builder and an interactive, searchable knowledge graph.
 
-Recogito supports documents in plaintext, [TEI/XML](https://tei-c.org/), and PDF and format,
-and allows upload of images as well as import of IIIF manifests. A plugin architecture 
-allows extending functionality with custom components, features or even full custom 
-annotation environments.
-  `,
-  client: '[Performant Software Solutions](https://www.performantsoftware.com/)',
-  technologies: '[React](https://react.dev/), [Annotorious](https://annotoruious.dev), [PDF.js](https://mozilla.github.io/pdf.js/)',
-  link: 'https://recogitostudio.org'
+IMMARKUS supports local images as well as IIIF collections and operates entirely in your browser, 
+without transmitting data to a server. All images, data models, and annotations are stored 
+on your device, for complete privacy and control over your work.`,
+  client: '[KU Leuven](https://www.arts.kuleuven.be/english)',
+  technologies: '[IIIF](https://iiif.io), [Annotorious](https://annotorious.dev), [SegmentAnything 2](https://ai.meta.com/sam2/), [OpenCV.js](https://github.com/TechStark/opencv-js)',
+  link: 'https://immarkus.xmarkus.org'
 }, {
   title: 'Heritage Browser',
   summary: 'An interactive map browser for large cultural heritage collections.',

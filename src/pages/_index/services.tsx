@@ -2,11 +2,25 @@ import Markdown from 'react-markdown';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const SERVICE_PACKAGES = [{
+  title: 'Grant Writing & Technical Planning Support',
+  details: `I help articulate technical work packages, methodologies, and 
+implementation strategies for grant applications and write narrative that 
+translates complex technical ideas into clear, funder-friendly language.`,
+  services: 
+`- **Technical narratives.** Methodology and technical approach sections 
+tailored to funder expectations.
+
+- **Work package scoping.** Milestones, deliverables, risk analysis, and 
+implementation planning.
+
+- **Proposal review.** Editing and refining existing drafts to improve
+  structure, and alignment with call aims.`
+}, {
   title: 'UX Design and Interaction Prototyping',
   details: `I design user-centered tools and interfaces that help 
 scholars, curators, students, or the general public interact with complex
-cultural data more easily. I help you test ideas, and create interactive 
-prototypes for digital publications, scholarly tools and research environments.`,
+cultural data. I help you test ideas, and create interactive prototypes 
+for digital publications, scholarly tools and research environments.`,
   services: 
 `- **Project discovery and scoping.** Collaborative sessions to turn early
   ideas into clear, feasible projects, supported by stakeholder analysis and
@@ -70,20 +84,6 @@ transparency, ethics, and long-term sustainability.`,
 - **Integration support.** Guidance for integrating AI outputs 
   into existing systems while documenting limitations and ensuring
   responsible use.`
-}, {
-  title: 'Grant Writing & Technical Planning Support',
-  details: `I help you articulate technical work packages, methodologies, and 
-implementation strategies for grant applications and write narrative that 
-translates complex technical ideas into clear, funder-friendly language.`,
-  services: 
-`- **Technical narratives.** Methodology and technical approach sections 
-tailored to funder expectations.
-
-- **Work package scoping.** Milestones, deliverables, risk analysis, and 
-implementation planning.
-
-- **Proposal review.** Editing and refining existing drafts to improve
-  structure, and alignment with call aims.`
 }]
 
 export const Services = () => {
