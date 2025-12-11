@@ -23,6 +23,7 @@
     "@iconify-json/fontisto": "^1.2.1",
     "@iconify-json/simple-icons": "^1.2.62",
     "@radix-ui/react-accordion": "^1.2.12",
+    "@radix-ui/react-dialog": "^1.1.15",
     "@tailwindcss/vite": "^4.1.17",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
