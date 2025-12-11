@@ -21,8 +21,8 @@ const PROJECTS = [{
   image: '/assets/img/portfolio-heritage-browser.jpg'
 }, {
   title: 'liiive',
-  summary: 'Real-time collaborative viewing & annotation for IIIF image collections.',
-  image: '/images/portfolio-annotorious.jpg'
+  summary: 'Online platform for real-time collaborative viewing & annotation for IIIF image collections.',
+  image: '/assets/img/portfolio-liiive.jpg'
 }];
 
 export const Portfolio = () => {
