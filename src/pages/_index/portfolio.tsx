@@ -1,4 +1,4 @@
-import { useState, type ReactNode } from 'react';
+import { useState } from 'react';
 import Markdown from 'react-markdown';
 import { ExternalLink } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader } from '@/components/ui/dialog';
@@ -25,8 +25,17 @@ const PROJECTS: Project[] = [{
   title: 'IMMARKUS',
   summary: 'A semantic image annotation tool for digital humanists and heritage professionals.',
   image: '/assets/img/portfolio-immarkus.png',
-  blurb: '',
-  client: '[KU Leuven](https://www.arts.kuleuven.be/english)'
+  blurb: `A browser-based, open source tool for semantic image annotation, 
+built for researchers, digital humanists, and cultural heritage professionals. It includes 
+a multi-image annotation workbench with AI-powered drawing tools for faster, smarter 
+selection; a lightweight ontology builder and an interactive, searchable knowledge graph.
+
+IMMARKUS supports local images as well as IIIF collections and operates entirely in your browser, 
+without transmitting data to a server. All images, data models, and annotations are stored 
+on your device, for complete privacy and control over your work.`,
+  client: '[KU Leuven](https://www.arts.kuleuven.be/english)',
+  technologies: '[IIIF](https://iiif.io), [Annotorious](https://annotorious.dev), [SegmentAnything 2](https://ai.meta.com/sam2/), [OpenCV.js](https://github.com/TechStark/opencv-js)',
+  link: 'https://immarkus.xmarkus.org'
 }, {
   title: 'Machina Emblematica',
   summary: 'A chatbot that brings a small corner of Renaissance knowledge back to life.',
@@ -63,7 +72,16 @@ I designed the user experience for the project and developed the frontend web ap
   title: 'liiive',
   summary: 'Online platform for real-time collaborative viewing & annotation for IIIF image collections.',
   image: '/assets/img/portfolio-liiive.jpg',
-  blurb: ''
+  blurb: `liiive is a web-based tool that lets you explore and annotate digital image 
+collections with others. Built on the [IIIF](https://iiif.io) standard, it’s designed for 
+anyone who works with high-resolution images—whether you’re a researcher, educator, student, 
+or cultural heritage professional.
+
+With liiive, you collaborate in real-time, navigate image collections together, and see where 
+your teammates are lookin. Annotate images using drawing tools to highlight specific areas, 
+add comments, and engage in discussions directly on the image.`,
+  technologies: '[IIIF](https://iiif.io), [Annotorious](https://annotorious.dev), [YJS](https://yjs.dev/), [Supabase](https://supabase.com/)',
+  link: 'https://liiive.now'
 }];
 
 const InlineMarkdown = (props: { children: string }) => {
@@ -72,7 +90,7 @@ const InlineMarkdown = (props: { children: string }) => {
     <Markdown
       components={{
         a: ({ node, ...props }) => (
-          <a className="underline font-medium" {...props} target="_blank" />
+          <a className="hover:underline font-medium" {...props} target="_blank" />
         )
       }}>
       {props.children}
