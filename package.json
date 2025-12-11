@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "astro dev",
-    "build": "astro build && cp CNAME ./docs",
+    "build": "astro build && cp CNAME ./docs && cp .nojekyll ./docs",
     "preview": "astro preview"
   },
   "repository": {
