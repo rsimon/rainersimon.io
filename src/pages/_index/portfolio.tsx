@@ -1,8 +1,8 @@
 
 const PROJECTS = [{
   title: 'IMMARKUS',
-  summary: 'An open source tool for scholarly semantic image annotation.',
-  image: '/assets/img/portfolio-immarkus.jpg'
+  summary: 'A semantic image annotation tool for digital humanists and heritage professionals.',
+  image: '/assets/img/portfolio-immarkus.png'
 }, {
   title: 'Machina Emblematica',
   summary: 'A chatbot that brings a small corner of Renaissance knowledge back to life.',
