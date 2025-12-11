@@ -139,7 +139,7 @@ export const Portfolio = () => {
                 alt={project.title}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
 
-              <div className="absolute inset-0 bg-linear-to-t from-primary via-primary/95 to-primary/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+              <div className="absolute inset-0 bg-linear-to-t from-primary via-primary/80 to-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
                 <h3 className="text-xl tracking-wide font-semibold text-primary-foreground">{project.title}</h3>
                 <p className="text-primary-foreground/90">{project.summary}</p>
               </div>

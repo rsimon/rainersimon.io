@@ -19,7 +19,6 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
-    "@iconify-json/akar-icons": "^1.2.7",
     "@iconify-json/fontisto": "^1.2.1",
     "@iconify-json/simple-icons": "^1.2.62",
     "@radix-ui/react-accordion": "^1.2.12",

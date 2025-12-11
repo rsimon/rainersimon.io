@@ -18,7 +18,7 @@ implementation planning.
 }, {
   title: 'UX Design and Interaction Prototyping',
   details: `I design user-centered tools and interfaces that help 
-scholars, curators, students, or the general public interact with complex
+researchers, curators, students, or the general public interact with complex
 cultural data. I help you test ideas, and create interactive prototypes 
 for digital publications, scholarly tools and research environments.`,
   services: 
@@ -34,7 +34,7 @@ testing, stakeholder review, or inclusion in grant proposals.`
 }, {
   title: 'IIIF & Annotation Workflow Consulting',
   details: `I help Digital Humanities projects, DH centers, and 
-cultural institutions make informed decisions around IIIF adoption, 
+cultural institutions make informed decisions about IIIF adoption, 
 annotation tooling, metadata practies, and viewer UX.`,
   services:
 `- **Infrastructure assessment.** Evaluation of your IIIF setup for 
