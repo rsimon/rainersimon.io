@@ -40,13 +40,13 @@ const year = new Date().getFullYear();
             </p>
           </div>
 
-          <div class="flex gap-4 text-md mt-16">
+          <div class="flex flex-col md:flex-row gap-4 text-md mt-16">
             <a 
-              class="inline-flex items-center h-12 px-8 transition-colors duration-150 rounded-md focus:shadow-outline text-white bg-steel-light hover:bg-steel-lighter" 
+              class="inline-flex items-center justify-center h-12 px-8 transition-colors duration-150 rounded-md focus:shadow-outline text-white bg-steel-light hover:bg-steel-lighter" 
               href="https://calendly.com/rainer-rainersimon/rainersimon-io-introduction">Book a Consultation</a>
 
             <a 
-              class="inline-flex items-center h-12 px-8 transition-colors duration-150 rounded-md focus:shadow-outline border text-steel-light border-steel-lighter hover:bg-steel/10" 
+              class="inline-flex items-center justify-center h-12 px-8 transition-colors duration-150 rounded-md focus:shadow-outline border text-steel-light border-steel-lighter hover:bg-steel/10" 
               href="mailto:hello@rainersimon.io">Email Me</a>
           </div>
         </div>
@@ -82,13 +82,13 @@ const year = new Date().getFullYear();
             through your needs.
           </p>
 
-          <div class="flex gap-4 text-md mt-16">
+          <div class="flex flex-col md:flex-row gap-4 text-md mt-16">
             <a 
-              class="inline-flex items-center h-12 px-8 transition-colors duration-150 rounded-md focus:shadow-outline text-white bg-steel-light hover:bg-steel-lighter" 
+              class="inline-flex items-center justify-center h-12 px-8 transition-colors duration-150 rounded-md focus:shadow-outline text-white bg-steel-light hover:bg-steel-lighter" 
               href="https://calendly.com/rainer-rainersimon/rainersimon-io-introduction">Book a Consultation</a>
 
             <a 
-              class="inline-flex items-center h-12 px-8 transition-colors duration-150 rounded-md focus:shadow-outline border text-steel-light border-steel-lighter hover:bg-steel/10" 
+              class="inline-flex items-center justify-center h-12 px-8 transition-colors duration-150 rounded-md focus:shadow-outline border text-steel-light border-steel-lighter hover:bg-steel/10" 
               href="mailto:hello@rainersimon.io">Email Me</a>
           </div>
         </div>
@@ -97,9 +97,9 @@ const year = new Date().getFullYear();
   </main>
 
   <footer class="bg-[url(/assets/img/splash-footer-bg.svg)] bg-bottom-0 bg-cover mt-42">
-		<section class="container mx-auto px-10 pt-36 text-white leading-8">
-			<div class="grid grid-cols-4 gap-14 pb-20 tracking-wide">
-        <div class="flex flex-col col-span-2 md:flex-row items-start gap-6">
+		<section class="container mx-auto px-10 pt-24 md:pt-36 text-white leading-8">
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-20 md:gap-14 pb-20 tracking-wide">
+        <div class="flex flex-col md:flex-row col-span-2 items-center md:items-start gap-6">
           <img 
             src="/assets/img/rainer.jpg"
             alt="Rainer" 
@@ -107,32 +107,17 @@ const year = new Date().getFullYear();
             height={140} 
             class="rounded-full" />
 
-          <div class="text-sm leading-relaxed">
+          <div class="text-sm leading-relaxed text-center md:text-left">
             <p class="max-w-[280px] mt-0.5">
               <strong class="font-bold">Hi, I'm Rainer.</strong>
               Independent IT consultant and research software engineer 
               with more than 15 years experience in Digital Humanities.
             </p>
-            <div class="text-white/60 mt-0.5 flex items-center gap-1.5">
+            <div class="text-white/60 mt-0.5 inline-flex md:flex items-center gap-1.5">
               <Icon name="fontisto:map-marker-alt" class="size-2.5" /> Vienna, Austria
             </div>
           </div>
         </div>
-        
-				<div>
-					<h4 class="font-bold">COMPANY</h4>
-					<ul>
-						<li>
-              <a href="/imprint" class="hover:underline">Imprint</a>
-            </li>
-						<li>
-              <a href="/assets/files/rainersimon_terms_202206.pdf" class="hover:underline" target="_blank">Terms<span class="hidden md:inline"> & Conditions</span></a>
-            </li>
-						<li>
-              <a href="/contact" class="hover:underline">Contact</a>
-            </li>
-					</ul>
-				</div>
 
 				<div>
 					<h4 class="font-bold">SOCIAL</h4>
@@ -158,9 +143,24 @@ const year = new Date().getFullYear();
 						</li>
 					</ul>
 				</div>
+
+        <div>
+					<h4 class="font-bold">COMPANY</h4>
+					<ul>
+						<li>
+              <a href="/imprint" class="hover:underline">Imprint</a>
+            </li>
+						<li>
+              <a href="/assets/files/rainersimon_terms_202206.pdf" class="hover:underline" target="_blank">Terms<span class="hidden md:inline"> & Conditions</span></a>
+            </li>
+						<li>
+              <a href="/contact" class="hover:underline">Contact</a>
+            </li>
+					</ul>
+				</div>
 			</div>
 
-			<div class="flex justify-between pt-2 md:pt-4 pb-8 border-t">
+			<div class="flex justify-between md:pt-4 pb-8 border-t">
 				<p>&copy; Rainer Simon, {year}</p>
 
 				<p class="hidden md:inline-block">
