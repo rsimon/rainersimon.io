@@ -25,16 +25,15 @@ const PROJECTS: Project[] = [{
   title: 'Recogito Studio',
   summary: 'Collaborative document annotation for the classroom.',
   image: '/assets/img/portfolio-recogito-studio.png',
-  blurb: `A collaborative tool for annotating text and images.
-Built for classroom use, lecturers can use Recogito Studio to create exercises
-for close reading and online group work.
+  blurb: `Recogito Studio is a collaborative tool for annotating text and images,
+built for classroom use. Lecturers can create exercises for close reading, facilitate
+online group work, and review student activity in real time.
 
 Recogito supports documents in plaintext, [TEI/XML](https://tei-c.org/), and PDF and format,
 and allows upload of images as well as import of IIIF manifests. A plugin architecture 
 allows extending functionality with custom components, features or even full custom 
-annotation environments.
-  `,
-  client: '[Performant Software Solutions](https://www.performantsoftware.com/)',
+annotation environments.`,
+  client: '[Performant Software Solutions](https://www.performantsoftware.com/) / [University of Bonn](https://www.uni-bonn.de/en/university/university)',
   technologies: '[React](https://react.dev/), [Annotorious](https://annotoruious.dev), [PDF.js](https://mozilla.github.io/pdf.js/)',
   link: 'https://recogitostudio.org'
 }, {
@@ -45,7 +44,7 @@ annotation environments.
 16th-century encyclopedia of allegorical illustrations, natural history, ancient fables, and 
 moral reflections. 
 
-Built as a multimodal, retrieval-augmented generation (RAG) system, the Machina draws directly 
+Built as a multimodal retrieval-augmented generation (RAG) system, it draws directly 
 from high-resolution scans provided by the [Bayerische Staatsbibliothek](https://www.digitale-sammlungen.de/de/details/bsb10575861) 
 and text transcriptions from [Furman University](https://www.furman.edu/humanities-center/).
 I designed the user experience for the project and developed the frontend web application.`,
@@ -56,12 +55,12 @@ I designed the user experience for the project and developed the frontend web ap
   title: 'Annotorious',
   summary: 'Open source JavaScript image annotation library.',
   image: '/assets/img/portfolio-annotorious.jpg',
-  blurb: `An open source JavaScript library for adding image annotation capabilities to 
-your web application with just a few lines of code.
+  blurb: `Annotorious is an open source JavaScript library that adds image annotation 
+capabilities to your web application with only a few lines of code.
 
-Annotorious integrates seamlessly with OpenSeadragon, allowing developers to easily build
-applications for annotating high-resolution zoomable images, including images served 
-via [IIIF](https://iiif.io). Annotorious is compatible with the
+It integrates seamlessly with OpenSeadragon, making it easy to build tools for
+annotating high-resolution, zoomable images, including those served via
+[IIIF](https://iiif.io). Annotorious is fully compatible with the
 [W3C Web Annotation Data Model](https://www.w3.org/TR/annotation-model/).`,
   technologies: '[OpenSeadragon](https://openseadragon.github.io/), [PixiJS](https://pixijs.com/), [React](https://react.dev/), ',
   link: 'https://annotorious.dev'
@@ -69,14 +68,14 @@ via [IIIF](https://iiif.io). Annotorious is compatible with the
   title: 'IMMARKUS',
   summary: 'A semantic image annotation tool for digital humanists and heritage professionals.',
   image: '/assets/img/portfolio-immarkus.png',
-  blurb: `A browser-based, open source tool for semantic image annotation, 
-built for researchers, digital humanists, and cultural heritage professionals. It includes 
-a multi-image annotation workbench with AI-powered drawing tools for faster, smarter 
-selection; a lightweight ontology builder and an interactive, searchable knowledge graph.
+  blurb: `IMMARKUS is a browser-based, open source environment for semantic image annotation, 
+designed for researchers, digital humanists, and cultural heritage professionals. It offers 
+a multi-image annotation workbench with AI-assisted drawing tools for faster region 
+selection, a lightweight ontology builder, and an interactive, searchable knowledge graph.
 
-IMMARKUS supports local images as well as IIIF collections and operates entirely in your browser, 
-without transmitting data to a server. All images, data models, and annotations are stored 
-on your device, for complete privacy and control over your work.`,
+The application works entirely client-side and supports both local images and IIIF
+collections. All data – images, models, and annotations – remains on the user's device, 
+ensuring full privacy and control over their work.`,
   client: '[KU Leuven](https://www.arts.kuleuven.be/english)',
   technologies: '[IIIF](https://iiif.io), [Annotorious](https://annotorious.dev), [SegmentAnything 2](https://ai.meta.com/sam2/), [OpenCV.js](https://github.com/TechStark/opencv-js)',
   link: 'https://immarkus.xmarkus.org'
@@ -84,20 +83,29 @@ on your device, for complete privacy and control over your work.`,
   title: 'Heritage Browser',
   summary: 'An interactive map browser for large cultural heritage collections.',
   image: '/assets/img/portfolio-heritage-browser.jpg',
-  blurb: '',
-  client: '[DHDev](https://www.dh-dev.com/)'
+  blurb: `Heritage Browser is map-based discovery interface for exploring large
+cultural heritage collections. Built with MapLibre and a custom backend, it 
+enables smooth, immediate navigation through hundreds of thousands of geo-located 
+objects.
+
+Deployed by the National Library of Israel for nearly 350,000 items, it supports
+full-text search, dynamic filtering, IIIF integration, and a responsive interface
+for both desktop and mobile. I designed and developed the frontend and the interaction 
+architecture.`,
+  client: '[DHDev](https://www.dh-dev.com/) / [National Library of Israel](https://www.nli.org.il/en)',
+  technologies: '[MapLibre](https://maplibre.org/), [React](https://react.dev/)',
+  link: 'https://geo.nli.org.il/en'
 }, {
   title: 'liiive',
   summary: 'Online platform for real-time collaborative viewing & annotation for IIIF image collections.',
   image: '/assets/img/portfolio-liiive.jpg',
-  blurb: `liiive is a web-based tool that lets you explore and annotate digital image 
-collections with others. Built on the [IIIF](https://iiif.io) standard, it’s designed for 
-anyone who works with high-resolution images—whether you’re a researcher, educator, student, 
-or cultural heritage professional.
+  blurb: `liiive is a web-based platform for real-time collaborative viewing and annotation
+of digital image collections. Built on the [IIIF](https://iiif.io) standard, it supports researchers,
+educators, students, and cultural heritage professionals working with high-resolution images.
 
-With liiive, you collaborate in real-time, navigate image collections together, and see where 
-your teammates are lookin. Annotate images using drawing tools to highlight specific areas, 
-add comments, and engage in discussions directly on the image.`,
+Users can navigate images together, see each other's cursor positions, and annotate collaboratively
+in real time. Drawing tools allow highlighting regions of interest, adding comments, and engaging in  
+discussions directly on the image.`,
   technologies: '[IIIF](https://iiif.io), [Annotorious](https://annotorious.dev), [YJS](https://yjs.dev/), [Supabase](https://supabase.com/)',
   link: 'https://liiive.now'
 }];
