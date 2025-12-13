@@ -7,11 +7,12 @@ const year = new Date().getFullYear();
 ---
 <Base>
   <header class="pb-8 md:pb-24 bg-[url(/assets/img/splash-header-bg.svg)] bg-bottom bg-cover">
-		<div class="container mx-auto px-10 pt-20 md:pt-20 pb-18 text-center md:text-left">
+		<div class="container mx-auto px-10 pt-16 md:pt-20 pb-20 text-center md:text-left">
 			<img 
         class="inline" 
         src="/assets/img/splash-logo.svg"
         alt="rainersimon.io">
+
 			<h1 class="text-white md:text-xl pt-1 md:pb-8 tracking-wide">
         Digital Humanities / IIIF / UX / Open Source
       </h1>
@@ -21,7 +22,7 @@ const year = new Date().getFullYear();
   <main>
 		<section class="pt-12 md:pt-18 text-lg leading-relaxed">
       <div class="container mx-auto">
-        <div class="px-10 pb-20 max-w-3xl">
+        <div class="px-4 md:px-10 pb-20 max-w-3xl">
           <p class="font-bold text-xl">
             Hi, I'm Rainer. I create software for digital humanists.
           </p>
@@ -55,15 +56,15 @@ const year = new Date().getFullYear();
 
     <section class="pb-20">
       <div class="container mx-auto">
-        <div class="px-10 max-w-3xl space-y-12">
+        <div class="px-4 md:px-10  max-w-3xl space-y-12">
           {<Services client:load />}
         </div>
       </div>
     </section>
 
     <section class="bg-steel-lighter/10">
-      <div class="container mx-auto pt-14 pb-20">
-        <div class="px-10 max-w-4xl">
+      <div class="container mx-auto pt-8 md:pt-14 pb-6 md:pb-20">
+        <div class="md:px-10 max-w-4xl">
           {<Portfolio client:load />}
         </div>
       </div>
@@ -71,7 +72,7 @@ const year = new Date().getFullYear();
 
     <section>     
       <div class="container mx-auto">
-        <div class="px-10 pt-20 pb-2 max-w-3xl space-y-12 leading-relaxed">
+        <div class="px-4 md:px-10  pt-20 pb-2 max-w-3xl space-y-12 leading-relaxed">
           <h2 class="text-xl font-bold">
             Have a project in mind?
           </h2>
@@ -96,7 +97,7 @@ const year = new Date().getFullYear();
   </main>
 
   <footer class="bg-[url(/assets/img/splash-footer-bg.svg)] bg-bottom-0 bg-cover mt-42">
-		<section class="container mx-auto px-10 pt-24 md:pt-36 text-white leading-8">
+		<section class="container mx-auto px-8 md:px-10 pt-24 md:pt-36 text-white leading-8">
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-20 md:gap-14 pb-20 tracking-wide">
         <div class="flex flex-col md:flex-row col-span-2 items-center md:items-start gap-6">
           <img 
