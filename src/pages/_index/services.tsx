@@ -5,7 +5,7 @@ const SERVICE_PACKAGES = [{
   title: 'Grant Writing & Technical Planning Support',
   details: `I help with the technical parts of your grant application,
 including work packages, methodology sections, and implementation planning.
-I translate complex technical into clear, funder-friendly 
+I translate complex technical ideas into clear, funder-friendly 
 language.`,
   services: 
 `- **Technical narratives.** Methodology and technical approach sections.
