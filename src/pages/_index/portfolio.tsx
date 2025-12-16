@@ -154,7 +154,7 @@ export const Portfolio = () => {
               </div>
             </div>
 
-            <div className="lg:hidden text-center pt-2 px-4 pb-4">
+            <div className="lg:hidden pt-2 px-4 pb-4">
               <h3 className="text-lg tracking-wide font-semibold">{project.title}</h3>
               <p>{project.summary}</p>
             </div>
@@ -167,7 +167,7 @@ export const Portfolio = () => {
         onOpenChange={() => setSelected(undefined)}>
         {selected && (
           <DialogContent
-            className="p-3 overflow-hidden shadow-xl gap-0 lg:max-w-2xl max-w-screen md:max-w-3xl h-screen md:h-auto rounded-none md:rounded-sm"
+            className="p-3 overflow-hidden shadow-xl gap-0 lg:max-w-2xl max-w-screen md:max-w-3xl h-dvh md:h-auto rounded-none md:rounded-sm"
             onOpenAutoFocus={e => e.preventDefault()}>
             <DialogHeader 
               className="relative md:border h-32 rounded-sm bg-cover bg-center"
