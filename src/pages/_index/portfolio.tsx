@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Markdown from 'react-markdown';
 import { ExternalLink } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader } from '@/components/ui/dialog';
@@ -129,6 +129,34 @@ export const Portfolio = () => {
 
   const [selected, setSelected] = useState<Project>();
 
+  useEffect(() => {
+    if (selected)
+      // Push a new history state when dialog opens
+      window.history.pushState({ dialogOpen: true }, '');
+
+    const handlePopState = (event: PopStateEvent) => {
+      if (selected) {
+        setSelected(undefined);
+        event.preventDefault();
+      }
+    }
+
+    window.addEventListener('popstate', handlePopState);
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    }
+  }, [selected]);
+
+  const handleCloseDialog = () => {
+    setSelected(undefined);
+
+    // If we pushed a state, go back to remove it
+    if (window.history.state?.dialogOpen) {
+      window.history.back();
+    }
+  }
+
   return (
     <div>
       <h2 className="px-4 md:px-0 text-xl font-bold mb-8">
@@ -164,7 +192,7 @@ export const Portfolio = () => {
 
       <Dialog
         open={Boolean(selected)}
-        onOpenChange={() => setSelected(undefined)}>
+        onOpenChange={handleCloseDialog}>
         {selected && (
           <DialogContent
             className="p-3 overflow-hidden shadow-xl gap-0 lg:max-w-2xl max-w-screen md:max-w-3xl h-dvh md:h-auto rounded-none md:rounded-sm"
