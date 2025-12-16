@@ -3,30 +3,28 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 
 const SERVICE_PACKAGES = [{
   title: 'Grant Writing & Technical Planning Support',
-  details: `I help articulate technical work packages, methodologies, and 
-implementation strategies for grant applications and write narrative that 
-translates complex technical ideas into clear, funder-friendly language.`,
+  details: `I help with the technical parts of your grant application,
+including work packages, methodology sections, and implementation planning.
+I translate complex technical into clear, funder-friendly 
+language.`,
   services: 
-`- **Technical narratives.** Methodology and technical approach sections 
-tailored to funder expectations.
+`- **Technical narratives.** Methodology and technical approach sections.
 
-- **Work package scoping.** Milestones, deliverables, risk analysis, and 
-implementation planning.
+- **Work package scoping.** Milestones, deliverables, risk analysis, and timelines.
 
-- **Proposal review.** Editing and refining existing drafts to improve
-  structure, and alignment with call aims.`
+- **Proposal review.** Editing drafts for clarity, structure, and alignment with call aims.`
 }, {
   title: 'UX Design and Interaction Prototyping',
   details: `I design user-centered tools and interfaces that help 
 researchers, curators, students, or the general public interact with complex
-cultural data. I help you test ideas, and create interactive prototypes 
+cultural data. I help test ideas, and create interactive prototypes 
 for digital publications, scholarly tools and research environments.`,
   services: 
 `- **Project discovery and scoping.** Collaborative sessions to turn early
   ideas into clear, feasible projects, supported by stakeholder analysis and
-  persona development.
+  personas.
 
-- **Interface design & wireframes.** Mockups that explore alternative 
+- **Interface design and wireframes.** Mockups that explore different 
 design directions and interaction patterns.
 
 - **Prototype development.** Clickable or functional prototypes for user 
@@ -35,9 +33,9 @@ testing, stakeholder review, or inclusion in grant proposals.`
   title: 'IIIF & Annotation Workflow Consulting',
   details: `I help Digital Humanities projects, DH centers, and 
 cultural institutions make informed decisions about IIIF adoption, 
-annotation tooling, metadata practies, and viewer UX.`,
+annotation tooling, metadata practices, and viewer user experience.`,
   services:
-`- **Infrastructure assessment.** Evaluation of your IIIF setup for 
+`- **Infrastructure assessment.** Evaluating your IIIF setup for 
   standards alignment, interoperability, and opportunities for improvement.
 
 - **Technology selection.** Guidance in choosing tools, frameworks, and 
@@ -46,44 +44,44 @@ annotation tooling, metadata practies, and viewer UX.`,
 - **User experience design.** UX consulting for image viewers, 
   annotation interfaces, and research workflows.
 
-- **Architecture planning.** System designs from [minimal computing](https://go-dh.github.io/mincomp/about/) 
-  setups to database-driven infrastructures.
+- **Architecture planning.** Designing systems ranging from
+[minimal computing](https://go-dh.github.io/mincomp/about/) 
+setups to database-driven infrastructures.
 
-- **Grant proposal support.** Technical narratives, milestone plans, and 
-  feasility sections for Digital Humanities grant applications.`
+- **Grant proposal support.** Technical narratives, milestone planning, and 
+  feasibility sections for Digital Humanities grant applications.`
 }, {
   title: 'Web Application Development',
-  details: `I design and build production-ready web applications tailored
-to the needs of digital scholarship and cultural heritage, including digital 
-editions, databases, annotation tools, interactive maps, storytelling 
-environments, and more.`,
+  details: `I design and build production-ready web applications for
+digital scholarship and cultural heritage projects, including digital 
+editions, databases, annotation tools, interactive maps, and storytelling 
+environments.`,
   services:
 `- **Technology consulting.** Framework, architecture and hosting 
   recommendations that fit your needs and budget.
 
 - **End-to-end development.** UX design, frontend and backend implementation,
-  integration and testing, from initial concept to deployed application.
+  integration, and testing, from initial concept to deployed application.
 
-- **Operations & maintenance.** Hosting, updates and support, or documentation
-  for a clean handoff to your IT team.`
+- **Operations and maintenance.** Hosting, updates, and ongoing support, 
+  or documentation for a clean handoff to your IT team.`
 }, {
   title: 'AI & Machine Learning for Collections',
-  details: `I help you evaluate and prototype AI approaches that support
-your research or collection management goals – always with a focus on 
+  details: `I help evaluate and prototype AI approaches that support
+your research or collection management goals, with a focus on 
 transparency, ethics, and long-term sustainability.`,
   services: 
-`- **Tool and model evaluation.** Assessment of AI tools and models suited 
+`- **Tool and model evaluation.** Assessing AI tools and models suited 
   to your content types, workflows, and institutional constraints.
 
 - **Minimal computing AI.** Lightweight AI solutions that run 
-  directly in the browser, reducing costs and protecting user privacy.
+  directly in the browser, reducing infrastructure costs and protecting user privacy.
 
-- **Architecture design and prototyping.** Proof-of-concept 
+- **Architecture design and prototyping.** Building proof-of-concept 
   implementations to validate ideas before full-scale development.
 	
-- **Integration support.** Guidance for integrating AI outputs 
-  into existing systems while documenting limitations and ensuring
-  responsible use.`
+- **Integration support.** Guidance on integrating AI outputs 
+  into existing systems, with clear documentation of limitations, assumptions and constraints.`
 }]
 
 export const Services = () => {
