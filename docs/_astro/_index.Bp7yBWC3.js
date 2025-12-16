@@ -159,7 +159,7 @@ design directions and interaction patterns.
 - **Prototype development.** Clickable or functional prototypes for user 
 testing, stakeholder review, or inclusion in grant proposals.`},{title:"IIIF & Annotation Workflow Consulting",details:`I help Digital Humanities projects, DH centers, and 
 cultural institutions make informed decisions about IIIF adoption, 
-annotation tooling, metadata practices, and viewer user experience.`,services:`- **Infrastructure assessment.** Evaluating your IIIF setup for 
+annotation tooling, metadata practices, and viewer user experience.`,services:`- **Infrastructure assessment.** Evaluation of your IIIF setup for 
   standards alignment, interoperability, and opportunities for improvement.
 
 - **Technology selection.** Guidance in choosing tools, frameworks, and 

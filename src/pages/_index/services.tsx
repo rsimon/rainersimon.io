@@ -35,7 +35,7 @@ testing, stakeholder review, or inclusion in grant proposals.`
 cultural institutions make informed decisions about IIIF adoption, 
 annotation tooling, metadata practices, and viewer user experience.`,
   services:
-`- **Infrastructure assessment.** Evaluating your IIIF setup for 
+`- **Infrastructure assessment.** Evaluation of your IIIF setup for 
   standards alignment, interoperability, and opportunities for improvement.
 
 - **Technology selection.** Guidance in choosing tools, frameworks, and 
