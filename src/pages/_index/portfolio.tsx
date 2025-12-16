@@ -53,7 +53,7 @@ I designed the user experience for the project and developed the frontend web ap
   link: 'https://machina.rainersimon.io'
 }, {
   title: 'Annotorious',
-  summary: 'Open source JavaScript image annotation library.',
+  summary: 'An open source JavaScript library for image annotation.',
   image: '/assets/img/portfolio-annotorious.jpg',
   blurb: `Annotorious is an open source JavaScript library that adds image annotation 
 capabilities to your web application with only a few lines of code.
@@ -97,7 +97,7 @@ architecture.`,
   link: 'https://geo.nli.org.il/en'
 }, {
   title: 'liiive',
-  summary: 'Online platform for real-time collaborative viewing & annotation for IIIF image collections.',
+  summary: 'An online platform for real-time collaborative viewing & annotation for IIIF image collections.',
   image: '/assets/img/portfolio-liiive.jpg',
   blurb: `liiive is a web-based platform for real-time collaborative viewing and annotation
 of digital image collections. Built on the [IIIF](https://iiif.io) standard, it supports researchers,
@@ -167,18 +167,18 @@ export const Portfolio = () => {
         onOpenChange={() => setSelected(undefined)}>
         {selected && (
           <DialogContent
-            className="p-0 overflow-hidden border-0 shadow-xl gap-0 lg:max-w-2xl"
+            className="p-3 overflow-hidden shadow-xl gap-0 lg:max-w-2xl max-w-screen md:max-w-3xl h-screen md:h-auto rounded-none md:rounded-sm"
             onOpenAutoFocus={e => e.preventDefault()}>
             <DialogHeader 
-              className="relative h-28 border-b bg-cover bg-center"
+              className="relative md:border h-32 rounded-sm bg-cover bg-center"
               style={{ backgroundImage: `url(${selected.image})` }}>
-              <div className="absolute inset-0 bg-linear-to-t from-primary/80 to-primary/40" />
-              <h3 className="absolute bottom-0 text-white text-2xl font-semibold tracking-wide mb-2 px-8 py-2">
+              <div className="absolute inset-0 bg-linear-to-t rounded-sm from-primary/60 to-primary/5" />
+              <h3 className="absolute bottom-0 text-white text-2xl font-semibold tracking-wide px-2.5 py-1.5">
                 {selected.title}
               </h3>
             </DialogHeader>
             
-            <div className="p-8 leading-relaxed">
+            <div className="p-3 pt-6 leading-relaxed">
               <div className="prose max-w-full">
                 <Markdown>
                   {selected.blurb}
