@@ -35,31 +35,33 @@ const PROJECTS: Project[] = [{
   title: 'Recogito Studio',
   summary: 'Collaborative document annotation for the classroom.',
   image: '/assets/img/portfolio-recogito-studio.png',
-  blurb: `Recogito Studio is a collaborative tool for annotating text and images,
-built for classroom use. Lecturers can create exercises for close reading, facilitate
-online group work, and review student activity in real time.
+  blurb: `Recogito Studio is a web-based platform for collaborative 
+annotation of texts and images, designed for classroom teaching and 
+group work.
 
-Recogito supports documents in plaintext, [TEI/XML](https://tei-c.org/), and PDF and format,
-and allows upload of images as well as import of IIIF manifests. A plugin architecture 
-allows extending functionality with custom components, features or even full custom 
-annotation environments.`,
+The platform supports document uploads in plaintext, [TEI/XML](https://tei-c.org/), 
+and PDF format, as well as image files and IIIF manifests. It's plugin-based 
+architecture allows the system to be extended with custom components, features, 
+or even fully bespoke annotation environments.Recogito Studio is open-source 
+software, released under the GNU Affero General Public License (AGPL).`,
   client: '[Performant Software Solutions](https://www.performantsoftware.com/) / [University of Bonn](https://www.uni-bonn.de/en/university/university)',
-  technologies: '[React](https://react.dev/), [Annotorious](https://annotoruious.dev), [PDF.js](https://mozilla.github.io/pdf.js/)',
+  technologies: '[Astro](https://astro.build/), [React](https://react.dev/), [Annotorious](https://annotoruious.dev), [PDF.js](https://mozilla.github.io/pdf.js/), [Supabase](https://supabase.com/)',
   link: 'https://recogitostudio.org'
 }, {
   title: 'Machina Emblematica',
   summary: 'A chatbot that brings a small corner of Renaissance knowledge back to life.',
   image: '/assets/img/portfolio-machina-emblematica.jpg',
-  blurb: `Machina Emblematica is a chat interface for exploring the _Symbola et Emblemata_, a 
-16th-century encyclopedia of allegorical illustrations, natural history, ancient fables, and 
-moral reflections. 
+  blurb: `Machina Emblematica is a conversational interface for exploring the 
+_Symbola et Emblemata_, a 16th-century encyclopedia of allegorical illustrations, 
+natural history, ancient fables, and moral reflections. 
 
-Built as a multimodal retrieval-augmented generation (RAG) system, it draws directly 
-from high-resolution scans provided by the [Bayerische Staatsbibliothek](https://www.digitale-sammlungen.de/de/details/bsb10575861) 
+The system is built as a multimodal retrieval-augmented generation (RAG) 
+application, drawing on high-resolution digitized sources from the
+[Bayerische Staatsbibliothek](https://www.digitale-sammlungen.de/de/details/bsb10575861) 
 and text transcriptions from [Furman University](https://www.furman.edu/humanities-center/).
-I designed the user experience for the project and developed the frontend web application.`,
+I designed the user experience and developed the frontend web application.`,
   client: 'Michela Vignoli / [AIT Austrian Institute of Technology](https://www.ait.ac.at/themen/data-science-artificial-intelligence)',
-  technologies: '[Astro](https://astro.build/), [React](https://react.dev/)',
+  technologies: '[Astro](https://astro.build/), [React](https://react.dev/), [Marqo](https://www.marqo.ai/)',
   link: 'https://machina.rainersimon.io'
 }, {
   title: 'Annotorious',
@@ -205,10 +207,10 @@ export const Portfolio = () => {
         onOpenChange={handleCloseDialog}>
         {selected && (
           <DialogContent
-            className="p-0 border-0 outline-0 gap-0 shadow-xl flex min-h-3/4 max-w-5xl! rounded-sm"
+            className="p-0 border-0 outline-0 gap-0 shadow-xl flex min-h-3/4 max-w-5xl! w-[calc(100vw-2rem)] rounded-sm"
             onOpenAutoFocus={e => e.preventDefault()}>
             <div className="w-100 shrink-0 relative">
-              <div className="h-full bg-black rounded-l-sm">
+              <div className="h-full bg-black rounded-l-sm overflow-hidden">
                 <Carousel 
                   className="relative h-full items-stretch"
                   opts={{
@@ -217,17 +219,17 @@ export const Portfolio = () => {
                   <CarouselContent>
                     <CarouselItem className="h-full">
                       <img 
-                        className="h-full object-contain"
+                        className="h-full object-cover"
                         src="/assets/img/portfolio/machina-01.png" />
                     </CarouselItem>
                     <CarouselItem className="h-full">
                       <img 
-                        className="h-full object-contain"
+                        className="h-full object-cover"
                         src="/assets/img/portfolio/machina-02.png" />
                     </CarouselItem>
                     <CarouselItem className="h-full">
                         <img 
-                          className="h-full object-contain"
+                          className="h-full object-cover"
                           src="/assets/img/portfolio/machina-03.png" />
                     </CarouselItem>
                   </CarouselContent>
@@ -241,41 +243,45 @@ export const Portfolio = () => {
               </div>
             </div>
 
-            <div className="p-10 leading-relaxed grow">
+            <div className="px-11 py-10 leading-relaxed grow">
               <DialogHeader>
-                <h3 className="text-2xl font-semibold tracking-wide">
+                <h3 className="text-2xl font-bold tracking-wide">
                   {selected.title}
                 </h3>
               </DialogHeader>
               
               <div>
-                <div className="prose pt-6 max-w-[65ch]">
+                <div className="prose pt-6 max-w-lg">
                   <Markdown>
                     {selected.blurb}
                   </Markdown>
                 </div>
 
-                <div className="space-y-0.5 mt-4 pb-1">
+                <div className="space-y-4 mt-8 pb-1">
                   {selected.client && (
-                    <div className="flex gap-2 [&>p]:p-0">
-                      <div className="font-semibold">Client:</div>
-                      <InlineMarkdown>{selected.client}</InlineMarkdown>
+                    <div>
+                      <div className="font-bold tracking-wide">Client:</div>
+                      <div className="text-muted-foreground">
+                        <InlineMarkdown>{selected.client}</InlineMarkdown>
+                      </div>
                     </div>
                   )}
 
                   {selected.technologies && (
-                    <div className="flex gap-2">
-                      <div className="font-semibold">Key technologies:</div>
-                      <InlineMarkdown>{selected.technologies}</InlineMarkdown>
+                    <div>
+                      <div className="font-bold tracking-wide">Key technologies:</div>
+                      <div className="text-muted-foreground">
+                        <InlineMarkdown>{selected.technologies}</InlineMarkdown>
+                      </div>
                     </div>
                   )}
 
                   {selected.link && (
-                    <div className="text-steel-light flex gap-1.5 items-center mt-4">
-                      <ExternalLink className="size-4" /> 
+                    <div className="text-steel-light flex gap-1.5 items-center mt-8">
+                      <ExternalLink className="size-4.5" strokeWidth={2.25} /> 
                       <a 
                         href={selected.link}
-                        className="font-medium hover:underline">{selected.link.replace(/^https?:\/\//, '')}</a>
+                        className="font-semibold text-lg hover:underline">{selected.link.replace(/^https?:\/\//, '')}</a>
                     </div>
                   )}
                 </div>
