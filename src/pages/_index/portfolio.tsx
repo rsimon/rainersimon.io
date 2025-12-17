@@ -1,7 +1,17 @@
 import { useEffect, useState } from 'react';
 import Markdown from 'react-markdown';
 import { ExternalLink } from 'lucide-react';
+import Autoplay from 'embla-carousel-autoplay';
 import { Dialog, DialogContent, DialogHeader } from '@/components/ui/dialog';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
+
+import './portfolio.css';
 
 interface Project {
 
@@ -195,47 +205,80 @@ export const Portfolio = () => {
         onOpenChange={handleCloseDialog}>
         {selected && (
           <DialogContent
-            className="p-3 overflow-hidden shadow-xl gap-0 lg:max-w-2xl max-w-screen md:max-w-3xl h-dvh md:h-auto rounded-none md:rounded-sm"
+            className="p-0 border-0 outline-0 gap-0 shadow-xl flex min-h-3/4 max-w-5xl! rounded-sm"
             onOpenAutoFocus={e => e.preventDefault()}>
-            <DialogHeader 
-              className="relative md:border h-32 rounded-sm bg-cover bg-center"
-              style={{ backgroundImage: `url(${selected.image})` }}>
-              <div className="absolute inset-0 bg-linear-to-t rounded-sm from-primary/60 to-primary/5" />
-              <h3 className="absolute bottom-0 text-white text-2xl font-semibold tracking-wide px-2.5 py-1.5">
-                {selected.title}
-              </h3>
-            </DialogHeader>
-            
-            <div className="p-3 pt-6 leading-relaxed">
-              <div className="prose max-w-full">
-                <Markdown>
-                  {selected.blurb}
-                </Markdown>
+            <div className="w-100 shrink-0 relative">
+              <div className="h-full bg-black rounded-l-sm">
+                <Carousel 
+                  className="relative h-full items-stretch"
+                  opts={{
+                    loop: true
+                  }}>
+                  <CarouselContent>
+                    <CarouselItem className="h-full">
+                      <img 
+                        className="h-full object-contain"
+                        src="/assets/img/portfolio/machina-01.png" />
+                    </CarouselItem>
+                    <CarouselItem className="h-full">
+                      <img 
+                        className="h-full object-contain"
+                        src="/assets/img/portfolio/machina-02.png" />
+                    </CarouselItem>
+                    <CarouselItem className="h-full">
+                        <img 
+                          className="h-full object-contain"
+                          src="/assets/img/portfolio/machina-03.png" />
+                    </CarouselItem>
+                  </CarouselContent>
+
+                  <CarouselPrevious 
+                    className="left-2" />
+
+                  <CarouselNext 
+                    className="right-2" />
+                </Carousel>
               </div>
+            </div>
 
-              <div className="space-y-0.5 mt-4 pb-1">
-                {selected.client && (
-                  <div className="flex gap-2 [&>p]:p-0">
-                    <div className="font-semibold">Client:</div>
-                    <InlineMarkdown>{selected.client}</InlineMarkdown>
-                  </div>
-                )}
+            <div className="p-10 leading-relaxed grow">
+              <DialogHeader>
+                <h3 className="text-2xl font-semibold tracking-wide">
+                  {selected.title}
+                </h3>
+              </DialogHeader>
+              
+              <div>
+                <div className="prose pt-6 max-w-[65ch]">
+                  <Markdown>
+                    {selected.blurb}
+                  </Markdown>
+                </div>
 
-                {selected.technologies && (
-                  <div className="flex gap-2">
-                    <div className="font-semibold">Key technologies:</div>
-                    <InlineMarkdown>{selected.technologies}</InlineMarkdown>
-                  </div>
-                )}
+                <div className="space-y-0.5 mt-4 pb-1">
+                  {selected.client && (
+                    <div className="flex gap-2 [&>p]:p-0">
+                      <div className="font-semibold">Client:</div>
+                      <InlineMarkdown>{selected.client}</InlineMarkdown>
+                    </div>
+                  )}
 
-                {selected.link && (
-                  <div className="text-steel-light flex gap-1.5 items-center mt-4">
-                    <ExternalLink className="size-4" /> 
-                    <a 
-                      href={selected.link}
-                      className="font-medium hover:underline">{selected.link.replace(/^https?:\/\//, '')}</a>
-                  </div>
-                )}
+                  {selected.technologies && (
+                    <div className="flex gap-2">
+                      <div className="font-semibold">Key technologies:</div>
+                      <InlineMarkdown>{selected.technologies}</InlineMarkdown>
+                    </div>
+                  )}
+
+                  {selected.link && (
+                    <div className="text-steel-light flex gap-1.5 items-center mt-4">
+                      <ExternalLink className="size-4" /> 
+                      <a 
+                        href={selected.link}
+                        className="font-medium hover:underline">{selected.link.replace(/^https?:\/\//, '')}</a>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           </DialogContent>
