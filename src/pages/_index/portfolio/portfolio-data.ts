@@ -78,7 +78,7 @@ I designed the user experience and developed the frontend web application.`,
   },{
     image: '/assets/img/portfolio/machina-04.jpg', alt: 'UI design: source preview'
   }]
-}, {
+},{
   title: 'Annotorious',
   summary: 'An open source JavaScript library for image annotation.',
   image: '/assets/img/portfolio-annotorious.jpg',
@@ -107,7 +107,15 @@ ensuring full privacy and control over their work.`,
   client: '[KU Leuven](https://www.arts.kuleuven.be/english)',
   technologies: '[IIIF](https://iiif.io), [Annotorious](https://annotorious.dev), [SegmentAnything 2](https://ai.meta.com/sam2/), [OpenCV.js](https://github.com/TechStark/opencv-js)',
   link: 'https://immarkus.xmarkus.org',
-  screenshots: []
+  screenshots: [{
+    image: '/assets/img/portfolio/immarkus-01.jpg', alt: 'A city map image annotated in IMMARKUS'
+  },{
+    video: '/assets/img/portfolio/immarkus-02.mp4', alt: 'The IMMARKUS smart scissors tool'
+  },{
+    image: '/assets/img/portfolio/immarkus-03.png', alt: 'The knowledge graph interface'
+  },{
+    image: '/assets/img/portfolio/immarkus-04.png', alt: 'Data model designer'
+  }]
 }, {
   title: 'Heritage Browser',
   summary: 'An interactive map browser for large cultural heritage collections.',
