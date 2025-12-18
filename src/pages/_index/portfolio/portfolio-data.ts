@@ -70,9 +70,13 @@ I designed the user experience and developed the frontend web application.`,
   technologies: '[Astro](https://astro.build/), [React](https://react.dev/), [Marqo](https://www.marqo.ai/)',
   link: 'https://machina.rainersimon.io',
   screenshots: [{
-    video: '/assets/img/portfolio/machina-01.mp4', alt: 'Conversational interface'
-  }, {
-    image: '/assets/img/portfolio/machina-02.jpg', alt: 'UI design: About section'
+    image: '/assets/img/portfolio/machina-01.jpg', alt: 'Machina Emblematica mobile start page'
+  },{
+    video: '/assets/img/portfolio/machina-02.mp4', alt: 'Conversational interface'
+  },{
+    image: '/assets/img/portfolio/machina-03.jpg', alt: 'UI design: About section'
+  },{
+    image: '/assets/img/portfolio/machina-04.jpg', alt: 'UI design: source preview'
   }]
 }, {
   title: 'Annotorious',
