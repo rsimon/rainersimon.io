@@ -24,7 +24,7 @@ export const ScreenshotCarousel = (props: ScreenshotCarouselProps) => {
           <CarouselItem>
             <video 
               aria-label={screenshot.alt}
-              className="size-full object-contain"
+              className="size-full object-contain p-2"
               autoPlay loop muted playsInline 
               src={screenshot.video} />
           </CarouselItem>
@@ -32,13 +32,13 @@ export const ScreenshotCarousel = (props: ScreenshotCarouselProps) => {
           <CarouselItem>
               <img 
                 alt={screenshot.alt}
-                className="size-full object-contain"
+                className="size-full object-contain p-2"
                 src={screenshot.image} />
           </CarouselItem>
         ))}
       </CarouselContent>
 
-      <div className="absolute inset-0 size-full bg-linear-to-t from-black/90 via-black/20 via-25% to-black/0" />
+      <div className="absolute inset-0 size-full bg-linear-to-t from-black/80 via-black/10 via-15% to-black/0" />
 
       <CarouselDotButtons />
     </Carousel>

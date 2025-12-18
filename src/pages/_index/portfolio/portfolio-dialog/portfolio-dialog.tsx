@@ -64,10 +64,10 @@ export const PortfolioDialog = (props: PortfolioDialogProps) => {
       onOpenChange={onCloseDialog}>
       {project && (
         <DialogContent
-          className="max-h-[95vh] p-1 border-0 outline-0 gap-0 shadow-xl flex max-w-5xl! w-[calc(100vw-2rem)] rounded-sm"
+          className="max-h-[95vh] p-1 border-0 outline-0 gap-0 shadow-xl flex max-w-6xl! w-[calc(100vw-2rem)] rounded-sm"
           onOpenAutoFocus={e => e.preventDefault()}>
-          <div className="w-102 shrink-0 relative">
-            <div className="h-full bg-black rounded-l-sm overflow-hidden">
+          <div className="w-160 shrink-0 relative">
+            <div className="h-full bg-black relative rounded-l-sm overflow-hidden">
               <ScreenshotCarousel 
                 project={props.project} />
             </div>
