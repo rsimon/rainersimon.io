@@ -1,4 +1,4 @@
-import type { Project } from '../portfolio-projects';
+import type { Project, ProjectScreenshot, ProjectVideoScreenshot } from '../portfolio-data';
 import {
   Carousel,
   CarouselContent,
@@ -12,6 +12,9 @@ interface ScreenshotCarouselProps {
 
 }
 
+const isVideo = (screenshot: ProjectScreenshot): screenshot is ProjectVideoScreenshot =>
+  'video' in screenshot;
+
 export const ScreenshotCarousel = (props: ScreenshotCarouselProps) => {
 
   return (
@@ -21,22 +24,22 @@ export const ScreenshotCarousel = (props: ScreenshotCarouselProps) => {
         loop: true
       }}>
       <CarouselContent>
-        <CarouselItem className="h-full">
-          <video 
-            className="h-full object-cover"
-            autoPlay loop muted playsInline 
-            src="/assets/img/portfolio/machina-01.mp4"/>
-        </CarouselItem>
-        <CarouselItem className="h-full">
-            <img 
-            className="h-full object-cover"
-            src="/assets/img/portfolio/machina-02.png" />
-        </CarouselItem>
-        <CarouselItem className="h-full">
-            <img 
+        {props.project.screenshots.map(screenshot => isVideo(screenshot) ? (
+          <CarouselItem className="h-full">
+            <video 
+              aria-label={screenshot.alt}
               className="h-full object-cover"
-              src="/assets/img/portfolio/machina-03.png" />
-        </CarouselItem>
+              autoPlay loop muted playsInline 
+              src={screenshot.video} />
+          </CarouselItem>
+        ) : (
+          <CarouselItem className="h-full">
+              <img 
+                alt={screenshot.alt}
+                className="h-full object-cover"
+                src={screenshot.image} />
+          </CarouselItem>
+        ))}
       </CarouselContent>
 
       <div className="absolute inset-0 size-full bg-linear-to-t from-black/80 via-black/10 via-30% to-black/10" />

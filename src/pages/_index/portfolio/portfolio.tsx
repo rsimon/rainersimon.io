@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react';
-import { PROJECTS, type Project } from './portfolio-projects';
+import { PROJECTS, type Project } from './portfolio-data';
 import { PortfolioDialog } from './portfolio-dialog/portfolio-dialog';
 
 export const Portfolio = () => {

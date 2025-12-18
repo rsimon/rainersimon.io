@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { ExternalLink } from 'lucide-react';
 import Markdown from 'react-markdown';
 import { Dialog, DialogContent, DialogHeader } from '@/components/ui/dialog';
-import type { Project } from '../portfolio-projects';
+import type { Project } from '../portfolio-data';
 import { ScreenshotCarousel } from './screenshot-carousel';
 
 interface PortfolioDialogProps {

@@ -69,7 +69,11 @@ I designed the user experience and developed the frontend web application.`,
   client: 'Michela Vignoli / [AIT Austrian Institute of Technology](https://www.ait.ac.at/themen/data-science-artificial-intelligence)',
   technologies: '[Astro](https://astro.build/), [React](https://react.dev/), [Marqo](https://www.marqo.ai/)',
   link: 'https://machina.rainersimon.io',
-  screenshots: []
+  screenshots: [{
+    video: '/assets/img/portfolio/machina-01.mp4', alt: 'Conversational interface'
+  }, {
+    image: '/assets/img/portfolio/machina-02.jpg', alt: 'UI design: About section'
+  }]
 }, {
   title: 'Annotorious',
   summary: 'An open source JavaScript library for image annotation.',
