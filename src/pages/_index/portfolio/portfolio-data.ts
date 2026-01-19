@@ -132,7 +132,9 @@ architecture.`,
   client: '[DHDev](https://www.dh-dev.com/) / [National Library of Israel](https://www.nli.org.il/en)',
   technologies: '[MapLibre](https://maplibre.org/), [React](https://react.dev/)',
   link: 'https://geo.nli.org.il/en',
-  screenshots: []
+  screenshots: [{
+    video: '/assets/img/portfolio/heritage-browser-01.mp4', alt: 'Heritage Browser map interface'
+  }]
 }, {
   title: 'liiive',
   summary: 'An online platform for real-time collaborative viewing & annotation for IIIF image collections.',
@@ -147,10 +149,10 @@ discussions directly on the image.`,
   technologies: '[IIIF](https://iiif.io), [Annotorious](https://annotorious.dev), [YJS](https://yjs.dev/), [Supabase](https://supabase.com/)',
   link: 'https://liiive.now',
   screenshots: [{
-      image: '/assets/img/portfolio/liiive-01.jpg', alt: 'Live collaborator cursors' 
+    image: '/assets/img/portfolio/liiive-01.jpg', alt: 'Live collaborator cursors' 
   }, {
-      video: '/assets/img/portfolio/liiive-02.mp4', alt: 'Liiive smart scissors annotation'
+    video: '/assets/img/portfolio/liiive-02.mp4', alt: 'liiive smart scissors annotation'
   }, {
-      image: '/assets/img/portfolio/liiive-03.png', alt: 'Dashboar' 
+    image: '/assets/img/portfolio/liiive-03.png', alt: 'Dashboar' 
   }]
 }];
