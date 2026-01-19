@@ -135,16 +135,20 @@ export const PortfolioDialog = (props: PortfolioDialogProps) => {
         onOpenChange={onCloseDialog}>
         {project && (
           <DialogContent
-            className="p-4 overflow-y-auto w-screen min-w-screen h-dvh rounded-none border-0"
+            className="p-0 w-screen min-w-screen rounded-none border-0"
             onOpenAutoFocus={e => e.preventDefault()}>
-            <DialogTitle className="text-2xl font-bold tracking-wide">
-              {project.title}
-            </DialogTitle>
+            <div className="bg-steel-light/20 h-dvh overflow-y-auto">
+              <div className="p-4 bg-white pb-8">
+                <DialogTitle className="text-2xl font-bold tracking-wide">
+                  {project.title}
+                </DialogTitle>
 
-            {renderProjectinfo()}
+                {renderProjectinfo()}
+              </div>
 
-            <ScreenshotGalleryMobile
-              project={project} />
+              <ScreenshotGalleryMobile
+                project={project} />
+            </div>
           </DialogContent>
         )}
       </Dialog>

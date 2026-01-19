@@ -63,7 +63,7 @@ const Thumbnail = ({
 
   return (
     <div
-      className="aspect-video bg-gray-200 rounded overflow-hidden cursor-pointer relative"
+      className="aspect-video rounded overflow-hidden cursor-pointer relative"
       onClick={onClick}>
       {!loaded && (
         <Skeleton className="absolute inset-0" />
@@ -92,8 +92,8 @@ export const ScreenshotGalleryMobile = (props: ScreenshotGalleryMobileProps) => 
 
   return props.project.screenshots.length > 0 ? (
     <>
-      <div className="mt-8">
-        <div className="grid grid-cols-2 gap-2">
+      <div className="p-4">
+        <div className="grid grid-cols-1 gap-4">
           {props.project.screenshots.map((screenshot, idx) => (
             <Thumbnail
               key={`screenshot:${idx}`}
