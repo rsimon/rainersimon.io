@@ -36,6 +36,9 @@ export interface ProjectVideoScreenshot {
 
 export type ProjectScreenshot = ProjectImageScreenshot | ProjectVideoScreenshot;
 
+export const isVideo = (screenshot: ProjectScreenshot): screenshot is ProjectVideoScreenshot =>
+  'video' in screenshot;
+
 export const PROJECTS: Project[] = [{
   title: 'Recogito Studio',
   summary: 'Collaborative document annotation for the classroom.',
