@@ -91,7 +91,9 @@ annotating high-resolution, zoomable images, including those served via
 [W3C Web Annotation Data Model](https://www.w3.org/TR/annotation-model/).`,
   technologies: '[OpenSeadragon](https://openseadragon.github.io/), [PixiJS](https://pixijs.com/), [React](https://react.dev/), ',
   link: 'https://annotorious.dev',
-  screenshots: []
+  screenshots: [{
+    image: '/assets/img/portfolio/annotorious-01.png', alt: 'Annotorious "Getting Started" JavaScript code snippet' 
+  }]
 }, {
   title: 'IMMARKUS',
   summary: 'A semantic image annotation tool for digital humanists and heritage professionals.',
