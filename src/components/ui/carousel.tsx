@@ -7,6 +7,7 @@ import type { EmblaCarouselType } from 'embla-carousel';
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
+import Autoplay from 'embla-carousel-autoplay';
 
 type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
@@ -45,7 +46,6 @@ function Carousel({
   orientation = "horizontal",
   opts,
   setApi,
-  plugins,
   className,
   children,
   ...props
@@ -55,7 +55,11 @@ function Carousel({
       ...opts,
       axis: orientation === "horizontal" ? "x" : "y",
     },
-    plugins
+    [Autoplay({ 
+      stopOnMouseEnter: true,
+      stopOnInteraction: false,
+      rootNode: emblaRoot => emblaRoot.parentElement 
+    })]
   )
   const [canScrollPrev, setCanScrollPrev] = useState(false)
   const [canScrollNext, setCanScrollNext] = useState(false)

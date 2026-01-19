@@ -66,14 +66,7 @@ export const PortfolioDialog = (props: PortfolioDialogProps) => {
         <DialogContent
           className="max-h-[95vh] p-0 border-0 outline-0 gap-0 shadow-xl flex max-w-6xl! w-[calc(100vw-2rem)] rounded-sm"
           onOpenAutoFocus={e => e.preventDefault()}>
-          <div className="w-160 max-w-1/2 shrink-0 relative">
-            <div className="h-full bg-black relative rounded-l-sm overflow-hidden">
-              <ScreenshotCarousel 
-                project={props.project} />
-            </div>
-          </div>
-
-          <div className="px-11 py-6 leading-relaxed grow overflow-y-auto">
+          <div className="px-10 py-8 leading-relaxed grow overflow-y-auto">
             <DialogHeader>
               <h3 className="text-2xl font-bold tracking-wide">
                 {project.title}
@@ -115,6 +108,13 @@ export const PortfolioDialog = (props: PortfolioDialogProps) => {
                   </div>
                 )}
               </div>
+            </div>
+          </div>
+
+          <div className="w-160 max-w-1/2 shrink-0 relative">
+            <div className="h-full relative rounded-r-sm overflow-hidden bg-black">
+              <ScreenshotCarousel 
+                project={props.project} />
             </div>
           </div>
         </DialogContent>

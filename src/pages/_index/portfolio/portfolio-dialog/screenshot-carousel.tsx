@@ -18,13 +18,14 @@ const isVideo = (screenshot: ProjectScreenshot): screenshot is ProjectVideoScree
 export const ScreenshotCarousel = (props: ScreenshotCarouselProps) => {
 
   return (
-    <Carousel className="relative h-full items-stretch -mx-px -my-px">
+    <Carousel
+      className="relative h-full items-stretch -mx-px -my-px">
       <CarouselContent className="absolute inset-0 size-full">
         {props.project.screenshots.map(screenshot => isVideo(screenshot) ? (
           <CarouselItem>
             <video 
               aria-label={screenshot.alt}
-              className="size-full object-contain p-2"
+              className="size-full object-contain p-6"
               autoPlay loop muted playsInline 
               src={screenshot.video} />
           </CarouselItem>
@@ -32,7 +33,7 @@ export const ScreenshotCarousel = (props: ScreenshotCarouselProps) => {
           <CarouselItem>
               <img 
                 alt={screenshot.alt}
-                className="size-full object-contain p-2"
+                className="size-full object-contain p-6"
                 src={screenshot.image} />
           </CarouselItem>
         ))}
