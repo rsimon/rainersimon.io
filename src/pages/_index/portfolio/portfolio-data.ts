@@ -146,5 +146,11 @@ in real time. Drawing tools allow highlighting regions of interest, adding comme
 discussions directly on the image.`,
   technologies: '[IIIF](https://iiif.io), [Annotorious](https://annotorious.dev), [YJS](https://yjs.dev/), [Supabase](https://supabase.com/)',
   link: 'https://liiive.now',
-  screenshots: []
+  screenshots: [{
+      image: '/assets/img/portfolio/liiive-01.jpg', alt: 'Live collaborator cursors' 
+  }, {
+      video: '/assets/img/portfolio/liiive-02.mp4', alt: 'Liiive smart scissors annotation'
+  }, {
+      image: '/assets/img/portfolio/liiive-03.png', alt: 'Dashboar' 
+  }]
 }];
