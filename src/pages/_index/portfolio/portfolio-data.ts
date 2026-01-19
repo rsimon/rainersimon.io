@@ -52,7 +52,11 @@ software, released under the GNU Affero General Public License (AGPL).`,
   client: '[Performant Software Solutions](https://www.performantsoftware.com/) / [University of Bonn](https://www.uni-bonn.de/en/university/university)',
   technologies: '[Astro](https://astro.build/), [React](https://react.dev/), [Annotorious](https://annotoruious.dev), [PDF.js](https://mozilla.github.io/pdf.js/), [Supabase](https://supabase.com/)',
   link: 'https://recogitostudio.org',
-  screenshots: []
+  screenshots: [{
+    video: '/assets/img/portfolio/recogito-studio-01.mp4', alt: 'Collaborative text annotation'
+  }, {
+    image: '/assets/img/portfolio/recogito-studio-02.jpg', alt: 'An annotated 2-column PDF document.'
+  }]
 }, {
   title: 'Machina Emblematica',
   summary: 'A chatbot that brings a small corner of Renaissance knowledge back to life.',

@@ -111,7 +111,7 @@ export const PortfolioDialog = (props: PortfolioDialogProps) => {
             </div>
           </div>
 
-          <div className="w-160 max-w-1/2 shrink-0 relative">
+          <div className="w-180 max-w-3/4 shrink-0 relative">
             <div className="h-full relative rounded-r-sm overflow-hidden bg-black">
               <ScreenshotCarousel 
                 project={props.project} />
