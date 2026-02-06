@@ -23,7 +23,7 @@ export const Portfolio = () => {
               <div className="aspect-video relative">
                 <img
                   src={project.image || "/placeholder.svg"}
-                  alt={project.title}
+                  alt={project.image_alt}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
 
                 <div className="absolute inset-0 bg-linear-to-t from-primary via-primary/80 to-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">

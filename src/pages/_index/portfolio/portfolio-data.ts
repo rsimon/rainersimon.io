@@ -6,7 +6,7 @@ export interface Project {
 
   image: string;
 
-  imageAlt?: string;
+  image_alt?: string;
 
   screenshots: ProjectScreenshot[];
 
@@ -45,7 +45,7 @@ export const PROJECTS: Project[] = [{
   title: 'Recogito Studio',
   summary: 'Collaborative document annotation for the classroom.',
   image: '/assets/img/portfolio-recogito-studio.png',
-  imageAlt: 'Recogito Studio project thumbnail',
+  image_alt: 'Recogito Studio project thumbnail',
   blurb: `Recogito Studio is a web-based platform for collaborative 
 annotation of texts and images, designed for classroom teaching and 
 group work.
@@ -67,7 +67,7 @@ software, released under the GNU Affero General Public License (AGPL).`,
   title: 'Machina Emblematica',
   summary: 'A chatbot that brings a small corner of Renaissance knowledge back to life.',
   image: '/assets/img/portfolio-machina-emblematica.jpg',
-  imageAlt: 'Machina Emblematica project thumbnail',
+  image_alt: 'Machina Emblematica project thumbnail',
   blurb: `Machina Emblematica is a conversational interface for exploring the 
 _Symbola et Emblemata_, a 16th-century encyclopedia of allegorical illustrations, 
 natural history, ancient fables, and moral reflections. 
@@ -93,7 +93,7 @@ I designed the user experience and developed the frontend web application.`,
   title: 'Annotorious',
   summary: 'An open source JavaScript library for image annotation.',
   image: '/assets/img/portfolio-annotorious.jpg',
-  imageAlt: 'Annotorious project thumbnail',
+  image_alt: 'Annotorious project thumbnail',
   blurb: `Annotorious is an open source JavaScript library that adds image annotation 
 capabilities to your web application with only a few lines of code.
 
@@ -110,7 +110,7 @@ annotating high-resolution, zoomable images, including those served via
   title: 'IMMARKUS',
   summary: 'A semantic image annotation tool for digital humanists and heritage professionals.',
   image: '/assets/img/portfolio-immarkus.png',
-  imageAlt: 'IMMARKUS project thumbnail',
+  image_alt: 'IMMARKUS project thumbnail',
   blurb: `IMMARKUS is a browser-based, open source environment for semantic image annotation, 
 designed for researchers, digital humanists, and cultural heritage professionals. It offers 
 a multi-image annotation workbench with AI-assisted drawing tools for faster region 
@@ -135,7 +135,7 @@ ensuring full privacy and control over their work.`,
   title: 'Heritage Browser',
   summary: 'An interactive map browser for large cultural heritage collections.',
   image: '/assets/img/portfolio-heritage-browser.jpg',
-  imageAlt: 'Heritage Browser project thumbnail',
+  image_alt: 'Heritage Browser project thumbnail',
   blurb: `Heritage Browser is map-based discovery interface for exploring large
 cultural heritage collections. Built with MapLibre and a custom backend, it 
 enables smooth, immediate navigation through hundreds of thousands of geo-located 
@@ -155,7 +155,7 @@ architecture.`,
   title: 'liiive',
   summary: 'An online platform for real-time collaborative viewing & annotation for IIIF image collections.',
   image: '/assets/img/portfolio-liiive.jpg',
-  imageAlt: 'liiive project thumbnail',
+  image_alt: 'liiive project thumbnail',
   blurb: `liiive is a web-based platform for real-time collaborative viewing and annotation
 of digital image collections. Built on the [IIIF](https://iiif.io) standard, it supports researchers,
 educators, students, and cultural heritage professionals working with high-resolution images.
