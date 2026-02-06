@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { ExternalLink } from 'lucide-react';
 import Markdown from 'react-markdown';
 import { useMediaQuery } from 'usehooks-ts';
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogDescription, DialogTitle } from '@/components/ui/dialog';
 import type { Project } from '../portfolio-data';
 import { ScreenshotCarousel } from './screenshot-carousel';
 import { ScreenshotGalleryMobile } from './screenshot-gallery-mobile';
@@ -64,8 +64,8 @@ export const PortfolioDialog = (props: PortfolioDialogProps) => {
 
   const renderProjectinfo = () => (
     <div>
-      <DialogDescription asChild>
-        <div className="prose pt-6 max-w-md">
+      <DialogDescription>
+        <div className="prose pt-6 max-w-md text-base">
           <Markdown>
             {project.blurb}
           </Markdown>
@@ -109,7 +109,7 @@ export const PortfolioDialog = (props: PortfolioDialogProps) => {
       onOpenChange={onCloseDialog}>
       {project && (
         <DialogContent
-          className="max-h-[95vh] min-h-3/4 p-0 border-0 outline-0 gap-0 shadow-xl flex max-w-6xl! w-[calc(100vw-2rem)] rounded-sm"
+          className="max-h-[95vh] min-h-3/4 p-0 border-0 outline-0 gap-0 shadow-xl flex max-w-7xl! w-[calc(100vw-2rem)] rounded-sm"
           onOpenAutoFocus={e => e.preventDefault()}>
           <div className="px-10 py-8 leading-relaxed grow overflow-y-auto">
             <DialogTitle className="text-2xl font-bold tracking-wide">
@@ -119,7 +119,7 @@ export const PortfolioDialog = (props: PortfolioDialogProps) => {
             {renderProjectinfo()}
           </div>
 
-          <div className="w-170 max-w-3/4 shrink-0 relative">
+          <div className="w-160 max-w-3/4 shrink-0 relative">
             <div className="h-full relative rounded-r-sm overflow-hidden bg-black">
               <ScreenshotCarousel 
                 project={props.project} />

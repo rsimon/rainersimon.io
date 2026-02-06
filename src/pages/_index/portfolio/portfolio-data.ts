@@ -43,18 +43,14 @@ export const isVideo = (screenshot: ProjectScreenshot): screenshot is ProjectVid
 
 export const PROJECTS: Project[] = [{
   title: 'Recogito Studio',
-  summary: 'Collaborative document annotation for the classroom.',
+  summary: 'Real-time collaborative annotation for teaching, discussion, and shared close reading.',
   image: '/assets/img/portfolio-recogito-studio.png',
   image_alt: 'Recogito Studio project thumbnail',
-  blurb: `Recogito Studio is a web-based platform for collaborative 
-annotation of texts and images, designed for classroom teaching and 
-group work.
+  blurb: `Recogito Studio is a web-based annotation platform for texts and images, designed for classroom teaching, collaborative close reading, and online group work in the digital humanities and education.
 
-The platform supports document uploads in plaintext, [TEI/XML](https://tei-c.org/), 
-and PDF format, as well as image files and IIIF manifests. It's plugin-based 
-architecture allows the system to be extended with custom components, features, 
-or even fully bespoke annotation environments.Recogito Studio is open-source 
-software, released under the GNU Affero General Public License (AGPL).`,
+The application supports real-time collaborative annotation on plaintext, TEI/XML, and PDF documents, as well as images and IIIF manifests. A plugin-based architecture allows Recogito Studio to be extended with custom components, domain-specific tools, or fully bespoke annotation environments.
+
+I was responsible for the annotation frontend and the interaction design of the real-time collaboration features, including their underlying client-side architecture. Recogito Studio is released as open-source software under the GNU Affero General Public License (AGPL).`,
   client: '[Performant Software Solutions](https://www.performantsoftware.com/) / [University of Bonn](https://www.uni-bonn.de/en/university/university)',
   technologies: '[Astro](https://astro.build/), [React](https://react.dev/), [Annotorious](https://annotoruious.dev), [PDF.js](https://mozilla.github.io/pdf.js/), [Supabase](https://supabase.com/)',
   link: 'https://recogitostudio.org',
@@ -69,14 +65,11 @@ software, released under the GNU Affero General Public License (AGPL).`,
   image: '/assets/img/portfolio-machina-emblematica.jpg',
   image_alt: 'Machina Emblematica project thumbnail',
   blurb: `Machina Emblematica is a conversational interface for exploring the 
-_Symbola et Emblemata_, a 16th-century encyclopedia of allegorical illustrations, 
-natural history, ancient fables, and moral reflections. 
+_Symbola et Emblemata_, a 16th-century encyclopedia of allegorical illustrations, natural history, ancient fables, and moral reflections. 
 
-The system is built as a multimodal retrieval-augmented generation (RAG) 
-application, drawing on high-resolution digitized sources from the
-[Bayerische Staatsbibliothek](https://www.digitale-sammlungen.de/de/details/bsb10575861) 
-and text transcriptions from [Furman University](https://www.furman.edu/humanities-center/).
-I designed the user experience and developed the frontend web application.`,
+Built as a multimodal retrieval-augmented generation (RAG) system, the application combines high-resolution digitized images from the [Bayerische Staatsbibliothek](https://www.digitale-sammlungen.de/de/details/bsb10575861)  with curated textual transcriptions from [Furman University](https://www.furman.edu/humanities-center/).
+
+I designed the user experience and developed the application, focusing on a playful, engaging ineraction, while keeping the historical sources transparent and accessible.`,
   client: 'Michela Vignoli / [AIT Austrian Institute of Technology](https://www.ait.ac.at/themen/data-science-artificial-intelligence)',
   technologies: '[Astro](https://astro.build/), [React](https://react.dev/), [Marqo](https://www.marqo.ai/)',
   link: 'https://machina.rainersimon.io',
@@ -91,16 +84,14 @@ I designed the user experience and developed the frontend web application.`,
   }]
 },{
   title: 'Annotorious',
-  summary: 'An open source JavaScript library for image annotation.',
+  summary: 'Add image annotation functionality to any website with just a few lines of code.',
   image: '/assets/img/portfolio-annotorious.jpg',
   image_alt: 'Annotorious project thumbnail',
-  blurb: `Annotorious is an open source JavaScript library that adds image annotation 
-capabilities to your web application with only a few lines of code.
+  blurb: `Annotorious is an open source JavaScript library that adds image annotation capabilities to web applications with minimal setup.
 
-It integrates seamlessly with OpenSeadragon, making it easy to build tools for
-annotating high-resolution, zoomable images, including those served via
-[IIIF](https://iiif.io). Annotorious is fully compatible with the
-[W3C Web Annotation Data Model](https://www.w3.org/TR/annotation-model/).`,
+It integrates seamlessly with OpenSeadragon and supports high-resolution, zoomable images, including [IIIF](https://iiif.io) content. Annotorious is fully compatible with the [W3C Web Annotation Data Model](https://www.w3.org/TR/annotation-model/), and provides a flexible JavaScript and TypeScript API for building custom annotation tools and workflows.
+
+I created Annotorious in 2014 and have been actively maintaining it since. The library is widely used in Digital Humanities and cultural heritage projects, and forms a core component in several of my other projects, including Recogito Studio, IMMARKUS and liiive.`,
   technologies: '[OpenSeadragon](https://openseadragon.github.io/), [PixiJS](https://pixijs.com/), [React](https://react.dev/), ',
   link: 'https://annotorious.dev',
   screenshots: [{
@@ -108,17 +99,14 @@ annotating high-resolution, zoomable images, including those served via
   }]
 }, {
   title: 'IMMARKUS',
-  summary: 'A semantic image annotation tool for digital humanists and heritage professionals.',
+  summary: 'An all-in-browser annotation environment designed for digital humanists and heritage professionals.',
   image: '/assets/img/portfolio-immarkus.png',
   image_alt: 'IMMARKUS project thumbnail',
-  blurb: `IMMARKUS is a browser-based, open source environment for semantic image annotation, 
-designed for researchers, digital humanists, and cultural heritage professionals. It offers 
-a multi-image annotation workbench with AI-assisted drawing tools for faster region 
-selection, a lightweight ontology builder, and an interactive, searchable knowledge graph.
+  blurb: `IMMARKUS is a browser-based, open source environment for semantic image annotation, designed for researchers, digital humanists, and cultural heritage professionals.
+  
+It provides a multi-image annotation workbench with AI-assisted drawing tools for faster region selection, a lightweight ontology builder, and an interactive, searchable knowledge graph that connects annotations to structured concepts.
 
-The application works entirely client-side and supports both local images and IIIF
-collections. All data – images, models, and annotations – remains on the user's device, 
-ensuring full privacy and control over their work.`,
+I developed the application and frontend architecture working closely with the research team of the [InfraLives](https://www.infrastructurelives.eu/) project at KU Leuven. The application runs entirely client-side and supports both local images and IIIF collections. All data – images, models, and annotations – remains on the user's device, ensuring full privacy and control.`,
   client: '[KU Leuven](https://www.arts.kuleuven.be/english)',
   technologies: '[IIIF](https://iiif.io), [Annotorious](https://annotorious.dev), [SegmentAnything 2](https://ai.meta.com/sam2/), [OpenCV.js](https://github.com/TechStark/opencv-js)',
   link: 'https://immarkus.xmarkus.org',
@@ -133,18 +121,20 @@ ensuring full privacy and control over their work.`,
   }]
 }, {
   title: 'Heritage Browser',
-  summary: 'An interactive map browser for large cultural heritage collections.',
+  summary: 'Fast, map-based exploration of hundreds of thousands of cultural heritage objects.',
   image: '/assets/img/portfolio-heritage-browser.jpg',
   image_alt: 'Heritage Browser project thumbnail',
-  blurb: `Heritage Browser is map-based discovery interface for exploring large
-cultural heritage collections. Built with MapLibre and a custom backend, it 
-enables smooth, immediate navigation through hundreds of thousands of geo-located 
+  blurb: `Heritage Browser is map-based discovery interface for exploring large cultural heritage collections through geographic space. 
+  
+Built with MapLibre and a custom storage and indexing backend, it 
+enables smooth navigation across hundreds of thousands of geo-located 
 objects.
 
-Deployed by the National Library of Israel for nearly 350,000 items, it supports
-full-text search, dynamic filtering, IIIF integration, and a responsive interface
-for both desktop and mobile. I designed and developed the frontend and the interaction 
-architecture.`,
+The project originated as a joint entry with [DHDev](https://www.dh-dev.com/) to the [2022 TARBOOT Digital Culture & Heritage Contest](https://www.nli.org.il/en/at-your-service/announcements/tarboot-contest-winners), where it reached second place in the General Track. 
+
+Following the contest, the prototype was developed further in close collaboration with the National Library of Israel and is now deployed in production, providing access to nearly 350,000 items. The system supports full-text search, dynamic filtering, IIIF integration, and a responsive interface for both desktop and mobile use.
+
+I designed and developed the frontend and interaction architecture, working closely with DHDev and the team at the National Library of Israel throughout the project.`,
   client: '[DHDev](https://www.dh-dev.com/) / [National Library of Israel](https://www.nli.org.il/en)',
   technologies: '[MapLibre](https://maplibre.org/), [React](https://react.dev/)',
   link: 'https://geo.nli.org.il/en',
@@ -153,16 +143,15 @@ architecture.`,
   }]
 }, {
   title: 'liiive',
-  summary: 'An online platform for real-time collaborative viewing & annotation for IIIF image collections.',
+  summary: 'Shared viewing and annotation for IIIF image collections.',
   image: '/assets/img/portfolio-liiive.jpg',
   image_alt: 'liiive project thumbnail',
   blurb: `liiive is a web-based platform for real-time collaborative viewing and annotation
-of digital image collections. Built on the [IIIF](https://iiif.io) standard, it supports researchers,
-educators, students, and cultural heritage professionals working with high-resolution images.
+of high-resolution image collections.
 
-Users can navigate images together, see each other's cursor positions, and annotate collaboratively
-in real time. Drawing tools allow highlighting regions of interest, adding comments, and engaging in  
-discussions directly on the image.`,
+Built on the [IIIF](https://iiif.io) standard, it lets multiple users explore visual materials–artworks, manuscripts, maps, or historical documents–together, see each other's cursors, and create annotations simultaneously.Drawing tools allow highlighting regions of interest, adding comments, and engaging in discussions directly on the image.
+
+Following a collaboration with the University of Graz, I have released the tool as an open-source project, under the MIT license.`,
   technologies: '[IIIF](https://iiif.io), [Annotorious](https://annotorious.dev), [YJS](https://yjs.dev/), [Supabase](https://supabase.com/)',
   link: 'https://liiive.now',
   screenshots: [{
@@ -172,4 +161,55 @@ discussions directly on the image.`,
   }, {
     image: '/assets/img/portfolio/liiive-03.png', alt: 'Dashboar' 
   }]
+}, {
+  title: 'DIP.world',
+  summary: 'A map-driven interface for exploring Lower Austria\'s ceramic heritage.',
+  image: '/assets/img/portfolio-dipworld.jpg',
+  image_alt: 'DIP.world project thumbnail',
+  blurb: ``,
+  technologies: '[MapLibre](https://maplibre.org/), [React](https://react.dev/), Python',
+  link: 'https://www.noemuseen.at/dipworldnoemuseen/',
+  screenshots:[]
+}, {
+  title: 'Atlas of Prosodic Convergence',
+  summary: 'A cartographic prototype for comparing prosodic patterns across Cyprus.',
+  image: '/assets/img/portfolio-prosodic-convergence.jpg',
+  image_alt: 'Atlas of Prosodic Convergence project thumbnail',
+  blurb: ``,
+  client: 'University of Oxford Phonetics Lab, Faculty of Linguistics, Philology, and Phonetics',
+  technologies: '',
+  link: 'https://mappingprosody.phon.ox.ac.uk/what-we-are-doing',
+  screenshots: []
+}, {
+  title: 'Geo-Coding Egyptian Places',
+  summary: 'A case study comparing automated geo-coding methods for historical gazetters.',
+  image: '/assets/img/portfolio-bm-egypt.jpg',
+  image_alt: 'Geo-Coding Egpytian Place Names project thumbnail',
+  blurb: ``,
+  client: 'The British Museum',
+  technologies: '',
+  screenshots: []
+}, {
+  title: 'tiny.iiif',
+  summary: 'A minimal, low-cost IIIF server for small institutions and personal collections.',
+  image: '/assets/img/portfolio-tiny-iiif.jpg',
+  image_alt: 'tiny.iiif project thumbnail',
+  blurb: ``,
+  screenshots: []
+}, {
+  title: 'Digital Periegesis',
+  summary: 'A spatial reading environment for Pausanias\' Description of Greece.',
+  image: '/assets/img/portfolio-pausanias.jpg',
+  image_alt: 'Digital Periegesis project thumbnail',
+  blurb: ``,
+  link: 'https://pausanias.rainersimon.io',
+  screenshots: []
+}, {
+  title: 'Mappola Inscriptions Map',
+  summary: 'A reusable web map component for epigraphic data exploration.',
+  image: '/assets/img/portfolio-mappola.jpg',
+  image_alt: 'Mappola Inscriptions Map project thumbnail',
+  blurb: ``,
+  link: 'https://db.mappola.eu/inscriptions/map',
+  screenshots: []
 }];

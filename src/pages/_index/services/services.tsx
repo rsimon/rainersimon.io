@@ -88,7 +88,7 @@ export const Services = () => {
 
   return (
     <div className="space-y-16">
-      <h2 className="px-4 md:px-0 text-xl font-bold mb-4">
+      <h2 className="px-0 text-xl font-bold mb-4">
         My Services
       </h2>
 

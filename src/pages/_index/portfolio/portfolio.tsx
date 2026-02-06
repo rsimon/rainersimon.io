@@ -14,11 +14,11 @@ export const Portfolio = () => {
         Selected Projects
       </h2>
     
-      <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-4">
+      <div className="px-3 md:px-0 grid md:grid-cols-1 lg:grid-cols-3 gap-4">
         {PROJECTS.map((project, index) => (
           <div key={index}>
             <div
-              className="group relative overflow-hidden md:rounded-sm border border-steel/15 cursor-pointer hover:shadow-2xl transition-all duration-300"
+              className="group shadow-xs relative overflow-hidden rounded-sm border border-steel/15 cursor-pointer hover:shadow-2xl transition-all duration-300"
               onClick={() => setSelected(project)}>
               <div className="aspect-video relative">
                 <img
