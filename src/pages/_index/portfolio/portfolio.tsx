@@ -24,7 +24,9 @@ export const Portfolio = () => {
                 <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.image_alt}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
+                  loading="lazy"
+                  decoding="async"/>
 
                 <div className="absolute inset-0 bg-linear-to-t from-primary via-primary/80 to-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
                   <h3 className="text-xl tracking-wide font-semibold text-primary-foreground">{project.title}</h3>
