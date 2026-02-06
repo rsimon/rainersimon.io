@@ -2,6 +2,14 @@
 import '../styles/global.css';
 
 const { title } = Astro.props;
+
+const pageTitle = title 
+  ? `${title} | Rainer Simon` 
+  : 'Rainer Simon - Digital Humanities Software Development | IIIF, Annotation Tools & UX Design';
+
+const description = 'Independent IT consultant and research software engineer with more than 15 years experience in Digital Humanities. Based in Vienna, Austria.';
+const url = 'https://rainersimon.io';
+const image = `${url}/assets/img/social-preview.png`;
 ---
 <html lang="en-US" dir="ltr">
   <head>
@@ -10,7 +18,10 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff">
 
-    <title>{title ? `Rainer Simon | ${title}` : 'Rainer Simon - Digital Humanities Software Developer | IIIF, Annotation Tools & UX Consulting'}</title>
+    <title>{pageTitle}</title>
+    <meta name="description" content={description}>
+    <meta name="keywords" content="Digital Humanities software, IIIF consulting, annotation tools, research UX design, semantic annotation, cultural heritage technology, TEI XML, digital editions, DH developer Vienna">
+    <meta name="author" content="Rainer Simon">
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
@@ -19,49 +30,130 @@ const { title } = Astro.props;
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
 
-    <meta name="description" content="Expert Digital Humanities software development and IIIF consulting. 15+ years experience building tools for museums, libraries, and DH researchers. Based in Vienna, Austria.">
-    
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@aboutgeo" />
-    <meta name="twitter:title" content={title ? `rainersimon.io | ${title}` : 'rainersimon.io'} />
-    <meta name="twitter:description" content="Digital Humanities / IIIF / UX / Open Source" />
-    <meta name="twitter:image" content="https://rainersimon.io/assets/img/social-preview.png" />
-    <meta name="twitter:url" content="https://rainersimon.io" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+    <meta name="twitter:url" content={url} />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content={title ? `rainersimon.io | ${title}` : 'rainersimon.io'} />
-    <meta property="og:description" content="Digital Humanities / IIIF / UX / Open Source" />
-    <meta property="og:image" content="https://rainersimon.io/assets/img/social-preview.png" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image}/>
     <meta property="og:image:width" content="1600" />
     <meta property="og:image:height" content="900" />
-    <meta property="og:url" content="https://rainersimon.io" />
+    <meta property="og:url" content={url}/>
+    <meta property="og:site_name" content="Rainer Simon - Digital Humanities Software">
 
-    <link rel="canonical" href="https://rainersimon.io" />
+    <link rel="canonical" href={url}/>
 
     <link href="/assets/fonts/fonts.css" rel="stylesheet">
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Rainer Simon Digital Humanities Consulting",
-        "description": "Software development for digital humanists",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Vienna",
-          "addressCountry": "AT"
-        },
-        "founder": {
-          "@type": "Person",
-          "name": "Rainer Simon",
-          "sameAs": [
-            "https://github.com/rsimon",
-            "https://bsky.app/profile/aboutgeo.bsky.social",
-            "https://hcommons.social/@aboutgeo",
-            "https://www.linkedin.com/in/rainersimon/"
-          ]
-        },
-        "image": "https://rainersimon.io/assets/img/rainer.jpg"
+        "@graph": [
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://rainersimon.io/#organization",
+            "name": "Rainer Simon Digital Humanities Consulting",
+            "description": "Award-winning software development for Digital Humanities research, specializing in IIIF infrastructure, semantic annotation tools, and research UX design",
+            "url": "https://rainersimon.io",
+            "logo": "https://rainersimon.io/assets/img/splash-logo.svg",
+            "image": "https://rainersimon.io/assets/img/rainer.jpg",
+            "email": "hello@rainersimon.io",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Vienna",
+              "addressRegion": "Vienna",
+              "addressCountry": "AT"
+            },
+            "founder": {
+              "@type": "Person",
+              "@id": "https://rainersimon.io/#person"
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://rainersimon.io/#person",
+            "name": "Rainer Simon",
+            "givenName": "Rainer",
+            "familyName": "Simon",
+            "url": "https://rainersimon.io",
+            "image": "https://rainersimon.io/assets/img/rainer.jpg",
+            "jobTitle": "Digital Humanities Software Developer",
+            "worksFor": {
+              "@id": "https://rainersimon.io/#organization"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Vienna",
+              "addressCountry": "AT"
+            },
+            "sameAs": [
+              "https://github.com/rsimon",
+              "https://www.linkedin.com/in/rainersimon/",
+              "https://bsky.app/profile/aboutgeo.bsky.social",
+              "https://hcommons.social/@aboutgeo"
+            ],
+            "knowsAbout": [
+              "Digital Humanities",
+              "IIIF",
+              "Semantic Annotation",
+              "UX Design",
+              "Web Development",
+              "Cultural Heritage Technology",
+              "Open Source Software"
+            ]
+          },
+          {
+            "@type": "Service",
+            "serviceType": "IIIF & Annotation Workflow Consulting",
+            "provider": {
+              "@id": "https://rainersimon.io/#organization"
+            },
+            "areaServed": "Worldwide",
+            "description": "Infrastructure assessment, technology selection, and UX design for IIIF and annotation workflows"
+          },
+          {
+            "@type": "Service",
+            "serviceType": "Web Application Development",
+            "provider": {
+              "@id": "https://rainersimon.io/#organization"
+            },
+            "areaServed": "Worldwide",
+            "description": "Design and development of production-ready web applications for digital scholarship and cultural heritage"
+          },
+          {
+            "@type": "Service",
+            "serviceType": "UX Design and Interaction Prototyping",
+            "provider": {
+              "@id": "https://rainersimon.io/#organization"
+            },
+            "areaServed": "Worldwide",
+            "description": "User-centered design for research tools, digital publications, and cultural heritage interfaces"
+          },
+          {
+            "@type": "Service",
+            "serviceType": "Grant Writing & Technical Planning",
+            "provider": {
+              "@id": "https://rainersimon.io/#organization"
+            },
+            "areaServed": "Worldwide",
+            "description": "Technical support for Digital Humanities grant applications including work packages and methodology"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://rainersimon.io/#website",
+            "url": "https://rainersimon.io",
+            "name": "Rainer Simon - Digital Humanities Software Development",
+            "description": "Award-winning Digital Humanities software developer",
+            "publisher": {
+              "@id": "https://rainersimon.io/#person"
+            }
+          }
+        ]
       }
     </script>
   </head>

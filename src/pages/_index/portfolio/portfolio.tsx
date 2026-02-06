@@ -14,7 +14,7 @@ export const Portfolio = () => {
         Selected Projects
       </h2>
     
-      <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-4">
         {PROJECTS.map((project, index) => (
           <div key={index}>
             <div

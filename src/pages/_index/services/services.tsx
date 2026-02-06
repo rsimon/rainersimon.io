@@ -88,11 +88,15 @@ export const Services = () => {
 
   return (
     <div className="space-y-16">
+      <h2 className="px-4 md:px-0 text-xl font-bold mb-4">
+        My Services
+      </h2>
+
       <p className="text-lg leading-relaxed">
          I work with clients at every stage of the software development lifecycle: 
          from requirements gathering and technology assessment, to architecture, UX 
          design, implementation, to system integration, product launch and 
-         operations. My services:
+         operations.
       </p>
 
       <Accordion type="multiple">
@@ -101,7 +105,7 @@ export const Services = () => {
             key={title}
             value={title}>
             <AccordionTrigger
-              className="text-lg font-semibold">
+              className="text-lg font-medium">
               <h3 className="space-y-1">
                 {title}
               </h3>
