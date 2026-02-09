@@ -156,33 +156,48 @@ Following a collaboration with the University of Graz, I have released the tool 
   title: 'DIP.world',
   summary: 'A map-driven interface for exploring Lower Austria\'s ceramic heritage.',
   image: '/assets/img/portfolio-dipworld.jpg',
-  image_alt: 'DIP.world project thumbnail',
+  image_alt: 'DIP.world interactive map screenshot',
   blurb: `DIP.world is a map-driven interface for exploring the geographic distribution of historic tiled stove fragments held in museums across Lower Austria.
 
-Developed for the [Museumsmanagement Niederösterreich](https://www.noemuseen.at/), the application presents collection data from multiple regional museums in an interactive, touch-friendly map interface.
+Developed for the [Museumsmanagement Niederösterreich](https://www.noemuseen.at/), the application presents collection data from multiple regional museums through an interactive, touch-friendly map interface.
 
-The system was initially designed for use on a large-format touch display at the [Kaiser Franz Josef Museum](https://www.kaiser-franz-josef-museum-baden.at/) in Baden, Lower Austria. It is still available online, and continues to get regular data updates.
+The system was initially designed for use on a large-format touch display at the [Kaiser Franz Josef Museum](https://www.kaiser-franz-josef-museum-baden.at/) in Baden, Lower Austria. It is still available online, and continues to receive regular data updates.
 
 I designed and developed the frontend and user experience as well as the data update mechanism that refreshes the content from daily database dumps.`,
   link: 'https://www.noemuseen.at/dipworldnoemuseen/',
-  client: '[Museumsmanagement Niederösterreich](https://www.noemuseen.at/)'
-//}, {
-//  title: 'Atlas of Prosodic Convergence',
-//  summary: 'A cartographic prototype for comparing prosodic patterns across Cyprus.',
-//  image: '/assets/img/portfolio-prosodic-convergence.jpg',
-//  image_alt: 'Atlas of Prosodic Convergence project thumbnail',
-//  blurb: ``,
-//  client: 'University of Oxford Phonetics Lab, Faculty of Linguistics, Philology, and Phonetics',
-//  link: 'https://mappingprosody.phon.ox.ac.uk/what-we-are-doing',
+  client: '[Museumsmanagement Niederösterreich](https://www.noemuseen.at/)',
+  screenshots: [{
+    image: '/assets/img/portfolio/dipworld-01.jpg', alt: 'Map with a "list popup" overlay for scrolling through items at the selected place'
+  }, {
+    image: '/assets/img/portfolio/dipworld-02.jpg', alt: 'Map with item details popup overlay'
+  }]
+}, {
+//   title: 'Atlas of Prosodic Convergence',
+//   summary: 'A cartographic prototype for comparing prosodic patterns across Cyprus.',
+//   image: '/assets/img/portfolio-prosodic-convergence.jpg',
+//   image_alt: 'Interactive map showing prosodic data across Cyprus',
+//   blurb: `The Atlas of Prosodic Convergence is a prototype web map for comparing prosodic patterns across Cyprus, based on a limited corpus of geographically referenced data samples and audio recordings.
+// 
+// Developed in collaboration with researchers at the University of Oxford, the application was submitted as a proof of concept in support of a larger research grant proposal. It demonstrates potential interaction design approaches, visualization strategies, and the integration of linguistic audio data into a spatial exploration interface.
+// 
+// The map supports multiple mapping modes, including point-based visualization and choropleth representations using both administrative and Voronoi-based regions. Individual locations provide access to recorded speech samples, with integrated audio playback and spectrogram visualization.`,
+//   client: 'University of Oxford Phonetics Lab, Faculty of Linguistics, Philology, and Phonetics',
+//   link: 'https://mappingprosody.phon.ox.ac.uk/what-we-are-doing',
 //  screenshots: []
-//}, {
-//  title: 'Geo-Coding Egyptian Places',
-//  summary: 'A case study comparing automated geo-coding methods for historical gazetters.',
-//  image: '/assets/img/portfolio-bm-egypt.jpg',
-//  image_alt: 'Geo-Coding Egpytian Place Names project thumbnail',
-//  blurb: ``,
-//  client: 'The British Museum',
-//  screenshots: []
+
+  title: 'Geo-Coding Egyptian Places',
+  summary: 'A case study comparing automated geo-coding methods for historical gazetters.',
+  image: '/assets/img/portfolio-bm-egypt.jpg',
+  image_alt: 'Geo-Coding Egpytian Place Names project thumbnail',
+  blurb: `A proof-of-concept study that explored different automated approaches for assigning geographic coordinates to place names sampled from an in-house archaeological gazetteer.
+
+Contracted by the British Museum’s Egyptology Department, my work involved batch processing of place names, setting up indexing infrastructure, and comparing matching results across external geographic resources such as GeoNames. The results were prepared and presented as interactive web maps to support analysis and discussion.
+
+In addition to rule-based matching techniques, the project included early experiments with large language models (LLMs) to assist in the disambiguation of ambiguous or conflicting place name matches.`,
+  client: 'The British Museum',
+  screenshots: [{
+    image: '/assets/img/portfolio-bm-egypt.jpg', alt: 'Geo-coding results displayed on a web map of Egypt'
+  }]
 //}, {
 //  title: 'tiny.iiif',
 //  summary: 'A minimal, low-cost IIIF server for small institutions and personal collections.',

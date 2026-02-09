@@ -39,7 +39,7 @@ export const ProjectDetails = (props: ProjectDetailsProps) => {
         <img 
           src={project.image}
           alt={project.image_alt} 
-          className="rounded shadow-xs border aspect-12/5 object-cover" />
+          className="rounded shadow-xs border aspect-2/1 object-cover" />
       </div>
 
       <div className="my-12">
@@ -49,7 +49,7 @@ export const ProjectDetails = (props: ProjectDetailsProps) => {
 
         <div className="space-y-4 mt-8">
           {project.client && (
-            <div className="flex gap-2 items-center">
+            <div className="flex gap-2 items-start">
               <div className="font-bold tracking-wide">Client:</div>
               <div className="text-muted-foreground"><Markdown>{project.client}</Markdown></div>
             </div>
