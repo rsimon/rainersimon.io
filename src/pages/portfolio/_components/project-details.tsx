@@ -38,7 +38,7 @@ export const ProjectDetails = (props: ProjectDetailsProps) => {
         <img 
           src={project.image}
           alt={project.image_alt} 
-          className="rounded shadow-xs border aspect-2/1 object-cover" />
+          className="rounded shadow-xs border aspect-video object-cover" />
       </div>
 
       <div className="my-12">

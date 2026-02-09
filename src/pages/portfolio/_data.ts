@@ -198,13 +198,17 @@ In addition to rule-based matching techniques, the project included early experi
   screenshots: [{
     image: '/assets/img/portfolio-bm-egypt.jpg', alt: 'Geo-coding results displayed on a web map of Egypt'
   }]
-// }, {
-//  title: 'tiny.iiif',
-//  summary: 'A minimal, low-cost IIIF server for small institutions and personal collections.',
-//  image: '/assets/img/portfolio-tiny-iiif.jpg',
-//  image_alt: 'tiny.iiif project thumbnail',
-//  blurb: ``,
-//  screenshots: []
+}, {
+  title: 'tiny.iiif',
+  summary: 'A minimal, low-cost IIIF server for small institutions and personal collections.',
+  image: '/assets/img/portfolio-tiny-iiif.jpg',
+  image_alt: 'tiny.iiif project thumbnail',
+  blurb: `**tiny.iiif** is a minimal, open-source IIIF publishing server that transforms folders of image files into fully functional IIIF Presentation manifests with minimal setup.
+
+The project bridges the gap between full-scale collection management systems and hand-edited manifest JSON files, offering a simple drag-and-drop admin interface with built-in support for both the IIIF Image API (v2/v3) and Presentation API.
+
+I created tiny.iiif to make IIIF publishing more accessible to small institutions and personal initiatives—for small exhibitions, classroom projects, thesis presentations, or research dissemination. tiny.iiif is open source and available under the MIT license.`,
+  link: 'https://github.com/rsimon/tiny-iiif'
 }, {
   title: 'Digital Periegesis',
   summary: 'A spatial reading environment for Pausanias\' "Description of Greece".',
@@ -216,13 +220,11 @@ The application synchronizes a reading interface for a geo-coded TEI-encoded tex
 
 In addition to map-based navigation, the interface provides complementary exploratory tools, including a histogram view that visualizes place density across the length of the text and enables direct “jump-to” navigation. The system also supports navigation by thematic tags derived from the underlying TEI annotation.`,
   link: 'https://pausanias.rainersimon.io',
-//  screenshots: []
-//}, {
+// }, {
 //  title: 'Mappola Inscriptions Map',
 //  summary: 'A reusable web map component for epigraphic data exploration.',
 //  image: '/assets/img/portfolio-mappola.jpg',
 //  image_alt: 'Mappola Inscriptions Map project thumbnail',
 //  blurb: ``,
-//  link: 'https://db.mappola.eu/inscriptions/map',
-//  screenshots: []
+//  link: 'https://db.mappola.eu/inscriptions/map'
 }];
