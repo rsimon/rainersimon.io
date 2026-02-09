@@ -198,20 +198,24 @@ In addition to rule-based matching techniques, the project included early experi
   screenshots: [{
     image: '/assets/img/portfolio-bm-egypt.jpg', alt: 'Geo-coding results displayed on a web map of Egypt'
   }]
-//}, {
+// }, {
 //  title: 'tiny.iiif',
 //  summary: 'A minimal, low-cost IIIF server for small institutions and personal collections.',
 //  image: '/assets/img/portfolio-tiny-iiif.jpg',
 //  image_alt: 'tiny.iiif project thumbnail',
 //  blurb: ``,
 //  screenshots: []
-//}, {
-//  title: 'Digital Periegesis',
-//  summary: 'A spatial reading environment for Pausanias\' Description of Greece.',
-//  image: '/assets/img/portfolio-pausanias.jpg',
-//  image_alt: 'Digital Periegesis project thumbnail',
-//  blurb: ``,
-//  link: 'https://pausanias.rainersimon.io',
+}, {
+  title: 'Digital Periegesis',
+  summary: 'A spatial reading environment for Pausanias\' "Description of Greece".',
+  image: '/assets/img/portfolio-pausanias.jpg',
+  image_alt: 'Digital Periegesis project thumbnail',
+  blurb: `Digital Periegesis is a spatial reading environment for Pausanias’ *Description of Greece*, developed as part of the [Digital Periegesis](https://www.periegesis.org/en/) project in collaboration with the University of Uppsala and the Open University.
+
+The application synchronizes a reading interface for a geo-coded TEI-encoded text with an interactive map. As users move through the text, the map updates dynamically to display markers corresponding to the places referenced in the current reading view, based on gazetteer links embedded in the TEI markup.
+
+In addition to map-based navigation, the interface provides complementary exploratory tools, including a histogram view that visualizes place density across the length of the text and enables direct “jump-to” navigation. The system also supports navigation by thematic tags derived from the underlying TEI annotation.`,
+  link: 'https://pausanias.rainersimon.io',
 //  screenshots: []
 //}, {
 //  title: 'Mappola Inscriptions Map',

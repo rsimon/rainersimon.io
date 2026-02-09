@@ -18,18 +18,12 @@ export const ProjectDetails = (props: ProjectDetailsProps) => {
 
   const { project, previousProject, nextProject } = props;
 
-  const navigateBack = (e: React.MouseEvent) => {
-    e.preventDefault();
-    history.back();
-  }
-
   return (
     <div className="container max-w-xl">
       <div className="mb-6 space-y-1">
         <nav>
           <a 
-            href="/"
-            onClick={navigateBack}
+            href="/#portfolio"
             className="flex gap-1 items-center font-light text-muted-foreground no-underline hover:text-foreground hover:underline ">
             <ChevronLeft className="size-5" strokeWidth={1.5} /> Back
           </a>
