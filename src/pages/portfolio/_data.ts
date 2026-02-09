@@ -45,12 +45,12 @@ export const PROJECTS: Project[] = [{
   title: 'Recogito Studio',
   summary: 'Real-time collaborative annotation for teaching, discussion, and shared close reading.',
   image: '/assets/img/portfolio-recogito-studio.png',
-  image_alt: 'Anntated text in the Recogito Studio user interface',
-  blurb: `Recogito Studio is a web-based annotation platform for texts and images, designed for classroom teaching, collaborative close reading, and online group work in the digital humanities and education.
+  image_alt: 'Annotated text in the Recogito Studio user interface',
+  blurb: `Recogito Studio is a web-based platform for annotating texts and images, designed to support classroom teaching, collaborative close reading, and online group work in digital humanities and education.
 
 The application supports real-time collaborative annotation on plaintext, TEI/XML, and PDF documents, as well as images and IIIF manifests. A plugin-based architecture allows Recogito Studio to be extended with custom components, domain-specific tools, or fully bespoke annotation environments.
 
-I was responsible for the annotation frontend and the interaction design of the real-time collaboration features, including their underlying client-side architecture. Recogito Studio is released as open-source software under the GNU Affero General Public License (AGPL).`,
+I was responsible for the annotation frontend and the interaction design of the real-time collaboration features, including the client-side architecture that supports them. Recogito Studio is released as open-source software under the GNU Affero General Public License (AGPL).`,
   client: '[Performant Software Solutions](https://www.performantsoftware.com/) / [University of Bonn](https://www.uni-bonn.de/en/university/university)',
   link: 'https://recogitostudio.org',
   screenshots: [{
@@ -63,12 +63,11 @@ I was responsible for the annotation frontend and the interaction design of the 
   summary: 'A chatbot that brings a small corner of Renaissance knowledge back to life.',
   image: '/assets/img/portfolio-machina-emblematica.jpg',
   image_alt: 'Machina Emblematica website logo',
-  blurb: `Machina Emblematica is a conversational interface for exploring the 
-_Symbola et Emblemata_, a 16th-century encyclopedia of allegorical illustrations, natural history, ancient fables, and moral reflections. 
+  blurb: `Machina Emblematica is a conversational interface for exploring the _Symbola et Emblemata_, a 16th-century encyclopedia of allegorical illustrations, natural history, ancient fables, and moral reflections. 
 
 Built as a multimodal retrieval-augmented generation (RAG) system, the application combines high-resolution digitized images from the [Bayerische Staatsbibliothek](https://www.digitale-sammlungen.de/de/details/bsb10575861)  with curated textual transcriptions from [Furman University](https://www.furman.edu/humanities-center/).
 
-I designed the user experience and developed the application, focusing on a playful, engaging ineraction, while keeping the historical sources transparent and accessible.`,
+I designed the user experience and developed the application, focusing on a playful and engaging interaction while ensuring the historical sources remain transparent and accessible.`,
   client: 'Michela Vignoli / [AIT Austrian Institute of Technology](https://www.ait.ac.at/themen/data-science-artificial-intelligence)',
   link: 'https://machina.rainersimon.io',
   screenshots: [{
@@ -89,7 +88,7 @@ I designed the user experience and developed the application, focusing on a play
 
 It integrates seamlessly with OpenSeadragon and supports high-resolution, zoomable images, including [IIIF](https://iiif.io) content. Annotorious is fully compatible with the [W3C Web Annotation Data Model](https://www.w3.org/TR/annotation-model/), and provides a flexible JavaScript and TypeScript API for building custom annotation tools and workflows.
 
-I created Annotorious in 2014 and have been actively maintaining it since. The library is widely used in Digital Humanities and cultural heritage projects, and forms a core component in several of my other projects, including Recogito Studio, IMMARKUS and liiive.`,
+I created Annotorious in 2014 and have been actively maintaining it since. The library is widely used in digital humanities and cultural heritage projects and forms a core component in several of my other projects, including [Recogito Studio](/portfolio/recogito-studio/), [IMMARKUS](/portfolio/immarkus/) and [liiive](/portfolio/liiive/).`,
   link: 'https://annotorious.dev',
   screenshots: [{
     image: '/assets/img/portfolio/annotorious-01.png', alt: 'Annotorious "Getting Started" JavaScript code snippet' 
@@ -103,7 +102,7 @@ I created Annotorious in 2014 and have been actively maintaining it since. The l
   
 It provides a multi-image annotation workbench with AI-assisted drawing tools for faster region selection, a lightweight ontology builder, and an interactive, searchable knowledge graph that connects annotations to structured concepts.
 
-I developed the application and frontend architecture working closely with the research team of the [InfraLives](https://www.infrastructurelives.eu/) project at KU Leuven. The application runs entirely client-side and supports both local images and IIIF collections. All data – images, models, and annotations – remains on the user's device, ensuring full privacy and control.`,
+I developed the application in close collaboration with the research team of the [InfraLives](https://www.infrastructurelives.eu/) project at KU Leuven. The application runs entirely client-side and supports both local images and IIIF collections. All data – images, models, and annotations – remains on the user's device, ensuring full privacy and control.`,
   client: '[KU Leuven](https://www.arts.kuleuven.be/english)',
   link: 'https://immarkus.xmarkus.org',
   screenshots: [{
@@ -120,13 +119,13 @@ I developed the application and frontend architecture working closely with the r
   summary: 'Fast, map-based exploration of hundreds of thousands of cultural heritage objects.',
   image: '/assets/img/portfolio-heritage-browser.jpg',
   image_alt: 'A map of Europe with colourful markers, indicating the locations of cultural heritage objects',
-  blurb: `Heritage Browser is map-based discovery interface for exploring large cultural heritage collections through geographic space. 
+  blurb: `Heritage Browser is map-based discovery interface for exploring large cultural heritage collections geographically. 
   
 Built with MapLibre and a custom storage and indexing backend, it enables smooth navigation across hundreds of thousands of geo-located objects.
 
 The project originated as a joint entry with [DHDev](https://www.dh-dev.com/) to the [2022 TARBOOT Digital Culture & Heritage Contest](https://www.nli.org.il/en/at-your-service/announcements/tarboot-contest-winners), where it reached second place in the General Track. 
 
-Following the contest, the prototype was developed further in close collaboration with the National Library of Israel and is now deployed in production, providing access to nearly 350,000 items. The system supports full-text search, dynamic filtering, IIIF integration, and a responsive interface for both desktop and mobile use.
+After the contest, the prototype was further developed with the National Library of Israel and is now deployed in production, providing access to nearly 350,000 items. The system supports full-text search, dynamic filtering, IIIF integration, and a responsive interface for both desktop and mobile use.
 
 I designed and developed the frontend and interaction architecture, working closely with DHDev and the team at the National Library of Israel throughout the project.`,
   client: '[DHDev](https://www.dh-dev.com/) / [National Library of Israel](https://www.nli.org.il/en)',
@@ -141,7 +140,7 @@ I designed and developed the frontend and interaction architecture, working clos
   image_alt: 'A medieval manuscript image with coloured annotations and users\' cursors',
   blurb: `liiive is a web-based platform for real-time collaborative viewing and annotation of high-resolution image collections.
 
-Built on the [IIIF](https://iiif.io) standard, it lets multiple users explore visual materials–artworks, manuscripts, maps, or historical documents–together, see each other's cursors, and create annotations simultaneously.Drawing tools allow highlighting regions of interest, adding comments, and engaging in discussions directly on the image.
+Built on the [IIIF](https://iiif.io) standard, it lets multiple users explore visual materials–artworks, manuscripts, maps, or historical documents–together, see each other's cursors, and create annotations simultaneously. Users can highlight regions of interest, add comments, and engage in discussions directly on the image.
 
 Following a collaboration with the University of Graz, I have released the tool as an open-source project, under the MIT license.`,
   link: 'https://liiive.now',
@@ -159,7 +158,7 @@ Following a collaboration with the University of Graz, I have released the tool 
   image_alt: 'DIP.world interactive map screenshot',
   blurb: `DIP.world is a map-driven interface for exploring the geographic distribution of historic tiled stove fragments held in museums across Lower Austria.
 
-Developed for the [Museumsmanagement Niederösterreich](https://www.noemuseen.at/), the application presents collection data from multiple regional museums through an interactive, touch-friendly map interface.
+Developed for [Museumsmanagement Niederösterreich](https://www.noemuseen.at/), the application presents collection data from multiple regional museums via an interactive, touch-friendly map interface.
 
 The system was initially designed for use on a large-format touch display at the [Kaiser Franz Josef Museum](https://www.kaiser-franz-josef-museum-baden.at/) in Baden, Lower Austria. It is still available online, and continues to receive regular data updates.
 
@@ -180,7 +179,7 @@ I designed and developed the frontend and user experience as well as the data up
 
 Developed in collaboration with researchers at the University of Oxford, the application was submitted as a proof of concept in support of a larger research grant proposal. It demonstrates potential interaction design approaches, visualization strategies, and the integration of linguistic audio data into a spatial exploration interface.
 
-The map supports multiple mapping modes, including point-based visualization and choropleth representations using both administrative and Voronoi-based regions. Individual locations provide access to recorded speech samples, with integrated audio playback and spectrogram visualization.`,
+The map supports multiple visualization modes, including point-based and choropleth views using both administrative and Voronoi-based regions. Individual locations provide access to recorded speech samples, with integrated audio playback and spectrogram visualization.`,
   client: 'University of Oxford Phonetics Lab',
   link: 'https://mappingprosody.phon.ox.ac.uk/what-we-are-doing',
 }, {
@@ -192,7 +191,7 @@ The map supports multiple mapping modes, including point-based visualization and
 
 Contracted by the British Museum’s Egyptology Department, my work involved batch processing of place names, setting up indexing infrastructure, and comparing matching results across external geographic resources such as GeoNames. The results were prepared and presented as interactive web maps to support analysis and discussion.
 
-In addition to rule-based matching techniques, the project included early experiments with large language models (LLMs) to assist in the disambiguation of ambiguous or conflicting place name matches.`,
+Beyond rule-based matching, the project included early experiments with large language models (LLMs) to help disambiguate ambiguous or conflicting place name matches.`,
   client: 'The British Museum',
   screenshots: [{
     image: '/assets/img/portfolio-bm-egypt.jpg', alt: 'Geo-coding results displayed on a web map of Egypt'
@@ -204,7 +203,7 @@ In addition to rule-based matching techniques, the project included early experi
   image_alt: 'tiny.iiif project thumbnail',
   blurb: `**tiny.iiif** is a minimal, open-source IIIF publishing server that transforms folders of image files into fully functional IIIF Presentation manifests with minimal setup.
 
-The project bridges the gap between full-scale collection management systems and hand-edited manifest JSON files, offering a simple drag-and-drop admin interface with built-in support for both the IIIF Image API (v2/v3) and Presentation API.
+The project bridges the gap between full-scale collection management systems and hand-edited manifest JSON files, providing a simple drag-and-drop interface with built-in support for the IIIF Image API (v2/v3) and Presentation API.
 
 I created tiny.iiif to make IIIF publishing more accessible to small institutions and personal initiatives—for small exhibitions, classroom projects, thesis presentations, or research dissemination. tiny.iiif is open source and available under the MIT license.`,
   link: 'https://github.com/rsimon/tiny-iiif'
@@ -213,17 +212,19 @@ I created tiny.iiif to make IIIF publishing more accessible to small institution
   summary: 'A spatial reading environment for Pausanias\' "Description of Greece".',
   image: '/assets/img/portfolio-pausanias.jpg',
   image_alt: 'Digital Periegesis project thumbnail',
-  blurb: `Digital Periegesis is a spatial reading environment for Pausanias’ *Description of Greece*, developed as part of the [Digital Periegesis](https://www.periegesis.org/en/) project in collaboration with the University of Uppsala and the Open University.
+  blurb: `A prototype spatial reading environment for Pausanias’ *Description of Greece*, developed as part of the [Digital Periegesis](https://www.periegesis.org/en/) project in collaboration with the University of Uppsala and the Open University.
 
 The application synchronizes a reading interface for a geo-coded TEI-encoded text with an interactive map. As users move through the text, the map updates dynamically to display markers corresponding to the places referenced in the current reading view, based on gazetteer links embedded in the TEI markup.
 
-In addition to map-based navigation, the interface provides complementary exploratory tools, including a histogram view that visualizes place density across the length of the text and enables direct “jump-to” navigation. The system also supports navigation by thematic tags derived from the underlying TEI annotation.`,
+In addition to map-based navigation, the interface offers exploratory tools such as a histogram view, which visualizes the density of place references across the text and allows direct “jump-to” navigation. The system also supports navigation by thematic tags derived from the underlying TEI annotation.`,
   link: 'https://pausanias.rainersimon.io',
-// }, {
-//  title: 'Mappola Inscriptions Map',
-//  summary: 'A reusable web map component for epigraphic data exploration.',
-//  image: '/assets/img/portfolio-mappola.jpg',
-//  image_alt: 'Mappola Inscriptions Map project thumbnail',
-//  blurb: ``,
-//  link: 'https://db.mappola.eu/inscriptions/map'
+}, {
+  title: 'Mappola Inscriptions Map',
+  summary: 'A reusable web map component for epigraphic data exploration.',
+  image: '/assets/img/portfolio-mappola.jpg',
+  image_alt: 'Mappola Inscriptions Map project thumbnail',
+  blurb: `A lightweight, embeddable map component built for the ERC-funded [MAPPOLA](https://db.mappola.eu/info/project/concept-and-aim) project.
+    
+Developed with the team at the University of Vienna, the component offers an interactive map interface for browsing epigraphic records in the MAPPOLA project database.`,
+  link: 'https://db.mappola.eu/inscriptions/map'
 }];
