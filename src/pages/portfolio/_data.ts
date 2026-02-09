@@ -54,9 +54,9 @@ I was responsible for the annotation frontend and the interaction design of the 
   client: '[Performant Software Solutions](https://www.performantsoftware.com/) / [University of Bonn](https://www.uni-bonn.de/en/university/university)',
   link: 'https://recogitostudio.org',
   screenshots: [{
-    video: '/assets/img/portfolio/recogito-studio-01.mp4', alt: 'Collaborative text annotation'
-  }, {
     image: '/assets/img/portfolio/recogito-studio-02.jpg', alt: 'An annotated 2-column PDF document.'
+  }, {
+    video: '/assets/img/portfolio/recogito-studio-01.mp4', alt: 'Collaborative text annotation'    
   }]
 }, {
   title: 'Machina Emblematica',
@@ -155,52 +155,52 @@ Following a collaboration with the University of Graz, I have released the tool 
   }, {
     image: '/assets/img/portfolio/liiive-03.png', alt: 'Dashboar' 
   }]
-}, {
-  title: 'DIP.world',
-  summary: 'A map-driven interface for exploring Lower Austria\'s ceramic heritage.',
-  image: '/assets/img/portfolio-dipworld.jpg',
-  image_alt: 'DIP.world project thumbnail',
-  blurb: ``,
-  link: 'https://www.noemuseen.at/dipworldnoemuseen/',
-  screenshots:[]
-}, {
-  title: 'Atlas of Prosodic Convergence',
-  summary: 'A cartographic prototype for comparing prosodic patterns across Cyprus.',
-  image: '/assets/img/portfolio-prosodic-convergence.jpg',
-  image_alt: 'Atlas of Prosodic Convergence project thumbnail',
-  blurb: ``,
-  client: 'University of Oxford Phonetics Lab, Faculty of Linguistics, Philology, and Phonetics',
-  link: 'https://mappingprosody.phon.ox.ac.uk/what-we-are-doing',
-  screenshots: []
-}, {
-  title: 'Geo-Coding Egyptian Places',
-  summary: 'A case study comparing automated geo-coding methods for historical gazetters.',
-  image: '/assets/img/portfolio-bm-egypt.jpg',
-  image_alt: 'Geo-Coding Egpytian Place Names project thumbnail',
-  blurb: ``,
-  client: 'The British Museum',
-  screenshots: []
-}, {
-  title: 'tiny.iiif',
-  summary: 'A minimal, low-cost IIIF server for small institutions and personal collections.',
-  image: '/assets/img/portfolio-tiny-iiif.jpg',
-  image_alt: 'tiny.iiif project thumbnail',
-  blurb: ``,
-  screenshots: []
-}, {
-  title: 'Digital Periegesis',
-  summary: 'A spatial reading environment for Pausanias\' Description of Greece.',
-  image: '/assets/img/portfolio-pausanias.jpg',
-  image_alt: 'Digital Periegesis project thumbnail',
-  blurb: ``,
-  link: 'https://pausanias.rainersimon.io',
-  screenshots: []
-}, {
-  title: 'Mappola Inscriptions Map',
-  summary: 'A reusable web map component for epigraphic data exploration.',
-  image: '/assets/img/portfolio-mappola.jpg',
-  image_alt: 'Mappola Inscriptions Map project thumbnail',
-  blurb: ``,
-  link: 'https://db.mappola.eu/inscriptions/map',
-  screenshots: []
+//}, {
+//  title: 'DIP.world',
+//  summary: 'A map-driven interface for exploring Lower Austria\'s ceramic heritage.',
+//  image: '/assets/img/portfolio-dipworld.jpg',
+//  image_alt: 'DIP.world project thumbnail',
+//  blurb: ``,
+//  link: 'https://www.noemuseen.at/dipworldnoemuseen/',
+//  screenshots:[]
+//}, {
+//  title: 'Atlas of Prosodic Convergence',
+//  summary: 'A cartographic prototype for comparing prosodic patterns across Cyprus.',
+//  image: '/assets/img/portfolio-prosodic-convergence.jpg',
+//  image_alt: 'Atlas of Prosodic Convergence project thumbnail',
+//  blurb: ``,
+//  client: 'University of Oxford Phonetics Lab, Faculty of Linguistics, Philology, and Phonetics',
+//  link: 'https://mappingprosody.phon.ox.ac.uk/what-we-are-doing',
+//  screenshots: []
+//}, {
+//  title: 'Geo-Coding Egyptian Places',
+//  summary: 'A case study comparing automated geo-coding methods for historical gazetters.',
+//  image: '/assets/img/portfolio-bm-egypt.jpg',
+//  image_alt: 'Geo-Coding Egpytian Place Names project thumbnail',
+//  blurb: ``,
+//  client: 'The British Museum',
+//  screenshots: []
+//}, {
+//  title: 'tiny.iiif',
+//  summary: 'A minimal, low-cost IIIF server for small institutions and personal collections.',
+//  image: '/assets/img/portfolio-tiny-iiif.jpg',
+//  image_alt: 'tiny.iiif project thumbnail',
+//  blurb: ``,
+//  screenshots: []
+//}, {
+//  title: 'Digital Periegesis',
+//  summary: 'A spatial reading environment for Pausanias\' Description of Greece.',
+//  image: '/assets/img/portfolio-pausanias.jpg',
+//  image_alt: 'Digital Periegesis project thumbnail',
+//  blurb: ``,
+//  link: 'https://pausanias.rainersimon.io',
+//  screenshots: []
+//}, {
+//  title: 'Mappola Inscriptions Map',
+//  summary: 'A reusable web map component for epigraphic data exploration.',
+//  image: '/assets/img/portfolio-mappola.jpg',
+//  image_alt: 'Mappola Inscriptions Map project thumbnail',
+//  blurb: ``,
+//  link: 'https://db.mappola.eu/inscriptions/map',
+//  screenshots: []
 }];

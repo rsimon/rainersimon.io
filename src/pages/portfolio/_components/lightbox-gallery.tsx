@@ -13,7 +13,7 @@ interface LightboxGallerProps {
 
 export const LightboxGallery = (props: LightboxGallerProps) => {
 
-  const [index, setIndex] = useState<number | null>(null);
+  const [index, setIndex] = useState<number>(-1);
 
   const slides: Slide[] = useMemo(() => {
     if ((props.screenshots || []).length === 0)
@@ -22,9 +22,9 @@ export const LightboxGallery = (props: LightboxGallerProps) => {
     return props.screenshots.map(screenshot => {
       return (isVideo(screenshot)) ? {
         type: 'video',
-        sources: {
+        sources: [{
           src: screenshot.video
-        },
+        }],
         autoPlay: true
       } as unknown as Slide : {
         type: 'image',
@@ -61,10 +61,10 @@ export const LightboxGallery = (props: LightboxGallerProps) => {
       </div>
 
       <Lightbox
-        open={index !== null}
+        open={index > -1}
+        index={index}
         plugins={[Video]}
-        index={index ?? 0}
-        close={() => setIndex(null)}
+        close={() => setIndex(-1)}
         slides={slides} />
     </div>
   );
