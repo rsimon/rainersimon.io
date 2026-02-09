@@ -172,19 +172,18 @@ I designed and developed the frontend and user experience as well as the data up
     image: '/assets/img/portfolio/dipworld-02.jpg', alt: 'Map with item details popup overlay'
   }]
 }, {
-//   title: 'Atlas of Prosodic Convergence',
-//   summary: 'A cartographic prototype for comparing prosodic patterns across Cyprus.',
-//   image: '/assets/img/portfolio-prosodic-convergence.jpg',
-//   image_alt: 'Interactive map showing prosodic data across Cyprus',
-//   blurb: `The Atlas of Prosodic Convergence is a prototype web map for comparing prosodic patterns across Cyprus, based on a limited corpus of geographically referenced data samples and audio recordings.
-// 
-// Developed in collaboration with researchers at the University of Oxford, the application was submitted as a proof of concept in support of a larger research grant proposal. It demonstrates potential interaction design approaches, visualization strategies, and the integration of linguistic audio data into a spatial exploration interface.
-// 
-// The map supports multiple mapping modes, including point-based visualization and choropleth representations using both administrative and Voronoi-based regions. Individual locations provide access to recorded speech samples, with integrated audio playback and spectrogram visualization.`,
-//   client: 'University of Oxford Phonetics Lab, Faculty of Linguistics, Philology, and Phonetics',
-//   link: 'https://mappingprosody.phon.ox.ac.uk/what-we-are-doing',
-//  screenshots: []
+  title: 'Atlas of Prosodic Convergence',
+  summary: 'A cartographic prototype for comparing prosodic patterns across Cyprus.',
+  image: '/assets/img/portfolio-prosodic-convergence.jpg',
+  image_alt: 'Interactive map showing prosodic data across Cyprus',
+  blurb: `The Atlas of Prosodic Convergence is a prototype web map for comparing prosodic patterns across Cyprus, based on a limited corpus of geographically referenced data samples and audio recordings.
 
+Developed in collaboration with researchers at the University of Oxford, the application was submitted as a proof of concept in support of a larger research grant proposal. It demonstrates potential interaction design approaches, visualization strategies, and the integration of linguistic audio data into a spatial exploration interface.
+
+The map supports multiple mapping modes, including point-based visualization and choropleth representations using both administrative and Voronoi-based regions. Individual locations provide access to recorded speech samples, with integrated audio playback and spectrogram visualization.`,
+  client: 'University of Oxford Phonetics Lab',
+  link: 'https://mappingprosody.phon.ox.ac.uk/what-we-are-doing',
+}, {
   title: 'Geo-Coding Egyptian Places',
   summary: 'A case study comparing automated geo-coding methods for historical gazetters.',
   image: '/assets/img/portfolio-bm-egypt.jpg',
