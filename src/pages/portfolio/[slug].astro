@@ -11,12 +11,17 @@ export async function getStaticPaths() {
 const { slug } = Astro.params;
 
 const project: Project = PROJECTS.find(p => slugify(p.title) === slug);
+const projectIndex = PROJECTS.findIndex(p => slugify(p.title) === slug);
+const previousProject = projectIndex > 0 ? PROJECTS[projectIndex - 1] : null;
+const nextProject = projectIndex < PROJECTS.length - 1 ? PROJECTS[projectIndex + 1] : null;
 ---
 
 <Page title={project.title}>
   <section class="container mx-auto">
     <ProjectDetails 
       client:load
-      project={project} />
+      project={project}
+      previousProject={previousProject}
+      nextProject={nextProject} />
   </section>
 </Page>

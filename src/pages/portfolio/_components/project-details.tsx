@@ -1,17 +1,22 @@
 import Markdown from 'react-markdown';
-import { ChevronLeft, ExternalLink } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 import type { Project } from '../_data';
 import { LightboxGallery } from './lightbox-gallery';
+import { slugify } from '@/lib/utils';
 
 interface ProjectDetailsProps {
 
   project: Project;
 
+  previousProject?: Project | null;
+
+  nextProject?: Project | null;
+
 }
 
 export const ProjectDetails = (props: ProjectDetailsProps) => {
 
-  const { project } = props;
+  const { project, previousProject, nextProject } = props;
 
   const navigateBack = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -73,6 +78,38 @@ export const ProjectDetails = (props: ProjectDetailsProps) => {
             <LightboxGallery 
               screenshots={project.screenshots} />
           </div>
+        )}
+
+        {(previousProject || nextProject) && (
+          <nav className="flex justify-between gap-4 mt-12 pt-8 border-t">
+            {previousProject ? (
+              <a 
+                href={`/portfolio/${slugify(previousProject.title)}`}
+                className="flex-1 flex gap-4 items-start py-2 rounded no-underline hover:underline text-foreground">
+                <ChevronLeft className="size-5" strokeWidth={1.5} />
+                <span className="text-sm">
+                  <div className="text-xs font-light uppercase tracking-wide text-muted-foreground">Previous</div>
+                  <div className="font-semibold">{previousProject.title}</div>
+                </span>
+              </a>
+            ) : (
+              <div className="flex-1" />
+            )}
+
+            {nextProject ? (
+              <a 
+                href={`/portfolio/${slugify(nextProject.title)}`}
+                className="flex-1 flex gap-4 items-start justify-end py-2 rounded no-underline hover:underline text-foreground">
+                <span className="text-sm text-right">
+                  <div className="text-xs font-light uppercase tracking-wide text-muted-foreground">Next</div>
+                  <div className="font-semibold">{nextProject.title}</div>
+                </span>
+                <ChevronRight className="size-5" strokeWidth={1.5} />
+              </a>
+            ) : (
+              <div className="flex-1" />
+            )}
+          </nav>
         )}
       </div>
     </div>

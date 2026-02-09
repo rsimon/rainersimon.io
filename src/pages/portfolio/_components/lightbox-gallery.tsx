@@ -42,17 +42,17 @@ export const LightboxGallery = (props: LightboxGallerProps) => {
         {props.screenshots.map((screenshot, idx) => (
           <div
             key={idx}
-            className="cursor-pointer aspect-square overflow-hidden rounded-sm shadow-xs hover:shadow-md transition-shadow duration-200 bg-black/5"
+            className="cursor-pointer border aspect-square overflow-hidden rounded-sm hover:shadow-md transition-shadow duration-200 bg-black/5"
             onClick={() => setIndex(idx)}>
             {isVideo(screenshot) ? (
-              <div className="w-full h-full flex items-center justify-center text-2xl text-white bg-linear-to-br from-black/40 to-black/60 hover:to-black/70 transition-colors duration-300">
+              <div className="size-full flex items-center justify-center text-2xl text-white bg-linear-to-br from-black/40 to-black/60 hover:to-black/70 transition-colors duration-300">
                 ▶
               </div>
             ) : (
               <img
                 src={screenshot.image}
                 alt={screenshot.alt}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                className="size-full object-cover hover:scale-105 transition-transform duration-300"
                 loading="lazy"
               />
             )}
