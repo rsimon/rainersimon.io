@@ -45,7 +45,7 @@ export const PROJECTS: Project[] = [{
   title: 'Recogito Studio',
   summary: 'Real-time collaborative annotation for teaching, discussion, and shared close reading.',
   image: '/assets/img/portfolio-recogito-studio.png',
-  image_alt: 'Recogito Studio project thumbnail',
+  image_alt: 'Anntated text in the Recogito Studio user interface',
   blurb: `Recogito Studio is a web-based annotation platform for texts and images, designed for classroom teaching, collaborative close reading, and online group work in the digital humanities and education.
 
 The application supports real-time collaborative annotation on plaintext, TEI/XML, and PDF documents, as well as images and IIIF manifests. A plugin-based architecture allows Recogito Studio to be extended with custom components, domain-specific tools, or fully bespoke annotation environments.
@@ -62,7 +62,7 @@ I was responsible for the annotation frontend and the interaction design of the 
   title: 'Machina Emblematica',
   summary: 'A chatbot that brings a small corner of Renaissance knowledge back to life.',
   image: '/assets/img/portfolio-machina-emblematica.jpg',
-  image_alt: 'Machina Emblematica project thumbnail',
+  image_alt: 'Machina Emblematica website logo',
   blurb: `Machina Emblematica is a conversational interface for exploring the 
 _Symbola et Emblemata_, a 16th-century encyclopedia of allegorical illustrations, natural history, ancient fables, and moral reflections. 
 
@@ -84,7 +84,7 @@ I designed the user experience and developed the application, focusing on a play
   title: 'Annotorious',
   summary: 'Add image annotation functionality to any website with just a few lines of code.',
   image: '/assets/img/portfolio-annotorious.jpg',
-  image_alt: 'Annotorious project thumbnail',
+  image_alt: 'An aerial photograph of a park, with Annotorious shape annotations',
   blurb: `Annotorious is an open source JavaScript library that adds image annotation capabilities to web applications with minimal setup.
 
 It integrates seamlessly with OpenSeadragon and supports high-resolution, zoomable images, including [IIIF](https://iiif.io) content. Annotorious is fully compatible with the [W3C Web Annotation Data Model](https://www.w3.org/TR/annotation-model/), and provides a flexible JavaScript and TypeScript API for building custom annotation tools and workflows.
@@ -98,7 +98,7 @@ I created Annotorious in 2014 and have been actively maintaining it since. The l
   title: 'IMMARKUS',
   summary: 'An all-in-browser annotation environment designed for digital humanists and heritage professionals.',
   image: '/assets/img/portfolio-immarkus.png',
-  image_alt: 'IMMARKUS project thumbnail',
+  image_alt: 'A screenshot of the IMMARKUS knowledge graph',
   blurb: `IMMARKUS is a browser-based, open source environment for semantic image annotation, designed for researchers, digital humanists, and cultural heritage professionals.
   
 It provides a multi-image annotation workbench with AI-assisted drawing tools for faster region selection, a lightweight ontology builder, and an interactive, searchable knowledge graph that connects annotations to structured concepts.
@@ -119,12 +119,10 @@ I developed the application and frontend architecture working closely with the r
   title: 'Heritage Browser',
   summary: 'Fast, map-based exploration of hundreds of thousands of cultural heritage objects.',
   image: '/assets/img/portfolio-heritage-browser.jpg',
-  image_alt: 'Heritage Browser project thumbnail',
+  image_alt: 'A map of Europe with colourful markers, indicating the locations of cultural heritage objects',
   blurb: `Heritage Browser is map-based discovery interface for exploring large cultural heritage collections through geographic space. 
   
-Built with MapLibre and a custom storage and indexing backend, it 
-enables smooth navigation across hundreds of thousands of geo-located 
-objects.
+Built with MapLibre and a custom storage and indexing backend, it enables smooth navigation across hundreds of thousands of geo-located objects.
 
 The project originated as a joint entry with [DHDev](https://www.dh-dev.com/) to the [2022 TARBOOT Digital Culture & Heritage Contest](https://www.nli.org.il/en/at-your-service/announcements/tarboot-contest-winners), where it reached second place in the General Track. 
 
@@ -140,9 +138,8 @@ I designed and developed the frontend and interaction architecture, working clos
   title: 'liiive',
   summary: 'Shared viewing and annotation for IIIF image collections.',
   image: '/assets/img/portfolio-liiive.jpg',
-  image_alt: 'liiive project thumbnail',
-  blurb: `liiive is a web-based platform for real-time collaborative viewing and annotation
-of high-resolution image collections.
+  image_alt: 'A medieval manuscript image with coloured annotations and users\' cursors',
+  blurb: `liiive is a web-based platform for real-time collaborative viewing and annotation of high-resolution image collections.
 
 Built on the [IIIF](https://iiif.io) standard, it lets multiple users explore visual materials–artworks, manuscripts, maps, or historical documents–together, see each other's cursors, and create annotations simultaneously.Drawing tools allow highlighting regions of interest, adding comments, and engaging in discussions directly on the image.
 
@@ -155,14 +152,20 @@ Following a collaboration with the University of Graz, I have released the tool 
   }, {
     image: '/assets/img/portfolio/liiive-03.png', alt: 'Dashboar' 
   }]
-//}, {
-//  title: 'DIP.world',
-//  summary: 'A map-driven interface for exploring Lower Austria\'s ceramic heritage.',
-//  image: '/assets/img/portfolio-dipworld.jpg',
-//  image_alt: 'DIP.world project thumbnail',
-//  blurb: ``,
-//  link: 'https://www.noemuseen.at/dipworldnoemuseen/',
-//  screenshots:[]
+}, {
+  title: 'DIP.world',
+  summary: 'A map-driven interface for exploring Lower Austria\'s ceramic heritage.',
+  image: '/assets/img/portfolio-dipworld.jpg',
+  image_alt: 'DIP.world project thumbnail',
+  blurb: `DIP.world is a map-driven interface for exploring the geographic distribution of historic tiled stove fragments held in museums across Lower Austria.
+
+Developed for the [Museumsmanagement Niederösterreich](https://www.noemuseen.at/), the application presents collection data from multiple regional museums in an interactive, touch-friendly map interface.
+
+The system was initially designed for use on a large-format touch display at the [Kaiser Franz Josef Museum](https://www.kaiser-franz-josef-museum-baden.at/) in Baden, Lower Austria. It is still available online, and continues to get regular data updates.
+
+I designed and developed the frontend and user experience as well as the data update mechanism that refreshes the content from daily database dumps.`,
+  link: 'https://www.noemuseen.at/dipworldnoemuseen/',
+  client: '[Museumsmanagement Niederösterreich](https://www.noemuseen.at/)'
 //}, {
 //  title: 'Atlas of Prosodic Convergence',
 //  summary: 'A cartographic prototype for comparing prosodic patterns across Cyprus.',
