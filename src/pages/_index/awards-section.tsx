@@ -115,7 +115,7 @@ export const AwardsSection = () => {
               </div>
 
               {award.badge && (
-                <div className="flex-shrink-0">
+                <div className="shrink-0">
                   <img
                     src={award.badge}
                     alt={`${award.title} badge`}
