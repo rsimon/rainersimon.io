@@ -4,7 +4,9 @@ import { slugify } from '@/lib/utils';
 export const PortfolioSection = () => {
   return (
     <div>
-      <h2 className="px-4 md:px-0 text-xl font-bold mb-8">Selected Projects</h2>
+      <h2 className="px-4 md:px-0 text-2xl font-bold mb-8">
+        Some of My Projects
+      </h2>
 
       <div className="px-3 md:px-0 grid md:grid-cols-1 lg:grid-cols-3 gap-4">
         {PROJECTS.map((project, index) => (

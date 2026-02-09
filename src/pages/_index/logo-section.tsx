@@ -43,8 +43,8 @@ export const LogoSection = () => {
 
   return (
     <div className="px-0 md:px-10 max-w-4xl">
-      <h2 className="px-4 md:px-0 text-xl font-bold mb-16">
-        Selected Clients & Partners
+      <h2 className="px-4 md:px-0 text-2xl font-bold mb-16">
+        Who I Work With
       </h2>
           
       <div className="px-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16 md:gap-24 items-center">
