@@ -1,0 +1,22 @@
+---
+import Page from '@/layouts/Page.astro';
+import { slugify } from '@/lib/utils';
+import { PROJECTS, type Project } from './_data';
+import { ProjectDetails } from './_components';
+
+export async function getStaticPaths() {
+  return PROJECTS.map(p => ({ params: { slug: slugify(p.title) } }));
+}
+
+const { slug } = Astro.params;
+
+const project: Project = PROJECTS.find(p => slugify(p.title) === slug);
+---
+
+<Page title={project.title}>
+  <section class="container mx-auto">
+    <ProjectDetails 
+      client:load
+      project={project} />
+  </section>
+</Page>

@@ -8,15 +8,13 @@ export interface Project {
 
   image_alt?: string;
 
-  screenshots: ProjectScreenshot[];
-
   blurb: string;
 
   client?: string;
 
-  technologies?: string;
-
   link?: string;
+
+  screenshots?: ProjectScreenshot[];
 
 }
 
@@ -33,6 +31,8 @@ export interface ProjectVideoScreenshot {
   alt: string;
 
   video: string;
+
+  thumbnail?: string;
 
 }
 
@@ -52,7 +52,6 @@ The application supports real-time collaborative annotation on plaintext, TEI/XM
 
 I was responsible for the annotation frontend and the interaction design of the real-time collaboration features, including their underlying client-side architecture. Recogito Studio is released as open-source software under the GNU Affero General Public License (AGPL).`,
   client: '[Performant Software Solutions](https://www.performantsoftware.com/) / [University of Bonn](https://www.uni-bonn.de/en/university/university)',
-  technologies: '[Astro](https://astro.build/), [React](https://react.dev/), [Annotorious](https://annotoruious.dev), [PDF.js](https://mozilla.github.io/pdf.js/), [Supabase](https://supabase.com/)',
   link: 'https://recogitostudio.org',
   screenshots: [{
     video: '/assets/img/portfolio/recogito-studio-01.mp4', alt: 'Collaborative text annotation'
@@ -71,7 +70,6 @@ Built as a multimodal retrieval-augmented generation (RAG) system, the applicati
 
 I designed the user experience and developed the application, focusing on a playful, engaging ineraction, while keeping the historical sources transparent and accessible.`,
   client: 'Michela Vignoli / [AIT Austrian Institute of Technology](https://www.ait.ac.at/themen/data-science-artificial-intelligence)',
-  technologies: '[Astro](https://astro.build/), [React](https://react.dev/), [Marqo](https://www.marqo.ai/)',
   link: 'https://machina.rainersimon.io',
   screenshots: [{
     image: '/assets/img/portfolio/machina-01.jpg', alt: 'Machina Emblematica mobile start page'
@@ -92,7 +90,6 @@ I designed the user experience and developed the application, focusing on a play
 It integrates seamlessly with OpenSeadragon and supports high-resolution, zoomable images, including [IIIF](https://iiif.io) content. Annotorious is fully compatible with the [W3C Web Annotation Data Model](https://www.w3.org/TR/annotation-model/), and provides a flexible JavaScript and TypeScript API for building custom annotation tools and workflows.
 
 I created Annotorious in 2014 and have been actively maintaining it since. The library is widely used in Digital Humanities and cultural heritage projects, and forms a core component in several of my other projects, including Recogito Studio, IMMARKUS and liiive.`,
-  technologies: '[OpenSeadragon](https://openseadragon.github.io/), [PixiJS](https://pixijs.com/), [React](https://react.dev/), ',
   link: 'https://annotorious.dev',
   screenshots: [{
     image: '/assets/img/portfolio/annotorious-01.png', alt: 'Annotorious "Getting Started" JavaScript code snippet' 
@@ -108,7 +105,6 @@ It provides a multi-image annotation workbench with AI-assisted drawing tools fo
 
 I developed the application and frontend architecture working closely with the research team of the [InfraLives](https://www.infrastructurelives.eu/) project at KU Leuven. The application runs entirely client-side and supports both local images and IIIF collections. All data – images, models, and annotations – remains on the user's device, ensuring full privacy and control.`,
   client: '[KU Leuven](https://www.arts.kuleuven.be/english)',
-  technologies: '[IIIF](https://iiif.io), [Annotorious](https://annotorious.dev), [SegmentAnything 2](https://ai.meta.com/sam2/), [OpenCV.js](https://github.com/TechStark/opencv-js)',
   link: 'https://immarkus.xmarkus.org',
   screenshots: [{
     image: '/assets/img/portfolio/immarkus-01.jpg', alt: 'A city map image annotated in IMMARKUS'
@@ -136,7 +132,6 @@ Following the contest, the prototype was developed further in close collaboratio
 
 I designed and developed the frontend and interaction architecture, working closely with DHDev and the team at the National Library of Israel throughout the project.`,
   client: '[DHDev](https://www.dh-dev.com/) / [National Library of Israel](https://www.nli.org.il/en)',
-  technologies: '[MapLibre](https://maplibre.org/), [React](https://react.dev/)',
   link: 'https://geo.nli.org.il/en',
   screenshots: [{
     video: '/assets/img/portfolio/heritage-browser-01.mp4', alt: 'Heritage Browser map interface'
@@ -152,7 +147,6 @@ of high-resolution image collections.
 Built on the [IIIF](https://iiif.io) standard, it lets multiple users explore visual materials–artworks, manuscripts, maps, or historical documents–together, see each other's cursors, and create annotations simultaneously.Drawing tools allow highlighting regions of interest, adding comments, and engaging in discussions directly on the image.
 
 Following a collaboration with the University of Graz, I have released the tool as an open-source project, under the MIT license.`,
-  technologies: '[IIIF](https://iiif.io), [Annotorious](https://annotorious.dev), [YJS](https://yjs.dev/), [Supabase](https://supabase.com/)',
   link: 'https://liiive.now',
   screenshots: [{
     image: '/assets/img/portfolio/liiive-01.jpg', alt: 'Live collaborator cursors' 
@@ -167,7 +161,6 @@ Following a collaboration with the University of Graz, I have released the tool 
   image: '/assets/img/portfolio-dipworld.jpg',
   image_alt: 'DIP.world project thumbnail',
   blurb: ``,
-  technologies: '[MapLibre](https://maplibre.org/), [React](https://react.dev/), Python',
   link: 'https://www.noemuseen.at/dipworldnoemuseen/',
   screenshots:[]
 }, {
@@ -177,7 +170,6 @@ Following a collaboration with the University of Graz, I have released the tool 
   image_alt: 'Atlas of Prosodic Convergence project thumbnail',
   blurb: ``,
   client: 'University of Oxford Phonetics Lab, Faculty of Linguistics, Philology, and Phonetics',
-  technologies: '',
   link: 'https://mappingprosody.phon.ox.ac.uk/what-we-are-doing',
   screenshots: []
 }, {
@@ -187,7 +179,6 @@ Following a collaboration with the University of Graz, I have released the tool 
   image_alt: 'Geo-Coding Egpytian Place Names project thumbnail',
   blurb: ``,
   client: 'The British Museum',
-  technologies: '',
   screenshots: []
 }, {
   title: 'tiny.iiif',
