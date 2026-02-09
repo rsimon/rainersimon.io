@@ -6,7 +6,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 import type { EmblaCarouselType } from 'embla-carousel';
 
 import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/shadcn/button"
 import Autoplay from 'embla-carousel-autoplay';
 
 type CarouselApi = UseEmblaCarouselType[1]

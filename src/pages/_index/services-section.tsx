@@ -1,5 +1,10 @@
 import Markdown from 'react-markdown';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { 
+  Accordion, 
+  AccordionContent, 
+  AccordionItem, 
+  AccordionTrigger 
+} from '@/shadcn/accordion';
 
 const SERVICE_PACKAGES = [{
   title: 'Grant Writing & Technical Planning Support',
@@ -84,11 +89,11 @@ transparency, ethics, and long-term sustainability.`,
   into existing systems, with clear documentation of limitations, assumptions and constraints.`
 }]
 
-export const Services = () => {
+export const ServicesSection = () => {
 
   return (
     <div className="space-y-16">
-      <h2 className="px-4 md:px-0 text-xl font-bold mb-4">
+      <h2 className="px-0 text-xl font-bold mb-4">
         My Services
       </h2>
 
