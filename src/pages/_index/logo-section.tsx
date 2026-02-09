@@ -49,7 +49,9 @@ export const LogoSection = () => {
           
       <div className="px-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16 md:gap-24 items-center">
         {LOGOS.map(logo => (
-          <div className="flex items-center justify-center h-14">
+          <div 
+            key={logo.src}
+            className="flex items-center justify-center h-14">
             <img 
               className="max-h-full max-w-full w-auto h-auto object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300" 
               src={logo.src}

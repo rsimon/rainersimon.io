@@ -71,6 +71,28 @@ environments.`,
 - **Operations and maintenance.** Hosting, updates, and ongoing support, 
   or documentation for a clean handoff to your IT team.`
 }, {
+  title: 'Managed Hosting & Operations',
+  details: `I provide managed hosting and operational support for custom 
+web applications and open source tools. Whether it's a bespoke project built 
+specifically for your needs or a deployment of liiive or Tiny IIIF, I handle 
+infrastructure, updates, monitoring, and ongoing maintenance so you can focus 
+on your research and collections.`,
+  services:
+`- **Managed hosting.** Reliable, secure hosting for custom-built applications 
+  and open source tools with automatic backups and monitoring.
+
+- **Deployment and configuration.** Setting up your application in production, 
+  configuring databases, APIs, and external integrations.
+
+- **Monitoring and incident response.** 24/7 monitoring, uptime tracking, 
+  and rapid response to issues to keep your systems running smoothly.
+
+- **Updates and maintenance.** Regular security updates, dependency management, 
+  and proactive maintenance to ensure long-term sustainability.
+
+- **Documentation and handoff.** Clear documentation so you can take over 
+  operations at any time, or continue with managed support as your needs evolve.`
+}, {
   title: 'AI & Machine Learning for Collections',
   details: `I help evaluate and prototype AI approaches that support
 your research or collection management goals, with a focus on 
