@@ -30,7 +30,7 @@ export const ProjectDetails = (props: ProjectDetailsProps) => {
         </nav>
 
         <h1 className="text-3xl font-bold">
-          Case Study: {project.title}
+          {project.title}
         </h1>
       </div>
 
