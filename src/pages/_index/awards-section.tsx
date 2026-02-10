@@ -71,7 +71,7 @@ export const AwardsSection = () => {
                   {award.title}
                 </a>
                 
-                <div className="text-base text-muted-foreground prose max-w-3/4">
+                <div className="text-base prose max-w-3/4">
                   <Markdown>
                     {award.blurb}
                   </Markdown>
