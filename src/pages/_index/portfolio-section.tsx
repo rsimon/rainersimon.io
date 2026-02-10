@@ -29,7 +29,7 @@ export const PortfolioSection = () => {
               </div>
             </a>
 
-            <div className="lg:hidden pt-2 px-4 pb-4">
+            <div className="lg:hidden pt-2 px-0.5 pb-4">
               <h3 className="text-lg tracking-wide font-semibold">{project.title}</h3>
               <p>{project.summary}</p>
             </div>

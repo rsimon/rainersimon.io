@@ -105,7 +105,7 @@ export const ServicesSection = () => {
   return (
     <div className="space-y-16">
       <h2 className="px-0 text-2xl font-bold mb-4">
-        My Services 
+        What I Do 
       </h2>
 
       <p className="text-lg leading-relaxed">
