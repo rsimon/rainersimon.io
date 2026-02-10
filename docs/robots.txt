@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rainersimon.io/sitemap.xml
+Sitemap: https://rainersimon.io/sitemap-index.xml
