@@ -110,8 +110,8 @@ const year = new Date().getFullYear();
       <h2 class="sr-only">About</h2>
 
       <div class="pb-16 tracking-wide">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-20 md:gap-14">
-          <div class="flex flex-col md:flex-row col-span-2 items-center md:items-start gap-6">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-20 md:gap-14">
+          <div class="flex flex-col md:flex-row col-span-3 items-center md:items-start gap-6">
             <img 
               src="/assets/img/rainer.jpg"
               alt="Rainer" 
@@ -119,14 +119,21 @@ const year = new Date().getFullYear();
               height={140} 
               class="rounded-full" />
 
-            <div class="text-sm leading-relaxed text-center md:text-left">
-              <p class="max-w-70 mt-0.5">
+            <div class="text-sm leading-relaxed text-center md:text-left space-y-3">
+              <p class="max-w-96 mt-0.5">
                 <strong class="font-bold">Hi, I'm Rainer.</strong>
-                Independent IT consultant and research software engineer 
-                with 15+ years experience in Digital Humanities.
+                Independent software developer with 15+ years of experience in Digital 
+                Humanities. I love projects that don't fit the standard mould – where
+                technology meets creativity meets scholarship.
+              </p>
+
+              <p class="max-w-96">
+                I value collaboration and (so I'm told) I'm good at 
+                cutting through complexity to find the solution that
+                fits.
               </p>
               <div class="text-white/60 mt-0.5 inline-flex md:flex items-center gap-1.5">
-                <Icon name="fontisto:map-marker-alt" class="size-2.5" /> Vienna, Austria
+                <Icon name="fontisto:map-marker-alt" class="size-2.5" /> Based in Vienna, Austria
               </div>
             </div>
           </div>
@@ -172,10 +179,10 @@ const year = new Date().getFullYear();
           </div>
         </div>
 
-        <div class="grid grid-cols-4 gap-20 md:gap-14 mt-8 md:mt-2">
-          <div class="hidden md:block col-span-2 lg:col-span-3" />
+        <div class="grid grid-cols-5 gap-20 md:gap-14 mt-8">
+          <div class="hidden md:block col-span-3 lg:col-span-3" />
 
-          <div class="col-span-4 md:col-span-2 lg:col-span-1 w-full space-y-1">
+          <div class="col-span-3 md:col-span-2 lg:col-span-2 w-full space-y-1">
             <p class="text-sm">
               Sign up to my newsletter. 
               <span class="text-white/60 block">Occasional updates on DH tools, projects and ideas.</span>
