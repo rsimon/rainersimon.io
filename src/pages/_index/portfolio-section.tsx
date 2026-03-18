@@ -5,7 +5,7 @@ export const PortfolioSection = () => {
   return (
     <div>
       <h2 className="px-4 md:px-0 text-2xl font-bold mb-8">
-        Some of My Projects
+        Selected Work
       </h2>
 
       <div className="px-3 md:px-0 grid md:grid-cols-1 lg:grid-cols-3 gap-4">

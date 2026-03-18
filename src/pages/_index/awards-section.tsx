@@ -43,23 +43,23 @@ export const AwardsSection = () => {
   return (
     <div className="px-4 md:px-0 max-w-2xl">
       <h2 className="text-2xl font-bold mb-12">
-        Awards & Recognition
+        Awards
       </h2>
       
       <div className="px-1">
         {AWARDS.map((award, index) => (
-          <div key={`${award.year}-${index}`} className="flex gap-4">
+          <div key={`${award.year}-${index}`} className="flex gap-6">
             <div className="flex flex-col items-center">
-              <div className="size-3 bg-steel-lighter rounded-full" />
+              <div className="size-2 bg-slate-300 rounded-full" />
 
               {index !== AWARDS.length - 1 && (
-                <div className="w-0.5 h-40 lg:h-36 bg-steel-lighter" />
+                <div className="w-0.5 h-40 lg:h-36 bg-slate-300" />
               )}
             </div>
             
             <div className="flex-1 flex flex-row gap-6 items-start">
               <div className="flex-1 -translate-y-2">
-                <div className="flex gap-2 font-semibold text-steel-light">
+                <div className="flex gap-2 font-semibold text-muted-foreground/80">
                   {award.year}
                 </div>
 
@@ -67,7 +67,7 @@ export const AwardsSection = () => {
                   href={award.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-steel-light transition-colors text-lg font-medium">
+                  className="hover:underline text-steel-light transition-colors text-lg font-medium">
                   {award.title}
                 </a>
                 

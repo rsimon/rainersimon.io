@@ -33,7 +33,7 @@ const year = new Date().getFullYear();
             
           <div class="space-y-4 mt-8">
             <p>
-              I'm an independent software developer specializing in the Digital Humanities – working
+              I'm an independent software developer specializing in the Digital Humanities. I work
               with universities, DH labs, museums, libraries, and archives to build and design tools, 
               research infrastructure, digital editions, and data-driven publications.
             </p>
@@ -49,7 +49,7 @@ const year = new Date().getFullYear();
               class="inline-flex items-center justify-center h-12 px-8 transition-colors duration-150 rounded-sm focus:shadow-outline text-white bg-steel-light hover:bg-steel-lighter" 
               href="mailto:hello@rainersimon.io">Get in Touch</a>
             
-              <a 
+            <a 
               class="inline-flex items-center justify-center h-12 px-8 transition-colors duration-150 rounded-sm focus:shadow-outline border text-steel-light border-steel-lighter hover:bg-steel/10" 
               href="https://calendly.com/rainer-rainersimon/rainersimon-io-introduction">Schedule a Call</a>
           </div>
@@ -57,25 +57,17 @@ const year = new Date().getFullYear();
       </div>
     </section>
 
-    <section class="py-4">
-      <div class="container mx-auto">
-        <div class="px-4 md:px-10  max-w-3xl space-y-12">
-          <ServicesSection client:load />
-        </div>
-      </div>
-    </section>
-
-    <section class="pt-20 pb-24">
-      <div class="container mx-auto">
-        <LogoSection />
-      </div>
-    </section>
-
     <section id="portfolio" class="bg-steel-lighter/10">
-      <div class="container mx-auto pt-8 md:pt-24">
+      <div class="container mx-auto py-8 md:py-18">
         <div class="md:px-10">
           <PortfolioSection />
         </div>
+      </div>
+    </section>
+
+    <section class="py-8 md:py-18">
+      <div class="container mx-auto">
+        <LogoSection />
       </div>
     </section>
 
@@ -87,27 +79,27 @@ const year = new Date().getFullYear();
       </div>
     </section>
 
+    <section class="py-8 md:py-18">
+      <div class="container mx-auto">
+        <div class="px-4 md:px-10  max-w-3xl space-y-12">
+          <ServicesSection client:load />
+        </div>
+      </div>
+    </section>
+
     <section>     
       <div class="container mx-auto">
-        <div class="px-4 md:px-10  pt-20 pb-2 max-w-3xl space-y-12 leading-relaxed">
+        <div class="px-4 md:px-10 pt-12 pb-2 max-w-3xl space-y-12">
           <h2 class="text-2xl font-bold">
-            Have a Project in Mind?
+            Get in Touch
           </h2>
 
-          <p class="text-lg max-w-xl">
-            Whether you are still figuring out requirements or ready to begin development,
-            I'm happy to talk through your needs and explore how I can help.
+          <p class="text-lg max-w-xl leading-relaxed">
+            Whether you have an early idea or a fully formed project –
+            let's talk. Drop me a line at <a 
+              class="text-steel underline font-medium" 
+              href="mailto:hello@rainersimon.io">hello@rainersimon.io</a>
           </p>
-
-          <div class="flex flex-col md:flex-row gap-4 text-md mt-16">
-            <a 
-              class="inline-flex items-center justify-center h-12 px-8 transition-colors duration-150 rounded-sm focus:shadow-outline text-white bg-steel-light hover:bg-steel-lighter" 
-              href="https://calendly.com/rainer-rainersimon/rainersimon-io-introduction">Schedule a Free Consultation</a>
-
-            <a 
-              class="inline-flex items-center justify-center h-12 px-8 transition-colors duration-150 rounded-sm focus:shadow-outline border text-steel-light border-steel-lighter hover:bg-steel/10" 
-              href="mailto:hello@rainersimon.io">Email Me</a>
-          </div>
         </div>
       </div>
     </section>
