@@ -19,14 +19,13 @@ in clear, funder-friendly language.`,
 - **Proposal review.** Editing technical drafts for clarity, structure, and alignment with call aims.`
 }, {
   title: 'UX Design and Prototyping',
-  details: `I design user-centered tools and interfaces that help 
-researchers, curators, students, or the general public interact with complex
-cultural data. I help test ideas, and create interactive prototypes 
-for digital publications, scholarly tools and research environments.`,
+  details: `I design tools and interfaces for digital scholarship – from early 
+concept sketches to fully functional prototypes ready for user testing or grant 
+submissions. I work with researchers and stakeholders to turn ideas into 
+concrete designs.`,
   services: 
 `- **Project discovery and scoping.** Collaborative sessions to turn early
-  ideas into clear, feasible projects, supported by stakeholder analysis and
-  personas.
+  ideas into clear, feasible projects.
 
 - **Interface design and wireframes.** Mockups that explore different 
 design directions and interaction patterns.
@@ -35,25 +34,23 @@ design directions and interaction patterns.
 testing, stakeholder review, or inclusion in grant proposals.`
 }, {
   title: 'IIIF & Annotation Systems',
-  details: `I help Digital Humanities projects, DH centers, and 
-cultural institutions make informed decisions about IIIF adoption, 
-annotation tooling, metadata practices, and viewer user experience.`,
+  details: `With over a decade of hands-on experience building IIIF-based
+tools and annotation systems, I help institutions evaluate and plan their
+IIIF adoption, tooling, and workflow design – from minimal setups to
+full-scale infrastructure.`,
   services:
 `- **Infrastructure assessment.** Evaluation of your IIIF setup for 
   standards alignment, interoperability, and opportunities for improvement.
 
-- **Technology selection.** Guidance in choosing tools, frameworks, and 
-  platforms appropriate to your resources and project requirements.
+- **Technology selection.** Guidance in choosing the right tools, 
+  frameworks, and platforms for your content, workflows, and budget.
 
-- **User experience design.** UX consulting for image viewers, 
+- **Viewer & interface design.** Designing and evaluating image viewers,
   annotation interfaces, and research workflows.
 
-- **Architecture planning.** Designing systems ranging from
+- **Architecture planning.** Planning and scoping systems from lightweight
 [minimal computing](https://go-dh.github.io/mincomp/about/) 
-setups to database-driven infrastructures.
-
-- **Grant proposal support.** Technical narratives, milestone planning, and 
-  feasibility sections for Digital Humanities grant applications.`
+setups to full collection management infrastructures.`
 }, {
   title: 'Web Application Development',
   details: `I design and build production-ready web applications for
@@ -62,10 +59,10 @@ editions, databases, annotation tools, interactive maps, and storytelling
 environments.`,
   services:
 `- **Technology consulting.** Framework, architecture and hosting 
-  recommendations that fit your needs and budget.
+  recommendations matched to your project scale, team and budget.
 
 - **End-to-end development.** UX design, frontend and backend implementation,
-  integration, and testing, from initial concept to deployed application.
+  integration, and testing – from initial concept to deployed application.
 
 - **Operations and maintenance.** Hosting, updates, and ongoing support, 
   or documentation for a clean handoff to your IT team.`
