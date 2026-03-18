@@ -18,7 +18,7 @@ in clear, funder-friendly language.`,
 
 - **Proposal review.** Editing technical drafts for clarity, structure, and alignment with call aims.`
 }, {
-  title: 'UX Design and Prototyping',
+  title: 'UX Design & Prototyping',
   details: `I design tools and interfaces for digital scholarship – from early 
 concept sketches to fully functional prototypes ready for user testing or grant 
 submissions. I work with researchers and stakeholders to turn ideas into 

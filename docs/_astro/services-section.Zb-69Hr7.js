@@ -9,7 +9,7 @@ in clear, funder-friendly language.`,services:`- **Technical narratives.** Metho
 
 - **Work package scoping.** Milestones, deliverables, risk analysis, and timelines.
 
-- **Proposal review.** Editing technical drafts for clarity, structure, and alignment with call aims.`},{title:"UX Design and Prototyping",details:`I design tools and interfaces for digital scholarship – from early 
+- **Proposal review.** Editing technical drafts for clarity, structure, and alignment with call aims.`},{title:"UX Design & Prototyping",details:`I design tools and interfaces for digital scholarship – from early 
 concept sketches to fully functional prototypes ready for user testing or grant 
 submissions. I work with researchers and stakeholders to turn ideas into 
 concrete designs.`,services:`- **Project discovery and scoping.** Collaborative sessions to turn early
