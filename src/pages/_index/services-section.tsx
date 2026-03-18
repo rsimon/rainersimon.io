@@ -7,19 +7,18 @@ import {
 } from '@/shadcn/accordion';
 
 const SERVICE_PACKAGES = [{
-  title: 'Grant Writing & Technical Planning Support',
-  details: `I help with the technical parts of your grant application,
-including work packages, methodology sections, and implementation planning.
-I translate complex technical ideas into clear, funder-friendly 
-language.`,
+  title: 'Grant Writing & Technical Planning',
+  details: `I help turn your research vision into a technically sound, submission-ready proposal.
+I draft work packages, write methodology sections, and develop implementation plans
+in clear, funder-friendly language.`,
   services: 
 `- **Technical narratives.** Methodology and technical approach sections.
 
 - **Work package scoping.** Milestones, deliverables, risk analysis, and timelines.
 
-- **Proposal review.** Editing drafts for clarity, structure, and alignment with call aims.`
+- **Proposal review.** Editing technical drafts for clarity, structure, and alignment with call aims.`
 }, {
-  title: 'UX Design and Interaction Prototyping',
+  title: 'UX Design and Prototyping',
   details: `I design user-centered tools and interfaces that help 
 researchers, curators, students, or the general public interact with complex
 cultural data. I help test ideas, and create interactive prototypes 
@@ -35,7 +34,7 @@ design directions and interaction patterns.
 - **Prototype development.** Clickable or functional prototypes for user 
 testing, stakeholder review, or inclusion in grant proposals.`
 }, {
-  title: 'IIIF & Annotation Workflow Consulting',
+  title: 'IIIF & Annotation Systems',
   details: `I help Digital Humanities projects, DH centers, and 
 cultural institutions make informed decisions about IIIF adoption, 
 annotation tooling, metadata practices, and viewer user experience.`,
@@ -82,7 +81,7 @@ ongoing updates and maintenance.
 - **Migration and handoff.** Consulting and support for migrating your data
 from managed applications to your own self-hosted environment.`
 }, {
-  title: 'AI & Machine Learning for Collections',
+  title: 'AI & Machine Learning',
   details: `I help evaluate and prototype AI approaches that support
 your research or collection management goals, with a focus on 
 transparency, ethics, and long-term sustainability.`,
@@ -104,16 +103,9 @@ export const ServicesSection = () => {
 
   return (
     <div className="space-y-16">
-      <h2 className="px-0 text-2xl font-bold mb-4">
+      <h2 className="px-0 text-2xl font-bold mb-6">
         My Services 
       </h2>
-
-      <p className="text-lg leading-relaxed">
-         I work with clients at every stage of the software development lifecycle: 
-         from requirements gathering and technology assessment, to architecture, UX 
-         design, implementation, to system integration, product launch and 
-         operations.
-      </p>
 
       <Accordion type="multiple">
         {SERVICE_PACKAGES.map(({ title, details, services }) => (
