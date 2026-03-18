@@ -68,19 +68,19 @@ environments.`,
   or documentation for a clean handoff to your IT team.`
 }, {
   title: 'Managed Hosting & Operations',
-  details: `I provide managed hosting and operational support for personal 
-or institutional instances of liiive or tiny.iiif, as well as for bespoke 
-web applications.`,
+  details: `I offer managed hosting and operational support for bespoke 
+web applications built with me, as well as for institutional or personal
+instances of liiive and tiny.iiif.`,
   services:
-`- **Managed hosting.** Long-term operation of your web applications with 
-ongoing updates and maintenance.
+`- **Managed hosting.** Long-term operation of your web application with 
+ongoing updates, maintenance, and monitoring.
 
-- **Migration and handoff.** Consulting and support for migrating your data
-from managed applications to your own self-hosted environment.`
+- **Migration and handoff.** Full documentation and support for moving
+to your own self-hosted environment whenever you are ready.`
 }, {
   title: 'AI & Machine Learning',
   details: `I help evaluate and prototype AI approaches that support
-your research or collection management goals, with a focus on 
+your research and operational goals, with a focus on 
 transparency, ethics, and long-term sustainability.`,
   services: 
 `- **Tool and model evaluation.** Assessing AI tools and models suited 
@@ -89,8 +89,8 @@ transparency, ethics, and long-term sustainability.`,
 - **Minimal computing AI.** Lightweight AI solutions that run 
   directly in the browser, reducing infrastructure costs and protecting user privacy.
 
-- **Architecture design and prototyping.** Building proof-of-concept 
-  implementations to validate ideas before full-scale development.
+- **Prototyping.** Proof-of-concept implementations to validate ideas
+  before full-scale development.
 	
 - **Integration support.** Guidance on integrating AI outputs 
   into existing systems, with clear documentation of limitations, assumptions and constraints.`
