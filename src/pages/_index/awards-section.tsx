@@ -50,10 +50,10 @@ export const AwardsSection = () => {
         {AWARDS.map((award, index) => (
           <div key={`${award.year}-${index}`} className="flex gap-6">
             <div className="flex flex-col items-center">
-              <div className="size-2 bg-slate-300 rounded-full" />
+              <div className="size-2 bg-slate-400/75 rounded-full" />
 
               {index !== AWARDS.length - 1 && (
-                <div className="w-0.5 h-40 lg:h-36 bg-slate-300" />
+                <div className="w-0.5 h-40 lg:h-36 bg-slate-400/75" />
               )}
             </div>
             
